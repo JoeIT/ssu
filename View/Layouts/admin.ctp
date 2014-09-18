@@ -219,18 +219,20 @@ table>thead>tr>th>a {
 													
 						<!-- INICIO MENU FILES -->
 						
-						<?php if ($this->Acl->check('Files','index','AuthAcl') == true){?>
+						<?php 
+						
+						if ($this->Acl->check('Files','index','File') == true){?>
 						<li class="dropdown <?php if (isset($menus[$strAction]) && (int)$menus[$strAction] == 8){?> active <?php }?>">
 							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
 								<?php echo __('Files personal'); ?>
 								<b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu">
-								<?php if ($this->Acl->check('Files','index','AuthAcl') == true){?>
-									<li><?php echo $this->Html->link(__('Option A'), array('plugin' => 'auth_acl','controller' => 'files','action' => 'index')); ?></li>
+								<?php if ($this->Acl->check('Files','index','File') == true){?>
+									<li><?php echo $this->Html->link(__('Files'), array('plugin' => 'file','controller' => 'files','action' => 'index')); ?></li>
 								<?php } ?>
-								<?php if ($this->Acl->check('Employees','index','AuthAcl') == true){?>
-									<li><?php echo $this->Html->link(__('Option B'), array('plugin' => 'auth_acl','controller' => 'employees','action' => 'index')); ?></li>
+								<?php if ($this->Acl->check('Employees','index','File') == true){?>
+									<li><?php echo $this->Html->link(__('Employees'), array('plugin' => 'file','controller' => 'employees','action' => 'index')); ?></li>
 								<?php }?>
 							</ul>
 						</li>
