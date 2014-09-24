@@ -1,0 +1,26 @@
+PhpCake
+-----------
+
+* IMAGENES
+-----------
+// Image from root url (root/webroot/img/employee.jpg)
+echo $html->image('employee.jpg', array("alt" => "Empleado", 'fullBase' => true));
+
+// Image from root url (root/Plugin/File/webroot/img/employee.jpg)
+echo $this->Html->image('File.employee.png', array("alt" => "Empleado"));
+
+
+
+* LINKS
+----------
+// Link with image
+echo $this->Html->link(
+				$this->Html->image('File.employe.png', array('alt' => 'Employee: Juan Perez')), 
+				array('controller' => 'employees', 'action' => 'index', 'comments' => false), 
+				array('escape' => false)
+		);
+		
+* URLS
+-------
+// Root url
+echo $this->webroot 

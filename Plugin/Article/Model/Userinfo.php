@@ -7,7 +7,7 @@ App::uses('ArticleAppModel', 'Article.Model');
 */
 class Userinfo extends ArticleAppModel {
     public $useDbConfig = 'att2015sql';
-    public $useTable = 'USERINFO';
+    public $useTable = 'userinfo';
     public $primaryKey = 'USERID';
 
 	/**
