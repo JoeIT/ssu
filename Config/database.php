@@ -24,9 +24,9 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'ssu',
 		'password' => 'root',
-		'database' => 'cakephp_user_acl',
-		);
-        public $att2015sql = array(
+		'database' => 'ssurrhh',
+	);
+    public $att2015sql = array(
 		'datasource' => 'Database/Sqlserver',
 		'persistent' => false,
 		'host' => 'localhost',
@@ -34,4 +34,13 @@ class DATABASE_CONFIG {
 		'password' => 'root',
 		'database' => 'att2000SQL',
 	);
+	
+	/*public $filesdb = array(
+		'datasource' => 'Database/Sqlserver',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'ssu',
+		'password' => 'root',
+		'database' => 'files_db',
+	);*/
 }
