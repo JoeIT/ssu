@@ -6,31 +6,35 @@ class EmployeesController extends FileAppController {
 	
 	public function index() {
 	}
-	
-	public function add() {
-	}
+
+    public function panels() {
+    }
 	
 	public function edit($id = null) {
-		if(!$id) throw  new  NotFoundException(__('Id de empleado vacio!'));
+
+        if(!$id) throw  new  NotFoundException(__('Id de empleado vacio'));
 		
 		$employee = $this->Employee->findById($id);
-		if(!$employee) throw new NotFoundException(__('Invalid  employee'));
+		if(!$employee) throw new NotFoundException(__('Empleado no encontrado'));
 		
 		if ($this->request->is(array('post',  'put')))
 		{
 			$this->Employee->id = $id;
-			if ($this->Employee->save($this->request->data))
-			{
-				$this->Session->setFlash(__('Your Employee data has been updated.'));
-				return  $this->redirect(array('action' => 'index'));
-			}
-			
-			$this->Session->setFlash(__('Unable to update your employee data.'));			
+
+            if($this->Employee->validates())
+            {
+                if($this->Employee->save($this->request->data))
+                {
+                    $this->Session->setFlash(__('La información guardada exitosamente.'));
+                    return  $this->redirect(array('action' => 'index'));
+                }
+
+                $this->Session->setFlash(__('No se pudo guardar la información del empleado.'));
+            }
 		}
 		
 		if (!$this->request->data['Employee'])
 			$this->request->data  =  $employee;
-		
 		
 		//$userinfo = $this->Userinfo->find('first', array('conditions' => array('USERID' => $id)));
 		//$this->set('userinfoView', $userinfo['Userinfo']);
@@ -51,10 +55,5 @@ class EmployeesController extends FileAppController {
 		//echo "Name: ". $userinfo['Userinfo']['Name'];
 		
 		//print_r($userinfo);
-		
-		
-	}
-
-	public function delete() {
 	}
 }
