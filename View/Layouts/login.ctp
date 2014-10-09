@@ -20,6 +20,7 @@ body {
 <link
 	href="<?php echo $this->webroot; ?>bootstrap/css/bootstrap-responsive.css"
 	rel="stylesheet">
+	
 </head>
 <body>
 

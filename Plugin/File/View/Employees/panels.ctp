@@ -7,8 +7,10 @@
             $('#panel_' + $(this).attr('custom_type') ).toggle('slide');
         });
 
-        $( "#opener" ).click(function() {
-            $( "#dialog" ).dialog();
+        $('#add_statement').click(function(){
+            var url = "<?php echo $this->Html->url(array("controller"  =>  'statements',
+													"action"  =>  'ajaxadd'));?>";
+            loadDialogPanel(url, 'Nueva declaración jurada');
         });
 
         $('.ajaxloadpanel').click(function(){
@@ -33,26 +35,66 @@
                 default:
                     break;
             }
-        })
+        });
+
+        $('#ajax_content').dialog({
+            autoOpen: false,
+            modal: true,
+            title: '',
+            resizable: false,
+            close: function(){
+                $('#ajax_content').html('');
+            }
+        });
+
+        $('#ajax_content2').dialog({
+            autoOpen: false,
+            modal: true,
+            title: 'Nueva declaración jurada',
+            buttons: [
+                {
+                    text: 'Aceptar',
+                    click: function() {
+                        alert('La info fue guardada.');
+                    }
+                },
+                {
+                    text: 'Cerrar',
+                    click: function() {
+                        $(this).dialog('close');
+                    }
+                }
+            ],
+            close: function(){
+            }
+        });
+    });
+
+    function loadDialogPanel( url, title ) {
+
+        $('#ajax_content').dialog('option', 'title', title);
+        //$.ajax({async:false});
+        $('#ajax_content').load( url + '?' + $.now() ).dialog('open');
 
         /*$.ajax({
-            url: "<?php //echo $this->Html->url(array("controller"  =>  "statements",
-						//							"action"  =>  "index"));?>",
+            url: url,
             type: 'POST',
             async: 'false',
             data: {
                 my_id: '001',
                 my_name: 'This is my name'
             },
-            success: function(response)
+            success: function( response )
             {
-                alert('RESPONSE = ' + response);
+                $('#ajax_content').html( response );
+                $('#ajax_content').dialog('open');
             },
             error: function(request, textStatus, errorThrown)
             {
+                alert('Error: ' + errorThrown);
             }
         });*/
-    });
+    }
 
     function loadStatementsPanel() {
         $.ajax({
@@ -109,16 +151,10 @@
 
 </style>
 
-<div id="dialog" title="Basic dialog">
-    <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-</div>
-<button id="opener">Open Dialog</button>
-
-
 <h1>DATOS DEL EMPLEADO</h1>
 
 <!-- OTHER SECTION -->
-<div class='css-details_section' >
+<div class='css-details_section' id='test' >
     <h2>Detalles</h2>
 
     <?php echo $this->Html->image('File.Test_no_avatar.jpg', array("alt" => "")); ?>
@@ -163,6 +199,7 @@
 <!-- OTHER SECTION -->
     <div class='css-data_subsection' >
         <h2><a href='javascript:void(0)' id='' class='ajaxloadpanel' custom_type='statements' >Declaraciones juradas</a></h2>
+        <input type="button" id="add_statement" value="Agregar" />
         <div id='panel_statements' class='panel_to_toggle'>
         </div>
     </div>
@@ -185,3 +222,5 @@
         </div>
     </div>
 </div>
+
+<div id='ajax_content'></div>

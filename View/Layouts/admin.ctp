@@ -67,11 +67,14 @@ $menus['AsistenciaReportesindex'] = 7;
 <link href="<?php echo $this->webroot; ?>css/template.css" rel="stylesheet">
 <link href="<?php echo $this->webroot; ?>bootstrap-modal/css/animate.min.css" rel="stylesheet">
 <link href="<?php echo $this->webroot; ?>jquery/jquery-loadmask/jquery.loadmask.css" rel="stylesheet">
-<link href="<?php echo $this->webroot; ?>jquery/jquery-loadmask/jquery.loadmask.css" rel="stylesheet">
+<link href="<?php echo $this->webroot; ?>css/jquery-ui-1.11.1.custom.min.css" rel="stylesheet">
+<!-- <link href="<?php //echo $this->webroot; ?>css/jquery-ui.css" rel="stylesheet"> -->
 <?php echo $this->Html->css('fullcalendar'); ?>
 
 <script src="<?php echo $this->webroot; ?>jquery/jquery-1.8.3.js"></script>
-<script src="<?php echo $this->webroot; ?>js/jquery-ui-1.9.2.custom.min.js"></script>
+<!-- <script src="<?php //echo $this->webroot; ?>js/jquery-ui-1.9.2.custom.min.js"></script> -->
+<script src="<?php echo $this->webroot; ?>js/jquery-ui-1.11.1.custom.min.js"></script>
+<script src="<?php echo $this->webroot; ?>js/jquery.form.3.51.js"></script>
 
 <script src="<?php echo $this->webroot; ?>jquery/jquery-loadmask/jquery.loadmask.js"></script>
 <script src="<?php echo $this->webroot; ?>jquery/jquery.cookie.js"></script>

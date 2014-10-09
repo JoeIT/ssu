@@ -7,11 +7,12 @@ class Statement extends FileAppModel
 	public $validate = array(
 			'name' => array(
 				'rule' => 'alphaNumeric',
-				'required' => false
+				'required' => true
 			),
 			'description' => array(
 				'rule' => 'alphaNumeric',
-				'required' => false
+				'required' => false,
+                'allowEmpty' => true
 			)
 	);
 }

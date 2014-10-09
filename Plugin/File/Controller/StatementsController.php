@@ -9,6 +9,17 @@ class StatementsController extends FileAppController {
         $this->set('statementsList', $this->Statement->find('all'));
     }
 
-    public function add() {
+    public function ajaxadd() {
+        $this->layout = false;
+
+        if($this->request->is('Post'))
+        {
+            $this->Statement->create();
+            if($this->Statement->save($this->request->data))
+            {
+                // Saved successfully
+            }
+            // Not saved successfully
+        }
     }
 }

@@ -13,7 +13,12 @@
         <td><?php echo $statement['Statement']['description']; ?></td>
         <td>
             <a href="javascript:void(0)" >Modificar</a>
-            <a href="javascript:void(0)" >Eliminar</a>
+            <?php echo  $this->Form->postLink(
+                'Eliminar',
+                array('action'  =>  'delete',  $statement['Statement']['id']),
+                array('confirm'  =>  'Eliminar declaración: ' . $statement['Statement']['name'])
+                );
+            ?>
         </td>
     </tr>
     <?php } ?>
