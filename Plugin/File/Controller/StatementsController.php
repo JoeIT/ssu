@@ -12,14 +12,15 @@ class StatementsController extends FileAppController {
     public function ajaxadd() {
         $this->layout = false;
 
+        $this->set('saved', false);
+
         if($this->request->is('Post'))
         {
             $this->Statement->create();
             if($this->Statement->save($this->request->data))
             {
-                // Saved successfully
+                $this->set('saved', true);
             }
-            // Not saved successfully
         }
     }
 }

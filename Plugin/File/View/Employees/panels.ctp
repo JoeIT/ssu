@@ -37,13 +37,13 @@
             }
         });
 
-        $('#ajax_content').dialog({
+        $('#dialog_content').dialog({
             autoOpen: false,
             modal: true,
             title: '',
             resizable: false,
             close: function(){
-                $('#ajax_content').html('');
+                $('#dialog_content').html('');
             }
         });
 
@@ -72,9 +72,9 @@
 
     function loadDialogPanel( url, title ) {
 
-        $('#ajax_content').dialog('option', 'title', title);
+        $('#dialog_content').dialog('option', 'title', title);
         //$.ajax({async:false});
-        $('#ajax_content').load( url + '?' + $.now() ).dialog('open');
+        $('#dialog_content').load( url + '?' + $.now() ).dialog('open');
 
         /*$.ajax({
             url: url,
@@ -86,8 +86,8 @@
             },
             success: function( response )
             {
-                $('#ajax_content').html( response );
-                $('#ajax_content').dialog('open');
+                $('#dialog_content').html( response );
+                $('#dialog_content').dialog('open');
             },
             error: function(request, textStatus, errorThrown)
             {
@@ -223,4 +223,5 @@
     </div>
 </div>
 
-<div id='ajax_content'></div>
+<div id='dialog_content'>
+</div>
