@@ -11,7 +11,7 @@ class Statement extends FileAppModel
 				'required' => true
 			),
 			'description' => array(
-				'rule' => 'alphaNumeric',
+				'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
 				'required' => false,
                 'allowEmpty' => true
 			)
