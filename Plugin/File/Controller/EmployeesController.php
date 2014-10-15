@@ -9,6 +9,10 @@ class EmployeesController extends FileAppController {
 
     public function panels() {
     }
+
+    public function newEmployee() {
+        //$this->layout = 'some';
+    }
 	
 	public function edit($id = null) {
 

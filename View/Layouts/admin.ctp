@@ -73,12 +73,12 @@ $menus['AsistenciaReportesindex'] = 7;
 
 <script src="<?php echo $this->webroot; ?>jquery/jquery-1.8.3.js"></script>
 <!-- <script src="<?php //echo $this->webroot; ?>js/jquery-ui-1.9.2.custom.min.js"></script> -->
-<script src="<?php echo $this->webroot; ?>js/jquery-ui-1.11.1.custom.min.js"></script>
 <script src="<?php echo $this->webroot; ?>js/jquery.form.3.51.js"></script>
 
 <script src="<?php echo $this->webroot; ?>jquery/jquery-loadmask/jquery.loadmask.js"></script>
 <script src="<?php echo $this->webroot; ?>jquery/jquery.cookie.js"></script>
 <script src="<?php echo $this->webroot; ?>bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo $this->webroot; ?>js/jquery-ui-1.11.1.custom.min.js"></script>
 <script src="<?php echo $this->webroot; ?>bootstrap-modal/js/bootstrap.modal.js"></script>
 <script src="<?php echo $this->webroot; ?>bootstrap-modal/js/jquery.easing.1.3.js"></script>
 <script src="<?php echo $this->webroot; ?>tiny_mce/tiny_mce.js"></script>

@@ -8,11 +8,11 @@ class Statement extends FileAppModel
 			'name' => array(
                 //'rule' => array('custom', '/([\w.-]+ )+[\w+.-]/'),
                 'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'), // Regex to allow alphanumeric and internal spaces
-				'required' => true
+				'required' => true,
+                'allowEmpty' => false
 			),
 			'description' => array(
 				'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
-				'required' => false,
                 'allowEmpty' => true
 			)
 	);
