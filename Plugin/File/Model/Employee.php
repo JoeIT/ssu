@@ -31,7 +31,6 @@ class Employee extends FileAppModel
         ),
         'address' => array(
             'rule' => array('custom', '/^[a-z0-9 .\-]+$/i')
-        ),
-        'phone' => array()
+        )
 	);
 }
