@@ -1,8 +1,8 @@
 <table border="1">
     <tr>
         <th>ID</th>
-        <th>NAME</th>
-        <th>DESCRIPTION</th>
+        <th>NOMBRE</th>
+        <th>DESCRIPCION</th>
         <th></th>
     </tr>
     <?php  foreach ($statementsList  as  $statement){  ?>

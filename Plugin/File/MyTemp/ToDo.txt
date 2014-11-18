@@ -10,6 +10,6 @@ jmacias@ssucbba.org
 - Otros
 
 
-
-Usar OCR en doc
-Firmas digitales
+* Concurso de meritos, puntajes.
+* Usar OCR en doc
+* Firmas digitales (Las firmas de algunas personas)

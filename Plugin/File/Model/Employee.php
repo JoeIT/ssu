@@ -25,12 +25,16 @@ class Employee extends FileAppModel
             'rule' => 'alphaNumeric'
         ),
         'ci' => array(
+            'rule' => array('minLength' => '5')
         ),
         'gender' => array(
             'rule' => 'alphaNumeric'
         ),
         'address' => array(
             'rule' => array('custom', '/^[a-z0-9 .\-]+$/i')
+        ),
+        'phone' => array(
+            'rule' => array('minLength' => '8')
         )
 	);
 }

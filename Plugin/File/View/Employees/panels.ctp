@@ -5,7 +5,7 @@
 
         $('.panel_to_toggle').hide();
 
-        $('#add_statement').click(function(){
+        $('#add_statements').click(function(){
             var url = "<?php echo $this->Html->url(array("controller"  =>  'statements',
 													"action"  =>  'ajaxadd'));?>";
             loadDialogPanel(url, 'Nueva declaración jurada');
@@ -13,28 +13,37 @@
 
         $('.ajaxloadpanel').click(function(){
 
-            switch ( $(this).attr('custom_type') )
+            var type = $(this).attr('custom_type');
+
+            switch ( type )
             {
                 case 'records':
-					$('#panel_records').toggle();
+					url = "<?php echo $this->Html->url(array("controller"  =>  "records", "action"  =>  "index"));?>";
+                    loadIndexPanel(url, type, 'ANTECEDENTES');
                     break;
                 case 'personal_education':
-                    $('#panel_personal_education').toggle();
+                    url = "<?php echo $this->Html->url(array("controller"  =>  "personal_education", "action"  =>  "index"));?>";
+                    loadIndexPanel(url, type, 'EDUCACION PERSONAL');
 					break;
                 case 'jobs':
-					$('#panel_jobs').toggle();
+                    url = "<?php echo $this->Html->url(array("controller"  =>  "jobs", "action"  =>  "index"));?>";
+                    loadIndexPanel(url, type, 'EXPERIENCIAS DE TRABAJOS');
                     break;
                 case 'statements':
-                    loadStatementsPanel();
+                    url = "<?php echo $this->Html->url(array("controller"  =>  "statements", "action"  =>  "index"));?>";
+                    loadIndexPanel(url, type, 'DECLARACIONES JURADAS');
                     break;
                 case 'vacations':
-					$('#panel_vacations').toggle();
+                    url = "<?php echo $this->Html->url(array("controller"  =>  "vacations", "action"  =>  "index"));?>";
+                    loadIndexPanel(url, type, 'VACACIONES');
                     break;
                 case 'memos':
-					$('#panel_memos').toggle();
+                    url = "<?php echo $this->Html->url(array("controller"  =>  "memos", "action"  =>  "index"));?>";
+                    loadIndexPanel(url, type, 'MEMORANDUMS');
                     break;
                 case 'others':
-					$('#panel_others').toggle();
+                    url = "<?php echo $this->Html->url(array("controller"  =>  "others", "action"  =>  "index"));?>";
+                    loadIndexPanel(url, type, 'OTROS');
                     break;
                 default:
                     break;
@@ -49,8 +58,9 @@
             close: function(){
                 $('#dialog_content').html('');
             }
-        });
+        });$
 
+        // PARA BORRAR
         $('#ajax_content2').dialog({
             autoOpen: false,
             modal: true,
@@ -72,59 +82,36 @@
             close: function(){
             }
         });
+        //-----------------------------
     });
 
-    function loadDialogPanel( url, title ) {
-
+    function loadDialogPanel( url, title )
+    {
         $('#dialog_content').dialog('option', 'title', title);
         //$.ajax({async:false});
         $('#dialog_content').load( url + '?' + $.now() ).dialog('open');
+    }
 
-        /*$.ajax({
+    // -----------------------------------
+    // Load the index/list panels
+    function loadIndexPanel(url, type, name)
+    {
+        $.ajax({
             url: url,
             type: 'POST',
             async: 'false',
-            data: {
-                my_id: '001',
-                my_name: 'This is my name'
-            },
-            success: function( response )
+            success: function(indexDataPanel)
             {
-                $('#dialog_content').html( response );
-                $('#dialog_content').dialog('open');
+                $('#panel_' + type).html(indexDataPanel);
+                $('#panel_' + type).toggle();
             },
             error: function(request, textStatus, errorThrown)
             {
-                alert('Error: ' + errorThrown);
-            }
-        });*/
-    }
-
-    function loadStatementsPanel() {
-        $.ajax({
-            url: "<?php echo $this->Html->url(array("controller"  =>  "statements",
-													"action"  =>  "index"));?>",
-            type: 'POST',
-            async: 'false',
-            success: function(statementsPanel)
-            {
-                $('#panel_statements').html(statementsPanel);
-                $('#panel_statements').toggle();
-            },
-            error: function(request, textStatus, errorThrown)
-            {
-                alert('Error: No se pudo cargar la lista de declaraciones juradas.');
+                alert('Error: No se pudo cargar la lista de '+ name +'.');
             }
         });
     }
 </script>
-
-<style>
-    
-
-</style>
-
-<link href="<?php echo $this->webroot; ?>css/stylehrms.css" rel="stylesheet">
 
 <h1>DATOS DEL EMPLEADO</h1>
 
@@ -134,69 +121,36 @@
 		<div class='ibox-title'>
 			<h2>Detalles</h2>
 		</div>
-
-		<?php echo $this->Html->image('File.Test_no_avatar.jpg', array("alt" => "")); ?>
-
+		<?php echo $this->Html->image('File.Test_no_avatar.jpg', array("alt" => "Fotografía")); ?>
 		<?php echo $this->fetch('employee_info'); ?>
 	</div>
 	<!-- OTHER SECTION -->
 	<div class='css-data_section' >
-		<div class='css-data_subsection'>
-			<div class='ibox-title'>
-				<h2><a href='javascript:void(0)' id='' class='ajaxloadpanel' custom_type='records' >Antecedentes</a></h2>
-			</div>
-			<div id='panel_records' class='panel_to_toggle'>
-			</div>
-		</div>
+        <?php
+        $areasArray = array(
+            array(type => 'records', title => 'Antecedentes', value => '123'),
+            array(type => 'personal_education', title => 'Educacion personal', value => '123'),
+            array(type => 'jobs', title => 'Experiencias de trabajo', value => '123'),
+            array(type => 'statements', title => 'Declaraciones juradas', value => '123'),
+            array(type => 'vacations', title => 'Salidas y vacaciones', value => '123'),
+            array(type => 'memos', title => 'Memorandums', value => '123')
+        );
 
-		<div class='css-data_subsection' >
-			<div class='ibox-title'>
-				<h2><a href='javascript:void(0)' id='' class='ajaxloadpanel' custom_type='personal_education' >Educación personal</a></h2>
-			</div>
-			<div id='panel_personal_education' class='panel_to_toggle'>
-			</div>
-		</div>
-	<!-- OTHER SECTION -->
-		<div class='css-data_subsection' >
-			<div class='ibox-title'>
-				<h2><a href='javascript:void(0)' id='' class='ajaxloadpanel' custom_type='jobs' >Experiencias de trabajo</a></h2>
-			</div>
-			<div id='panel_jobs' class='panel_to_toggle'>
-			</div>
-		</div>
-	<!-- OTHER SECTION -->
-		<div class='css-data_subsection' >
-			<a href='javascript:void(0)' id="add_statement" class="pull-right btn btn-primary bt-sm m-r-sm m-t-sm" >Agregar</a>
-			<div class='ibox-title'>
-				<h2><a href='javascript:void(0)' id='' class='ajaxloadpanel' custom_type='statements' >Declaraciones juradas</a></h2>
-			</div>
-			<div id='panel_statements' class='panel_to_toggle'>
-			</div>
-		</div>
-	<!-- OTHER SECTION -->
-		<div class='css-data_subsection' >
-			<div class='ibox-title'>
-				<h2><a href='javascript:void(0)' id='' class='ajaxloadpanel' custom_type='vacations' >Salidas y vacaciones</a></h2>
-			</div>
-			<div id='panel_vacations' class='panel_to_toggle'>
-			</div>
-		</div>
-	<!-- OTHER SECTION -->
-		<div class='css-data_subsection' >
-			<div class='ibox-title'>
-				<h2><a href='javascript:void(0)' id='' class='ajaxloadpanel' custom_type='memos' >Memorandums</a></h2>
-			</div>
-			<div id='panel_memos' class='panel_to_toggle'>
-			</div>
-		</div>
-	<!-- OTHER SECTION -->
-		<div class='css-data_subsection' >
-			<div class='ibox-title'>
-				<h2><a href='javascript:void(0)' id='' class='ajaxloadpanel' custom_type='others' >Otros</a></h2>
-			</div>
-			<div id='panel_others' class='panel_to_toggle'>
-			</div>
-		</div>
+        foreach($areasArray as $area)
+        {
+        ?>
+            <div class='css-data_subsection'>
+                <a href='javascript:void(0)' id="add_<?php echo $area['type'] ?>" class="pull-right btn btn-primary bt-sm m-r-sm m-t-sm" >Agregar</a>
+                <div class=''>
+                    <h2><a href='javascript:void(0)' id='' class='ajaxloadpanel' custom_type='<?php echo $area['type'] ?>'><?php echo $area['title'] ?></a>
+                    </h2>
+                </div>
+                <div id='panel_<?php echo $area['type'] ?>' class='panel_to_toggle'>
+                </div>
+            </div>
+        <?php
+        } // Foreach end
+        ?>
 	</div>
 </div>
 
