@@ -117,30 +117,34 @@
 
 <!-- OTHER SECTION -->
 <div class='css-content' >
-	<div class='css-details_section ibox float-e-margins' id='test' >
-		<div class='ibox-title'>
+	<div class='css-details_section' id='test' >
+		<div class=''>
 			<h2>Detalles</h2>
 		</div>
 		<?php echo $this->Html->image('File.Test_no_avatar.jpg', array("alt" => "Fotografía")); ?>
+        </br>
+        </br>
 		<?php echo $this->fetch('employee_info'); ?>
 	</div>
 	<!-- OTHER SECTION -->
 	<div class='css-data_section' >
         <?php
         $areasArray = array(
-            array(type => 'records', title => 'Antecedentes', value => '123'),
-            array(type => 'personal_education', title => 'Educacion personal', value => '123'),
-            array(type => 'jobs', title => 'Experiencias de trabajo', value => '123'),
-            array(type => 'statements', title => 'Declaraciones juradas', value => '123'),
-            array(type => 'vacations', title => 'Salidas y vacaciones', value => '123'),
-            array(type => 'memos', title => 'Memorandums', value => '123')
+            array(type => 'records', title => 'Antecedentes', addButton => false),
+            array(type => 'personal_education', title => 'Educacion personal', addButton => false),
+            array(type => 'jobs', title => 'Experiencias de trabajo', addButton => false),
+            array(type => 'statements', title => 'Declaraciones juradas', addButton => true),
+            array(type => 'vacations', title => 'Salidas y vacaciones', addButton => false),
+            array(type => 'memos', title => 'Memorandums', addButton => true)
         );
 
         foreach($areasArray as $area)
         {
         ?>
             <div class='css-data_subsection'>
+                <?php if($area['addButton']){?>
                 <a href='javascript:void(0)' id="add_<?php echo $area['type'] ?>" class="pull-right btn btn-primary bt-sm m-r-sm m-t-sm" >Agregar</a>
+                <?php }// End if ?>
                 <div class=''>
                     <h2><a href='javascript:void(0)' id='' class='ajaxloadpanel' custom_type='<?php echo $area['type'] ?>'><?php echo $area['title'] ?></a>
                     </h2>

@@ -3,7 +3,8 @@ echo  $this->Form->create('Statement');
 echo  $this->Form->input('name', array('label' => 'Nombre'));
 echo  $this->Form->input('description', array('label' => 'Descripción', 'rows' => '3'));
 
-echo $this->Js->submit('Guardar', array(  //create ajax submit button
+echo $this->Js->submit('Guardar', array(
+    //Create ajax submit button
     'update' => '#dialog_content'
 ));
 

@@ -13,3 +13,16 @@ jmacias@ssucbba.org
 * Concurso de meritos, puntajes.
 * Usar OCR en doc
 * Firmas digitales (Las firmas de algunas personas)
+
+*******************************************
+ANTECEDENTES Y TITULOS
+----------------------
+
+Titulo o grado: (Certificado profesional licenciado en contaduria, titulo bachiller ..., etc)
+Fecha:
+Lugar: (Donde se realizo el curso)
+//Tiempo de duración:
+Institucion: (UMSS, Institulo xyz, etc)
+Descripcion:
+
+*******************
