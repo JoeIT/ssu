@@ -4,7 +4,7 @@ App::uses('FileAppModel',  'File.Model');
 
 class Employee extends FileAppModel
 {
-	public $validate = array(
+    public $validate = array(
         'name' => array(
             'rule' => 'alphaNumeric'
         ),

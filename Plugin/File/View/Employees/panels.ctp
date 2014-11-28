@@ -12,42 +12,7 @@
         });
 
         $('.ajaxloadpanel').click(function(){
-
-            var type = $(this).attr('custom_type');
-
-            switch ( type )
-            {
-                case 'records':
-					url = "<?php echo $this->Html->url(array("controller"  =>  "records", "action"  =>  "index"));?>";
-                    loadIndexPanel(url, type, 'ANTECEDENTES');
-                    break;
-                case 'personal_education':
-                    url = "<?php echo $this->Html->url(array("controller"  =>  "personal_education", "action"  =>  "index"));?>";
-                    loadIndexPanel(url, type, 'EDUCACION PERSONAL');
-					break;
-                case 'jobs':
-                    url = "<?php echo $this->Html->url(array("controller"  =>  "jobs", "action"  =>  "index"));?>";
-                    loadIndexPanel(url, type, 'EXPERIENCIAS DE TRABAJOS');
-                    break;
-                case 'statements':
-                    url = "<?php echo $this->Html->url(array("controller"  =>  "statements", "action"  =>  "index"));?>";
-                    loadIndexPanel(url, type, 'DECLARACIONES JURADAS');
-                    break;
-                case 'vacations':
-                    url = "<?php echo $this->Html->url(array("controller"  =>  "vacations", "action"  =>  "index"));?>";
-                    loadIndexPanel(url, type, 'VACACIONES');
-                    break;
-                case 'memos':
-                    url = "<?php echo $this->Html->url(array("controller"  =>  "memos", "action"  =>  "index"));?>";
-                    loadIndexPanel(url, type, 'MEMORANDUMS');
-                    break;
-                case 'others':
-                    url = "<?php echo $this->Html->url(array("controller"  =>  "others", "action"  =>  "index"));?>";
-                    loadIndexPanel(url, type, 'OTROS');
-                    break;
-                default:
-                    break;
-            }
+            loadIndexPanel($(this).attr('custom_type'));
         });
 
         $('#dialog_content').dialog({
@@ -58,7 +23,7 @@
             close: function(){
                 $('#dialog_content').html('');
             }
-        });$
+        });
 
         // PARA BORRAR
         $('#ajax_content2').dialog({
@@ -94,22 +59,60 @@
 
     // -----------------------------------
     // Load the index/list panels
-    function loadIndexPanel(url, type, name)
+    function loadIndexPanel(type)
     {
-        $.ajax({
-            url: url,
-            type: 'POST',
-            async: 'false',
-            success: function(indexDataPanel)
-            {
-                $('#panel_' + type).html(indexDataPanel);
-                $('#panel_' + type).toggle();
-            },
-            error: function(request, textStatus, errorThrown)
-            {
-                alert('Error: No se pudo cargar la lista de '+ name +'.');
+        if($('#panel_' + type).is(':visible'))
+            $('#panel_' + type).slideToggle();
+        else {
+            var url = '';
+            var name = '';
+
+            switch (type) {
+                case 'records':
+                    url = "<?php echo $this->Html->url(array("controller"  =>  "records", "action"  =>  "index"));?>";
+                    name = 'ANTECEDENTES';
+                    break;
+                case 'personal_education':
+                    url = "<?php echo $this->Html->url(array("controller"  =>  "personal_education", "action"  =>  "index"));?>";
+                    name = 'EDUCACION PERSONAL';
+                    break;
+                case 'jobs':
+                    url = "<?php echo $this->Html->url(array("controller"  =>  "jobs", "action"  =>  "index"));?>";
+                    name = 'EXPERIENCIAS DE TRABAJOS';
+                    break;
+                case 'statements':
+                    url = "<?php echo $this->Html->url(array("controller"  =>  "statements", "action"  =>  "index"));?>";
+                    name = 'DECLARACIONES JURADAS';
+                    break;
+                case 'vacations':
+                    url = "<?php echo $this->Html->url(array("controller"  =>  "vacations", "action"  =>  "index"));?>";
+                    name = 'VACACIONES';
+                    break;
+                case 'memos':
+                    url = "<?php echo $this->Html->url(array("controller"  =>  "memos", "action"  =>  "index"));?>";
+                    name = 'MEMORANDUMS';
+                    break;
+                case 'others':
+                    url = "<?php echo $this->Html->url(array("controller"  =>  "others", "action"  =>  "index"));?>";
+                    name = 'OTROS';
+                    break;
+                default:
+                    break;
             }
-        });
+
+            $.ajax({
+                url: url,
+                type: 'POST',
+                async: 'false',
+                success: function (indexDataPanel) {
+                    $('#panel_' + type).html(indexDataPanel);
+                    $('#panel_' + type).slideToggle();
+                },
+                error: function (request, textStatus, errorThrown) {
+                    alert('Error: No se pudo cargar la lista de ' + name + '.');
+                }
+            });
+        }
     }
 </script>
 
@@ -145,8 +148,8 @@
                 <?php if($area['addButton']){?>
                 <a href='javascript:void(0)' id="add_<?php echo $area['type'] ?>" class="pull-right btn btn-primary bt-sm m-r-sm m-t-sm" >Agregar</a>
                 <?php }// End if ?>
-                <div class=''>
-                    <h2><a href='javascript:void(0)' id='' class='ajaxloadpanel' custom_type='<?php echo $area['type'] ?>'><?php echo $area['title'] ?></a>
+                <div class='ajaxloadpanel css-title_section' custom_type='<?php echo $area['type'] ?>'>
+                    <h2><?php echo $area['title'] ?>
                     </h2>
                 </div>
                 <div id='panel_<?php echo $area['type'] ?>' class='panel_to_toggle'>
