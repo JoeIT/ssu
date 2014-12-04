@@ -6,7 +6,7 @@ class Employee extends FileAppModel
 {
     public $hasMany = array(
         'Statement' => array(
-            'className' => 'Statement'
+            'className' => 'FileStatement'
         ));
 
     public $validate = array(
