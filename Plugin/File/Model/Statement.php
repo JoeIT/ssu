@@ -4,6 +4,14 @@ App::uses('FileAppModel',  'File.Model');
 
 class Statement extends FileAppModel
 {
+    public $belongsTo = array(
+        'Employee' => array(
+            'className' => 'FileEmployee',
+            'foreignKey' => 'employee_id'
+        ));
+
+    //public $belongsTo = 'Employee';
+
     public $validate = array(
         'name' => array(
             //'rule' => array('custom', '/([\w.-]+ )+[\w+.-]/'),

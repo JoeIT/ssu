@@ -1,7 +1,20 @@
 <?php
 App::uses('FileAppController', 'File.Controller');
+App::uses('MassiveLoadFiles', 'File.Lib');
 
 class OCRController extends FileAppController {
+
+    public function test2()
+    {
+        echo 'Testing...</br>';
+
+        $folder = 'D:/JOE/listFolderFiles_test';
+
+        $slf = new MassiveLoadFiles();
+        $slf->listFiles($folder);
+
+    }
+
     public function test()
     {
         if ($this->request->is(array('post',  'put')))

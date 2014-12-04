@@ -4,6 +4,11 @@ App::uses('FileAppModel',  'File.Model');
 
 class Employee extends FileAppModel
 {
+    public $hasMany = array(
+        'Statement' => array(
+            'className' => 'Statement'
+        ));
+
     public $validate = array(
         'name' => array(
             'rule' => 'alphaNumeric'

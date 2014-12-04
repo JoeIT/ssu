@@ -13,6 +13,7 @@ jmacias@ssucbba.org
 * Concurso de meritos, puntajes.
 * Usar OCR en doc
 * Firmas digitales (Las firmas de algunas personas)
+* 4images
 
 *******************************************
 ANTECEDENTES Y TITULOS
