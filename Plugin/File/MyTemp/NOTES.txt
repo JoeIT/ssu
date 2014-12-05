@@ -1,5 +1,5 @@
-PhpCake
------------
+CakePHP
+********
 
 * IMAGENES
 -----------
@@ -23,4 +23,9 @@ echo $this->Html->link(
 * URLS
 -------
 // Root url
-echo $this->webroot 
+echo $this->webroot
+
+
+JQUERY
+********
+

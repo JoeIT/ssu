@@ -9,22 +9,32 @@ class StatementsController extends FileAppController {
         $this->set('statementsList', $this->Statement->find('all'));
     }
 
-    public function ajaxadd() {
+    public function ajaxadd($id = null) {
         $this->layout = false;
 
+        if($id != null)
+            $statement = $this->Statement->findById($id);
+
         $this->set('saved', false);
+
         $employees = $this->Statement->Employee->find('list');
         $this->set(compact('employees'));
 
-        if($this->request->is('Post'))
+        if($this->request->is(array('post', 'put')))
         {
-            $this->request->data['Statement']['employee_id'] = '2';
-            //print_r($this->request->data);
-            $this->Statement->create();
-            if($this->Statement->save($this->request->data))
+            if($id != null)
+                $this->Statement->id = $id;
+            else
             {
-                $this->set('saved', true);
+                $this->Statement->create();
+                $this->request->data['Statement']['employee_id'] = '2'; // CHANCE, TO SAVE THE EMPLOYEE ID
             }
+
+            if($this->Statement->save($this->request->data))
+                $this->set('saved', true);
         }
+
+        if (!$this->request->data['Statement'])
+            $this->request->data  = $statement;
     }
 }

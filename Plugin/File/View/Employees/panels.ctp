@@ -5,14 +5,25 @@
 
         $('.panel_to_toggle').hide();
 
-        $('#add_statements').click(function(){
+        //$('#add_statements').click(function(){
+        $(document).on('click', '#add_statements', function () {
             var url = "<?php echo $this->Html->url(array("controller"  =>  'statements',
 													"action"  =>  'ajaxadd'));?>";
+            var idType = $(this).attr('id_type');
+            if(idType != '' && idType != undefined)
+                url += '/' + idType;
+
             loadDialogPanel(url, 'Nueva declaración jurada');
         });
 
-        $('.ajaxloadpanel').click(function(){
-            loadIndexPanel($(this).attr('custom_type'));
+        $('.toggle_index_panel').click(function(){
+            // If panel is showed, then it will be just hide
+            if($('#panel_' + $(this).attr('custom_type')).is(':visible'))
+                $('#panel_' + $(this).attr('custom_type')).slideToggle();
+            else {
+                loadIndexPanel($(this).attr('custom_type'));
+            }
+
         });
 
         $('#dialog_content').dialog({
@@ -21,6 +32,7 @@
             title: '',
             resizable: false,
             close: function(){
+                // http://preloaders.net/
                 $('#dialog_content').html('');
             }
         });
@@ -52,6 +64,7 @@
 
     function loadDialogPanel( url, title )
     {
+        $('#dialog_content').html('<?php echo $this->Html->image('File.loading.gif', array("alt" => "Cargando...", "class" => "center")); ?>');
         $('#dialog_content').dialog('option', 'title', title);
         //$.ajax({async:false});
         $('#dialog_content').load( url + '?' + $.now() ).dialog('open');
@@ -61,9 +74,6 @@
     // Load the index/list panels
     function loadIndexPanel(type)
     {
-        if($('#panel_' + type).is(':visible'))
-            $('#panel_' + type).slideToggle();
-        else {
             var url = '';
             var name = '';
 
@@ -106,13 +116,16 @@
                 async: 'false',
                 success: function (indexDataPanel) {
                     $('#panel_' + type).html(indexDataPanel);
-                    $('#panel_' + type).slideToggle();
+
+                    // If panel is hidden, then it will be showed
+                    if( $('#panel_' + type).is(':hidden') )
+                        $('#panel_' + type).slideToggle();
                 },
                 error: function (request, textStatus, errorThrown) {
                     alert('Error: No se pudo cargar la lista de ' + name + '.');
                 }
             });
-        }
+
     }
 </script>
 
@@ -124,7 +137,7 @@
 		<div class=''>
 			<h2>Detalles</h2>
 		</div>
-		<?php echo $this->Html->image('File.Test_no_avatar.jpg', array("alt" => "Fotografía")); ?>
+		<?php echo $this->Html->image('File.Test_no_avatar.jpg', array("alt" => "Fotografía", "class" => "center")); ?>
         </br>
         </br>
 		<?php echo $this->fetch('employee_info'); ?>
@@ -148,7 +161,7 @@
                 <?php if($area['addButton']){?>
                 <a href='javascript:void(0)' id="add_<?php echo $area['type'] ?>" class="pull-right btn btn-primary bt-sm m-r-sm m-t-sm" >Agregar</a>
                 <?php }// End if ?>
-                <div class='ajaxloadpanel css-title_section' custom_type='<?php echo $area['type'] ?>'>
+                <div class='toggle_index_panel css-title_section' custom_type='<?php echo $area['type'] ?>'>
                     <h2><?php echo $area['title'] ?>
                     </h2>
                 </div>

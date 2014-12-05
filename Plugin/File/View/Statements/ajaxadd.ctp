@@ -2,10 +2,8 @@
 echo  $this->Form->create('Statement');
 echo  $this->Form->input('name', array('label' => 'Nombre'));
 //echo  $this->Form->input('employee_id', array('label' => 'Empleado'));
-//echo  $this->Form->input('employee_list', array('label' => 'Empleado'));
+echo  $this->Form->input('id', array('type' => 'hidden'));
 echo  $this->Form->input('description', array('label' => 'Descripción', 'rows' => '3'));
-
-//echo  $this->Form->end('GUARDAR');
 
 echo $this->Js->submit('Guardar', array(
     //Create ajax submit button
