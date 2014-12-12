@@ -1,4 +1,4 @@
-<table border="1">
+<table border="1" class="css-index_table">
     <tr>
         <th>TIPO</th>
         <th>FECHA DE EXPEDICION</th>

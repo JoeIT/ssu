@@ -23,6 +23,8 @@ class MassiveLoadFiles
             // $file->append('I am adding to the bottom of this file.');
             // $file->delete(); // Deleting file
 
+
+
             $file->close();
         }
     }

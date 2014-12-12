@@ -1,19 +1,35 @@
 <link href="<?php echo $this->webroot; ?>css/files-styles.css" rel="stylesheet">
 
 <script type="text/javascript">
+    var currentEmployeeID = '<?php echo $currentEmployeeID?>';
+
     $(document).ready(function () {
+
 
         $('.panel_to_toggle').hide();
 
-        //$('#add_statements').click(function(){
         $(document).on('click', '#add_statements', function () {
-            var url = "<?php echo $this->Html->url(array("controller"  =>  'statements',
-													"action"  =>  'ajaxadd'));?>";
+            var title = 'Nueva declaración jurada';
             var idType = $(this).attr('id_type');
-            if(idType != '' && idType != undefined)
-                url += '/' + idType;
+            var url = "<?php echo $this->Html->url(array("controller"  =>  'statements',
+													"action"  =>  'add'));?>";
 
-            loadDialogPanel(url, 'Nueva declaración jurada');
+            if(idType != '' && idType != undefined)
+            {
+                url += '/' + idType;
+                title = 'Editar declaración jurada';
+            }
+
+            loadDialogPanel(url, title);
+        });
+
+        $(document).on('click', '#delete_statements', function () {
+            var title = 'Borrar declaración jurada';
+            var idType = $(this).attr('id_type');
+            var url = "<?php echo $this->Html->url(array("controller"  =>  'statements',
+													"action"  =>  'delete'));?>/" + idType;
+
+           loadDialogPanel(url, title);
         });
 
         $('.toggle_index_panel').click(function(){
@@ -23,7 +39,6 @@
             else {
                 loadIndexPanel($(this).attr('custom_type'));
             }
-
         });
 
         $('#dialog_content').dialog({
@@ -32,16 +47,16 @@
             title: '',
             resizable: false,
             close: function(){
-                // http://preloaders.net/
                 $('#dialog_content').html('');
             }
         });
 
         // PARA BORRAR
+        /*
         $('#ajax_content2').dialog({
             autoOpen: false,
             modal: true,
-            title: 'Nueva declaración jurada',
+            title: 'Registro de declaración jurada',
             buttons: [
                 {
                     text: 'Aceptar',
@@ -58,12 +73,13 @@
             ],
             close: function(){
             }
-        });
+        });*/
         //-----------------------------
     });
 
     function loadDialogPanel( url, title )
     {
+        // http://preloaders.net/
         $('#dialog_content').html('<?php echo $this->Html->image('File.loading.gif', array("alt" => "Cargando...", "class" => "center")); ?>');
         $('#dialog_content').dialog('option', 'title', title);
         //$.ajax({async:false});
@@ -74,58 +90,58 @@
     // Load the index/list panels
     function loadIndexPanel(type)
     {
-            var url = '';
-            var name = '';
+        var url = '';
+        var name = '';
 
-            switch (type) {
-                case 'records':
-                    url = "<?php echo $this->Html->url(array("controller"  =>  "records", "action"  =>  "index"));?>";
-                    name = 'ANTECEDENTES';
-                    break;
-                case 'personal_education':
-                    url = "<?php echo $this->Html->url(array("controller"  =>  "personal_education", "action"  =>  "index"));?>";
-                    name = 'EDUCACION PERSONAL';
-                    break;
-                case 'jobs':
-                    url = "<?php echo $this->Html->url(array("controller"  =>  "jobs", "action"  =>  "index"));?>";
-                    name = 'EXPERIENCIAS DE TRABAJOS';
-                    break;
-                case 'statements':
-                    url = "<?php echo $this->Html->url(array("controller"  =>  "statements", "action"  =>  "index"));?>";
-                    name = 'DECLARACIONES JURADAS';
-                    break;
-                case 'vacations':
-                    url = "<?php echo $this->Html->url(array("controller"  =>  "vacations", "action"  =>  "index"));?>";
-                    name = 'VACACIONES';
-                    break;
-                case 'memos':
-                    url = "<?php echo $this->Html->url(array("controller"  =>  "memos", "action"  =>  "index"));?>";
-                    name = 'MEMORANDUMS';
-                    break;
-                case 'others':
-                    url = "<?php echo $this->Html->url(array("controller"  =>  "others", "action"  =>  "index"));?>";
-                    name = 'OTROS';
-                    break;
-                default:
-                    break;
+        switch (type) {
+            case 'records':
+                url = "<?php echo $this->Html->url(array("controller"  =>  "records", "action"  =>  "index"));?>";
+                name = 'ANTECEDENTES';
+                break;
+            case 'personal_education':
+                url = "<?php echo $this->Html->url(array("controller"  =>  "personal_education", "action"  =>  "index"));?>";
+                name = 'EDUCACION PERSONAL';
+                break;
+            case 'jobs':
+                url = "<?php echo $this->Html->url(array("controller"  =>  "jobs", "action"  =>  "index"));?>";
+                name = 'EXPERIENCIAS DE TRABAJOS';
+                break;
+            case 'statements':
+                url = "<?php echo $this->Html->url(array("controller"  =>  "statements", "action"  =>  "index"));?>";
+                name = 'DECLARACIONES JURADAS';
+                break;
+            case 'vacations':
+                url = "<?php echo $this->Html->url(array("controller"  =>  "vacations", "action"  =>  "index"));?>";
+                name = 'VACACIONES';
+                break;
+            case 'memos':
+                url = "<?php echo $this->Html->url(array("controller"  =>  "memos", "action"  =>  "index"));?>";
+                name = 'MEMORANDUMS';
+                break;
+            case 'others':
+                url = "<?php echo $this->Html->url(array("controller"  =>  "others", "action"  =>  "index"));?>";
+                name = 'OTROS';
+                break;
+            default:
+                break;
+        }
+
+        $.ajax({
+            url: url,
+            type: 'POST',
+            async: 'false',
+            data: { employeeId: currentEmployeeID },
+            success: function (indexDataPanel) {
+                $('#panel_' + type).html(indexDataPanel);
+
+                // If panel is hidden, then it will be showed
+                if( $('#panel_' + type).is(':hidden') )
+                    $('#panel_' + type).slideToggle();
+            },
+            error: function (request, textStatus, errorThrown) {
+                alert('Error: No se pudo cargar la lista de ' + name + '.');
             }
-
-            $.ajax({
-                url: url,
-                type: 'POST',
-                async: 'false',
-                success: function (indexDataPanel) {
-                    $('#panel_' + type).html(indexDataPanel);
-
-                    // If panel is hidden, then it will be showed
-                    if( $('#panel_' + type).is(':hidden') )
-                        $('#panel_' + type).slideToggle();
-                },
-                error: function (request, textStatus, errorThrown) {
-                    alert('Error: No se pudo cargar la lista de ' + name + '.');
-                }
-            });
-
+        });
     }
 </script>
 

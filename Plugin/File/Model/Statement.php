@@ -24,4 +24,9 @@ class Statement extends FileAppModel
             'allowEmpty' => true
         )
     );
+
+    public function findByEmployee($employeeId)
+    {
+        return $this->query("SELECT * FROM file_statements WHERE employee_id = '$employeeId'", false);
+    }
 }
