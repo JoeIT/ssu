@@ -6,28 +6,65 @@
 
         $('.panel_to_toggle').hide();
 
-        $(document).on('click', '#add_statements', function () {
-            var title = 'Nueva declaración jurada';
+        $(document).on('click', '#crud_action', function () {
+            var title = '';
+            var action = $(this).attr('action');
+            var type  = $(this).attr('type');
             var idType = $(this).attr('id_type');
-            var url = "<?php echo $this->Html->url(array("controller"  =>  'statements',
-													"action"  =>  'add'));?>";
+            var name = '';
+            var url = '';
+            var urlDelete = '';
 
-            if(idType != '' && idType != undefined)
-            {
-                url += '/' + idType;
-                title = 'Editar declaración jurada';
+            switch (type) {
+                case 'records':
+                    url = "<?php echo $this->Html->url(array("controller" => "records", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "records", "action" => "delete"));?>";
+                    name = 'antecedente';
+                    break;
+                case 'personal_education':
+                    url = "<?php echo $this->Html->url(array("controller" => "personal_education", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "personal_education", "action" => "delete"));?>";
+                    name = 'educación personal';
+                    break;
+                case 'jobs':
+                    url = "<?php echo $this->Html->url(array("controller" => "jobs", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "jobs", "action" => "delete"));?>";
+                    name = 'experiencia de trabajo';
+                    break;
+                case 'statements':
+                    url = "<?php echo $this->Html->url(array("controller" => "statements", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "statements", "action" => "delete"));?>";
+                    name = 'declaración jurada';
+                    break;
+                case 'vacations':
+                    url = "<?php echo $this->Html->url(array("controller" => "vacations", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "vacations", "action" => "delete"));?>";
+                    name = 'vacación';
+                    break;
+                case 'memos':
+                    url = "<?php echo $this->Html->url(array("controller" => "memos", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "memos", "action" => "delete"));?>";
+                    name = 'memorandum';
+                    break;
+                default:
+                    break;
             }
 
+
+            if(action == 'delete')
+            {
+                url = urlDelete + '/' + idType;
+                title = 'Eliminar ' + name;
+            }
+            else if(idType != '' && idType != undefined)
+            {
+                url += '/' + idType;
+                title = 'Editar ' + name;
+            }
+            else
+                title = 'Agregar ' + name;
+
             loadDialogPanel(url, title);
-        });
-
-        $(document).on('click', '#delete_statements', function () {
-            var title = 'Borrar declaración jurada';
-            var idType = $(this).attr('id_type');
-            var url = "<?php echo $this->Html->url(array("controller"  =>  'statements',
-													"action"  =>  'delete'));?>/" + idType;
-
-           loadDialogPanel(url, title);
         });
 
         $('.toggle_index_panel').click(function(){
@@ -116,10 +153,6 @@
                 url = "<?php echo $this->Html->url(array("controller"  =>  "memos", "action"  =>  "index"));?>";
                 name = 'MEMORANDUMS';
                 break;
-            case 'others':
-                url = "<?php echo $this->Html->url(array("controller"  =>  "others", "action"  =>  "index"));?>";
-                name = 'OTROS';
-                break;
             default:
                 break;
         }
@@ -159,7 +192,7 @@
 	<div class='css-data_section' >
         <?php
         $areasArray = array(
-            array(type => 'records', title => 'Antecedentes', addButton => false),
+            array(type => 'records', title => 'Antecedentes', addButton => true),
             array(type => 'personal_education', title => 'Educacion personal', addButton => false),
             array(type => 'jobs', title => 'Experiencias de trabajo', addButton => false),
             array(type => 'statements', title => 'Declaraciones juradas', addButton => true),
@@ -172,7 +205,7 @@
         ?>
             <div class='css-data_subsection'>
                 <?php if($area['addButton']){?>
-                <a href='javascript:void(0)' id="add_<?php echo $area['type'] ?>" class="pull-right btn btn-primary bt-sm m-r-sm m-t-sm" >Agregar</a>
+                <a href='javascript:void(0)' id="crud_action" type="<?php echo $area['type'] ?>" class="pull-right btn btn-primary bt-sm m-r-sm m-t-sm" >Agregar</a>
                 <?php }// End if ?>
                 <div class='toggle_index_panel css-title_section' custom_type='<?php echo $area['type'] ?>'>
                     <h2><?php echo $area['title'] ?>

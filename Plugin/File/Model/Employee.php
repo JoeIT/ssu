@@ -5,9 +5,25 @@ App::uses('FileAppModel',  'File.Model');
 class Employee extends FileAppModel
 {
     public $hasMany = array(
+        'Record' => array(
+            'className' => 'FileRecord'
+        ),
+        'PersonalEducation' => array(
+            'className' => 'FilePersonalEducation'
+        ),
+        'Job' => array(
+            'className' => 'FileJob'
+        ),
         'Statement' => array(
             'className' => 'FileStatement'
-        ));
+        ),
+        'Vacation' => array(
+            'className' => 'FileVacation'
+        ),
+        'Memo' => array(
+            'className' => 'FileMemo'
+        )
+    );
 
     public $validate = array(
         'name' => array(

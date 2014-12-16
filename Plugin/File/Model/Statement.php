@@ -10,8 +10,6 @@ class Statement extends FileAppModel
             'foreignKey' => 'employee_id'
         ));
 
-    //public $belongsTo = 'Employee';
-
     public $validate = array(
         'name' => array(
             //'rule' => array('custom', '/([\w.-]+ )+[\w+.-]/'),

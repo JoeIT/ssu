@@ -13,8 +13,8 @@
         <td><?php echo $statement[0]['name']; ?></td>
         <td><?php echo $statement[0]['description']; ?></td>
         <td>
-            <a href='javascript:void(0)' id="add_statements" id_type="<?php echo $statement[0]['id']; ?>" >Modificar</a>
-            <a href='javascript:void(0)' id="delete_statements" id_type="<?php echo $statement[0]['id']; ?>" >Eliminar</a>
+            <a href='javascript:void(0)' id="crud_action" type="statements" id_type="<?php echo $statement[0]['id']; ?>" >Modificar</a>
+            <a href='javascript:void(0)' id="crud_action" action="delete" id_type="<?php echo $statement[0]['id']; ?>" >Eliminar</a>
 
             <?php /*echo  $this->Form->postLink(
                 'Eliminar',
