@@ -7,9 +7,7 @@ class StatementsController extends FileAppController {
     public function index() {
         $this->layout = false;
 
-        $employeeId = $this->request->data('employeeId');
-
-        $this->set('statementsList', $this->Statement->findByEmployee($employeeId));
+        $this->set('statementsList', $this->Statement->findByEmployee( $this->Session->read('currentEmployeeID') ));
     }
 
     // This is an ajax action
@@ -29,10 +27,11 @@ class StatementsController extends FileAppController {
             if($id != null)
                 $this->Statement->id = $id;
             else
-            {
                 $this->Statement->create();
-                $this->request->data['Statement']['employee_id'] = $this->currentEmployeeID;
-            }
+
+            $this->request->data['Statement']['employee_id'] = $this->Session->read('currentEmployeeID');
+
+            print_r($this->request->data);
 
             if($this->Statement->save($this->request->data))
                 $this->set('saved', true);

@@ -3,10 +3,8 @@ App::uses('FileAppController', 'File.Controller');
 
 class EmployeesController extends FileAppController {
 	public $helpers = array('Html', 'Form');
-    // Stores the employee id that is current selected to be edited
-    public $currentEmployeeID = null;
-	
-	public function index() {
+
+    public function index() {
 	}
 
     public function panels() {
@@ -22,8 +20,8 @@ class EmployeesController extends FileAppController {
 		$employee = $this->Employee->findById($id);
 		if(!$employee) throw new NotFoundException(__('Empleado no encontrado'));
 
-        $this->currentEmployeeID = $id;
-        $this->set('currentEmployeeID', $this->currentEmployeeID);
+        // Stores the employee id that is current selected to be edited
+        $this->Session->write('currentEmployeeID', $id);
 
         if ($this->request->is(array('post',  'put')))
 		{

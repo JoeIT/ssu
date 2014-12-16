@@ -1,8 +1,6 @@
 <link href="<?php echo $this->webroot; ?>css/files-styles.css" rel="stylesheet">
 
 <script type="text/javascript">
-    var currentEmployeeID = '<?php echo $currentEmployeeID?>';
-
     $(document).ready(function () {
 
 
@@ -130,7 +128,6 @@
             url: url,
             type: 'POST',
             async: 'false',
-            data: { employeeId: currentEmployeeID },
             success: function (indexDataPanel) {
                 $('#panel_' + type).html(indexDataPanel);
 
