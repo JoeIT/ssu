@@ -19,8 +19,8 @@ class StatementsController extends FileAppController {
 
         $this->set('saved', false);
 
-        $employees = $this->Statement->Employee->find('list');
-        $this->set(compact('employees'));
+        /*$employees = $this->Statement->Employee->find('list');
+        $this->set(compact('employees'));*/
 
         if($this->request->is(array('post', 'put')))
         {
@@ -30,8 +30,6 @@ class StatementsController extends FileAppController {
                 $this->Statement->create();
 
             $this->request->data['Statement']['employee_id'] = $this->Session->read('currentEmployeeID');
-
-            print_r($this->request->data);
 
             if($this->Statement->save($this->request->data))
                 $this->set('saved', true);

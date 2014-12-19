@@ -3,35 +3,62 @@ App::uses('FileAppController', 'File.Controller');
 
 class MemosController extends FileAppController
 {
-    public $helper = array('Html', 'Form');
-
     public function index()
     {
         $this->layout = false;
-        $this->set('memosList', $this->Memo->find('all'));
+
+        $this->set('memosList', $this->Memo->findByEmployee( $this->Session->read('currentEmployeeID') ));
     }
 
-    public function view($id)
+    // This is an ajax action
+    public function add($id = null)
     {
-        $id = 1;
-        if  (!$id) throw  new  NotFoundException(__('Memorandum no válido'));
+        $this->layout = false;
 
-        $memo  =  $this->Memo->findById($id);
-        if  (!$memo)  {
-            throw  new  NotFoundException(__('Memorandum no válido'));
-}
-        $this->set('memo',  $memo);
+        if($id != null)
+            $memo = $this->Memo->findById($id);
+
+        $this->set('saved', false);
+
+        if($this->request->is(array('post', 'put')))
+        {
+            if($id != null)
+                $this->Memo->id = $id;
+            else
+                $this->Memo->create();
+
+            $this->request->data['Memo']['employee_id'] = $this->Session->read('currentEmployeeID');
+            $this->request->data['Memo']['registred_datetime'] = '';
+
+            if($this->Memo->validates())
+            {
+                if($this->Memo->save($this->request->data))
+                    $this->set('saved', true);
+                else
+                    $this->set('errorMessage', 'NOTA: Ocurrió un problema al guardar la información!!');
+            }
+        }
+
+        if (!$this->request->data['Memo'])
+            $this->request->data  = $memo;
     }
 
-    public function add()
+    // This is an ajax action
+    public function delete($id = null)
     {
-    }
+        $this->layout = false;
 
-    public function edit()
-    {
-    }
+        $memo = $this->Memo->findById($id);
 
-    public function remove()
-    {
+        $this->set(compact('memo'));
+        $this->set('deleted', false);
+
+        if($this->request->is(array('post')))
+        {
+            if($this->Memo->delete($id))
+                $this->set('deleted', true);
+            else
+                $this->set('errorMessage', 'NOTA: Ocurrió un problema al borrar la información!!');
+        }
     }
 }

@@ -23,9 +23,6 @@ class RecordsController extends FileAppController
 
         $this->set('saved', false);
 
-        $employees = $this->Record->Employee->find('list');
-        $this->set(compact('employees'));
-
         if($this->request->is(array('post', 'put')))
         {
             if($id != null)
@@ -35,12 +32,13 @@ class RecordsController extends FileAppController
 
             $this->request->data['Record']['employee_id'] = $this->Session->read('currentEmployeeID');
 
-            print_r($this->request->data);
-
-            if($this->Record->save($this->request->data))
-                $this->set('saved', true);
-            else
-                $this->set('errorMessage', 'NOTA: Ocurrió un problema al guardar la información!!');
+            if($this->Record->validates())
+            {
+                if($this->Record->save($this->request->data))
+                    $this->set('saved', true);
+                else
+                    $this->set('errorMessage', 'NOTA: Ocurrió un problema al guardar la información!!');
+            }
         }
 
         if (!$this->request->data['Record'])

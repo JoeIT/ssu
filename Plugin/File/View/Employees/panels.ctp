@@ -81,6 +81,7 @@
             modal: true,
             title: '',
             resizable: false,
+            closeOnEscape: true,
             close: function(){
                 $('#dialog_content').html('');
             }
@@ -193,10 +194,10 @@
         <?php
         $areasArray = array(
             array(type => 'records', title => 'Antecedentes', addButton => true),
-            array(type => 'personal_education', title => 'Educacion personal', addButton => false),
-            array(type => 'jobs', title => 'Experiencias de trabajo', addButton => false),
+            array(type => 'personal_education', title => 'Educacion personal', addButton => true),
+            array(type => 'jobs', title => 'Experiencias de trabajo', addButton => true),
             array(type => 'statements', title => 'Declaraciones juradas', addButton => true),
-            array(type => 'vacations', title => 'Salidas y vacaciones', addButton => false),
+            array(type => 'vacations', title => 'Salidas y vacaciones', addButton => true),
             array(type => 'memos', title => 'Memorandums', addButton => true)
         );
 

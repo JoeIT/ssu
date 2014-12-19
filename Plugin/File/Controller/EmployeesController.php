@@ -23,7 +23,7 @@ class EmployeesController extends FileAppController {
         // Stores the employee id that is current selected to be edited
         $this->Session->write('currentEmployeeID', $id);
 
-        if ($this->request->is(array('post',  'put')))
+        if ($this->request->is(array('post', 'put')))
 		{
 			$this->Employee->id = $id;
 

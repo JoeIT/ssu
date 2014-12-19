@@ -8,18 +8,13 @@
     </tr>
     <?php  foreach  ($memosList  as  $memo):  ?>
     <tr>
-        <td><?php  echo  $memo['Memo']['type'];  ?></td>
-        <td><?php  echo  $memo['Memo']['expedition_date'];  ?></td>
-        <td><?php  echo  $memo['Memo']['description'];  ?></td>
-        <td><?php  echo  $memo['Memo']['content'];  ?></td>
+        <td><?php  echo  $memo[0]['type'];  ?></td>
+        <td><?php  echo  $memo[0]['expedition_date'];  ?></td>
+        <td><?php  echo  $memo[0]['description'];  ?></td>
+        <td><?php  echo  $memo[0]['content'];  ?></td>
         <td>
-            <a href="javascript:void(0)" >Modificar</a>
-            <?php echo  $this->Form->postLink(
-                'Eliminar',
-                array('action'  =>  'delete',  $memo['Memo']['id']),
-                array('confirm'  =>  'Eliminar Memorandum: ' . $memo['Memo']['description'])
-            );
-            ?>
+            <a href='javascript:void(0)' id="crud_action" type="memos" id_type="<?php echo $memo[0]['id']; ?>" >Modificar</a>
+            <a href='javascript:void(0)' id="crud_action" type="memos" action="delete" id_type="<?php echo $memo[0]['id']; ?>" >Eliminar</a>
         </td>
     </tr>
 <?php  endforeach;  ?>
