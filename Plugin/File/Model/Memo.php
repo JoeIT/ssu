@@ -32,6 +32,6 @@ class Memo extends FileAppModel
 
     public function findByEmployee($employeeId)
     {
-        return $this->query("SELECT * FROM file_memos WHERE employee_id = '$employeeId'", false);
+        return $this->query("SELECT * FROM file_memos WHERE employee_id = '$employeeId' ORDER BY expedition_date", false);
     }
 }

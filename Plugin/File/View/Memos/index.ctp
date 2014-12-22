@@ -9,7 +9,7 @@
     <?php  foreach  ($memosList  as  $memo):  ?>
     <tr>
         <td><?php  echo  $memo[0]['type'];  ?></td>
-        <td><?php  echo  $memo[0]['expedition_date'];  ?></td>
+        <td><?php  echo  date("d/m/Y", strtotime($memo[0]['expedition_date']));  ?></td>
         <td><?php  echo  $memo[0]['description'];  ?></td>
         <td><?php  echo  $memo[0]['content'];  ?></td>
         <td>
