@@ -31,6 +31,7 @@ class JobsController extends FileAppController
                 $this->Job->create();
 
             $this->request->data['Job']['employee_id'] = $this->Session->read('currentEmployeeID');
+            //$this->request->data['Job']['registred_datetime'] = '';
 
             if($this->Job->validates())
             {

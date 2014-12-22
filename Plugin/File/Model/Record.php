@@ -14,7 +14,6 @@ class Record extends FileAppModel
         'name' => array(
             //'rule' => array('custom', '/([\w.-]+ )+[\w+.-]/'),
             'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'), // Regex to allow alphanumeric and internal spaces
-            'required' => true,
             'allowEmpty' => false
         ),
         'description' => array(
