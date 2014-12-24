@@ -31,6 +31,7 @@ class VacationsController extends FileAppController
                 $this->Vacation->create();
 
             $this->request->data['Vacation']['employee_id'] = $this->Session->read('currentEmployeeID');
+            $this->request->data['Vacation']['registred_datetime'] = '';
 
             if($this->Vacation->validates())
             {

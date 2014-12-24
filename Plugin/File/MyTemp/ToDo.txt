@@ -18,7 +18,6 @@ jmacias@ssucbba.org
 *******************************************
 ANTECEDENTES Y TITULOS
 ----------------------
-
 Titulo o grado: (Certificado profesional licenciado en contaduria, titulo bachiller ..., etc)
 Fecha:
 Lugar: (Donde se realizo el curso)
@@ -26,4 +25,8 @@ Lugar: (Donde se realizo el curso)
 Institucion: (UMSS, Institulo xyz, etc)
 Descripcion:
 
+-- Categorias y escalafones
+?? aDMINISTRATIVOS, MEDICOS Y ENFERMERAS, solo existen estos 3??
+
 *******************
+EDUCACION PERSONAL

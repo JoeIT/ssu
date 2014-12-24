@@ -10,11 +10,12 @@ echo  $this->Form->input('born_date', array('type' => 'date', 'label' => 'Fecha 
 echo  $this->Form->input('born_country', array('label' => 'País de procedencia'));
 echo  $this->Form->input('born_city', array('label' => 'Ciudad de procedencia'));
 echo  $this->Form->input('ci', array('label' => 'Carnet identidad'));
-echo  $this->Form->input('gender', array('label' => 'Género', 'options' => array('Genero' => array('m' => 'Masculino', 'f' => 'Femenino'))));
+echo  $this->Form->input('gender', array('label' => 'Género', 'options' => array('m' => 'Masculino', 'f' => 'Femenino')));
+echo  $this->Form->input('profile', array('label' => 'Perfíl', 'options' => array('a' => 'Administrativo', 's' => 'Salud', 'g' => 'Servicios de apoyo/generales')));
+
 echo  $this->Form->input('address', array('label' => 'Dirección'));
 echo  $this->Form->input('phone', array('label' => 'Teléfono'));
 echo  $this->Form->input('email', array('label' => 'Correo electrónico'));
-
 echo  $this->Form->input('id',  array('type'  =>  'hidden'));
 echo  $this->Form->end('GUARDAR');
 

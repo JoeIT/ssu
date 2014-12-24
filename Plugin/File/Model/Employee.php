@@ -27,7 +27,8 @@ class Employee extends FileAppModel
 
     public $validate = array(
         'name' => array(
-            'rule' => 'alphaNumeric'
+            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'), // Regex to allow alphanumeric and internal spaces
+            'allowEmpty' => false
         ),
         'paternal_surname' => array(
 		    'rule' => 'alphaNumeric'
@@ -49,7 +50,12 @@ class Employee extends FileAppModel
             'rule' => array('minLength' => '5')
         ),
         'gender' => array(
-            'rule' => 'alphaNumeric'
+            'rule' => 'alphaNumeric',
+            'allowEmpty' => false
+        ),
+        'profile' => array(
+            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'allowEmpty' => false
         ),
         'address' => array(
             'rule' => array('custom', '/^[a-z0-9 .\-]+$/i')

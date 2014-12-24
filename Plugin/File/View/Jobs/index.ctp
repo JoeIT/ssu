@@ -19,3 +19,11 @@
         </tr>
     <?php } ?>
 </table>
+</br>
+<h3>Evaluaciones</h3>
+<table border="1" class="css-index_table">
+    <tr>
+        <th>Fecha</th>
+        <th>Tipo</th>
+    </tr>
+</table>

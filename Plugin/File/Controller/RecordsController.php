@@ -31,6 +31,7 @@ class RecordsController extends FileAppController
                 $this->Record->create();
 
             $this->request->data['Record']['employee_id'] = $this->Session->read('currentEmployeeID');
+            $this->request->data['Record']['registred_datetime'] = '';
 
             if($this->Record->validates())
             {

@@ -190,14 +190,14 @@
 		<?php echo $this->fetch('employee_info'); ?>
 	</div>
 	<!-- OTHER SECTION -->
-	<div class='css-data_section' >
+    <div class='css-data_section' >
         <?php
         $areasArray = array(
-            array(type => 'records', title => 'Antecedentes', addButton => true),
+            array(type => 'records', title => 'Antecedentes y títulos', addButton => true),
             array(type => 'personal_education', title => 'Educacion personal', addButton => true),
             array(type => 'jobs', title => 'Experiencias de trabajo', addButton => true),
             array(type => 'statements', title => 'Declaraciones juradas', addButton => true),
-            array(type => 'vacations', title => 'Salidas y vacaciones', addButton => true),
+            array(type => 'vacations', title => 'Salidas, licencias y vacaciones', addButton => true),
             array(type => 'memos', title => 'Memorandums', addButton => true)
         );
 
@@ -205,14 +205,15 @@
         {
         ?>
             <div class='css-data_subsection'>
-                <?php if($area['addButton']){?>
-                <a href='javascript:void(0)' id="crud_action" type="<?php echo $area['type'] ?>" class="pull-right btn btn-primary bt-sm m-r-sm m-t-sm" >Agregar</a>
-                <?php }// End if ?>
-                <div class='toggle_index_panel css-title_section' custom_type='<?php echo $area['type'] ?>'>
-                    <h2><?php echo $area['title'] ?>
-                    </h2>
+                <div class="css-button_div">
+                    <?php if($area['addButton']){?>
+                        <a href='javascript:void(0)' id="crud_action" type="<?php echo $area['type'] ?>" class="css-add_button" >Agregar(+)</a>
+                    <?php }// End if ?>
                 </div>
-                <div id='panel_<?php echo $area['type'] ?>' class='panel_to_toggle'>
+                <div class='toggle_index_panel css-title_section css-title_section_<?php echo $area['type'] ?>' custom_type='<?php echo $area['type'] ?>'>
+                    <h2><?php echo $area['title'] ?></h2>
+                </div>
+                <div id='panel_<?php echo $area['type'] ?>' class='panel_to_toggle css-panel_to_toggle'>
                 </div>
             </div>
         <?php

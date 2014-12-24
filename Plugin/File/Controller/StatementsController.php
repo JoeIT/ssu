@@ -30,6 +30,7 @@ class StatementsController extends FileAppController {
                 $this->Statement->create();
 
             $this->request->data['Statement']['employee_id'] = $this->Session->read('currentEmployeeID');
+            $this->request->data['Statement']['registred_datetime'] = '';
 
             if($this->Statement->save($this->request->data))
                 $this->set('saved', true);
