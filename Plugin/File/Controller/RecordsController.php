@@ -4,13 +4,27 @@ App::uses('FileAppController',  'File.Controller');
 
 class RecordsController extends FileAppController
 {
+    //var $uses = array('File.Employee');
     public $helpers = array('Html', 'Form');
 
     public function index()
     {
         $this->layout = false;
 
+        //$this->loadModel('File.Employee');
+
+        /*App::uses('Employee', 'File.Model');
+        $emp = new Employee();
+        $employee = $emp->findById( $this->Session->read('currentEmployeeID') );
+        */
+
+        //$emp = $this->Employee->find('all');
+        //$this->Employee->findById( $this->Session->read('currentEmployeeID') );
+
+        //print_r($emp);
+
         $this->set('recordsList', $this->Record->findByEmployee( $this->Session->read('currentEmployeeID') ));
+        //$this->set('profile', );
     }
 
     // This is an ajax action

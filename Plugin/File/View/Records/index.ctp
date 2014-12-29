@@ -19,6 +19,7 @@
         </tr>
     <?php } ?>
 </table>
+
 </br>
 <h3>Categoria y escalafones</h3>
 <table border="1" class="css-index_table">
