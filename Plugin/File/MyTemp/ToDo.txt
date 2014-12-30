@@ -18,15 +18,19 @@ jmacias@ssucbba.org
 *******************************************
 ANTECEDENTES Y TITULOS
 ----------------------
-Titulo o grado: (Certificado profesional licenciado en contaduria, titulo bachiller ..., etc)
-Fecha:
-Lugar: (Donde se realizo el curso)
-//Tiempo de duración:
-Institucion: (UMSS, Institulo xyz, etc)
-Descripcion:
-
--- Categorias y escalafones
-?? aDMINISTRATIVOS, MEDICOS Y ENFERMERAS, solo existen estos 3??
+- Certificados
+- CV
+- Carta
+- Formulario de registro
+- Fotocopia carnet
 
 *******************
 EDUCACION PERSONAL
+
+*******************
+
+Cartas
+Contratos
+Titulos / certificados
+Memorandums
+Documentos personales (Fotocopias de carnet)

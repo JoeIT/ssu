@@ -19,7 +19,9 @@
         </tr>
     <?php } ?>
 </table>
-
+<?php
+if($profile == 's'){
+?>
 </br>
 <h3>Categoria y escalafones</h3>
 <table border="1" class="css-index_table">
@@ -28,3 +30,4 @@
         <th>Categoria</th>
     </tr>
 </table>
+<?php } ?>

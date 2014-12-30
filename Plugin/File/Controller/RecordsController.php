@@ -4,27 +4,23 @@ App::uses('FileAppController',  'File.Controller');
 
 class RecordsController extends FileAppController
 {
-    //var $uses = array('File.Employee');
+    //public $uses = array('File.Record','File.Employee');
     public $helpers = array('Html', 'Form');
 
     public function index()
     {
         $this->layout = false;
 
-        //$this->loadModel('File.Employee');
+        /*
+        $employe = $this->Employee;
+        $aux  = $employe->find('first', array('conditions' => array('id' => $this->Session->read('currentEmployeeID'))));
+        //$employe = $this->Employee->find('first', array('conditions' => array('id' => 1)));
+        $this->set('employes',$aux);*/
 
-        /*App::uses('Employee', 'File.Model');
-        $emp = new Employee();
-        $employee = $emp->findById( $this->Session->read('currentEmployeeID') );
-        */
-
-        //$emp = $this->Employee->find('all');
-        //$this->Employee->findById( $this->Session->read('currentEmployeeID') );
-
-        //print_r($emp);
+        $r = $this->Record->find('threaded', array('conditions' => array('employee_id' => $this->Session->read('currentEmployeeID'))));
 
         $this->set('recordsList', $this->Record->findByEmployee( $this->Session->read('currentEmployeeID') ));
-        //$this->set('profile', );
+        $this->set('profile', $r[0]['Employee']['profile']);
     }
 
     // This is an ajax action

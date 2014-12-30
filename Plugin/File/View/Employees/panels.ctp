@@ -21,22 +21,32 @@
                     urlDelete = "<?php echo $this->Html->url(array("controller" => "records", "action" => "delete"));?>";
                     name = 'antecedente';
                     break;
-                case 'personal_education':
-                    url = "<?php echo $this->Html->url(array("controller" => "personal_education", "action" => "add"));?>";
-                    urlDelete = "<?php echo $this->Html->url(array("controller" => "personal_education", "action" => "delete"));?>";
-                    name = 'educación personal';
-                    break;
                 case 'jobs':
                     url = "<?php echo $this->Html->url(array("controller" => "jobs", "action" => "add"));?>";
                     urlDelete = "<?php echo $this->Html->url(array("controller" => "jobs", "action" => "delete"));?>";
                     name = 'experiencia de trabajo';
+                    break;
+                case 'personal_education':
+                    url = "<?php echo $this->Html->url(array("controller" => "personal_education", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "personal_education", "action" => "delete"));?>";
+                    name = 'cursos realizados';
+                    break;
+                case 'job_contracts':
+                    url = "<?php echo $this->Html->url(array("controller" => "job_contracts", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "job_contracts", "action" => "delete"));?>";
+                    name = 'contratos de trabajo';
                     break;
                 case 'statements':
                     url = "<?php echo $this->Html->url(array("controller" => "statements", "action" => "add"));?>";
                     urlDelete = "<?php echo $this->Html->url(array("controller" => "statements", "action" => "delete"));?>";
                     name = 'declaración jurada';
                     break;
-                case 'vacations':
+                case 'others':
+                    url = "<?php echo $this->Html->url(array("controller" => "others", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "others", "action" => "delete"));?>";
+                    name = 'otros';
+                    break;
+                /*case 'vacations':
                     url = "<?php echo $this->Html->url(array("controller" => "vacations", "action" => "add"));?>";
                     urlDelete = "<?php echo $this->Html->url(array("controller" => "vacations", "action" => "delete"));?>";
                     name = 'vacación';
@@ -45,7 +55,7 @@
                     url = "<?php echo $this->Html->url(array("controller" => "memos", "action" => "add"));?>";
                     urlDelete = "<?php echo $this->Html->url(array("controller" => "memos", "action" => "delete"));?>";
                     name = 'memorandum';
-                    break;
+                    break;*/
                 default:
                     break;
             }
@@ -146,14 +156,15 @@
                 url = "<?php echo $this->Html->url(array("controller"  =>  "statements", "action"  =>  "index"));?>";
                 name = 'DECLARACIONES JURADAS';
                 break;
-            case 'vacations':
-                url = "<?php echo $this->Html->url(array("controller"  =>  "vacations", "action"  =>  "index"));?>";
+
+            /*case 'vacations':
+                url = "<?php //echo $this->Html->url(array("controller"  =>  "vacations", "action"  =>  "index"));?>";
                 name = 'VACACIONES';
                 break;
             case 'memos':
-                url = "<?php echo $this->Html->url(array("controller"  =>  "memos", "action"  =>  "index"));?>";
+                url = "<?php //echo $this->Html->url(array("controller"  =>  "memos", "action"  =>  "index"));?>";
                 name = 'MEMORANDUMS';
-                break;
+                break;*/
             default:
                 break;
         }
@@ -194,11 +205,15 @@
         <?php
         $areasArray = array(
             array(type => 'records', title => 'Antecedentes y títulos', addButton => true),
-            array(type => 'personal_education', title => 'Educacion personal', addButton => true),
             array(type => 'jobs', title => 'Experiencias de trabajo', addButton => true),
-            array(type => 'statements', title => 'Declaraciones juradas', addButton => true),
+            array(type => 'personal_education', title => 'Cursos realizados', addButton => true),
+            array(type => 'job_contracts', title => 'Contratos de trabajo', addButton => true),
+            array(type => 'statements', title => 'Declaraciones juradas de bienes y rentas', addButton => true),
+            array(type => 'others', title => 'Otros', addButton => true)
+
+            /*,
             array(type => 'vacations', title => 'Salidas, licencias y vacaciones', addButton => true),
-            array(type => 'memos', title => 'Memorandums', addButton => true)
+            array(type => 'memos', title => 'Memorandums', addButton => true)*/
         );
 
         foreach($areasArray as $area)
