@@ -17,10 +17,12 @@ class RecordsController extends FileAppController
         //$employe = $this->Employee->find('first', array('conditions' => array('id' => 1)));
         $this->set('employes',$aux);*/
 
+        /*
         $r = $this->Record->find('threaded', array('conditions' => array('employee_id' => $this->Session->read('currentEmployeeID'))));
 
         $this->set('recordsList', $this->Record->findByEmployee( $this->Session->read('currentEmployeeID') ));
         $this->set('profile', $r[0]['Employee']['profile']);
+        */
     }
 
     // This is an ajax action

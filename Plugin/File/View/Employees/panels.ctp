@@ -3,12 +3,12 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
-
         $('.panel_to_toggle').hide();
 
         $(document).on('click', '#crud_action', function () {
             var title = '';
             var action = $(this).attr('action');
+            var tag = $(this).attr('tag');
             var type  = $(this).attr('type');
             var idType = $(this).attr('id_type');
             var name = '';
@@ -16,50 +16,30 @@
             var urlDelete = '';
 
             switch (type) {
-                case 'records':
-                    url = "<?php echo $this->Html->url(array("controller" => "records", "action" => "add"));?>";
-                    urlDelete = "<?php echo $this->Html->url(array("controller" => "records", "action" => "delete"));?>";
+                case 'letters':
+                    url = "<?php echo $this->Html->url(array("controller" => "letters", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "letters", "action" => "delete"));?>";
                     name = 'antecedente';
                     break;
-                case 'jobs':
-                    url = "<?php echo $this->Html->url(array("controller" => "jobs", "action" => "add"));?>";
-                    urlDelete = "<?php echo $this->Html->url(array("controller" => "jobs", "action" => "delete"));?>";
+                case 'contracts':
+
                     name = 'experiencia de trabajo';
                     break;
-                case 'personal_education':
-                    url = "<?php echo $this->Html->url(array("controller" => "personal_education", "action" => "add"));?>";
-                    urlDelete = "<?php echo $this->Html->url(array("controller" => "personal_education", "action" => "delete"));?>";
+                case 'certificates':
+
                     name = 'cursos realizados';
                     break;
-                case 'job_contracts':
-                    url = "<?php echo $this->Html->url(array("controller" => "job_contracts", "action" => "add"));?>";
-                    urlDelete = "<?php echo $this->Html->url(array("controller" => "job_contracts", "action" => "delete"));?>";
+                case 'memos':
+
                     name = 'contratos de trabajo';
                     break;
-                case 'statements':
-                    url = "<?php echo $this->Html->url(array("controller" => "statements", "action" => "add"));?>";
-                    urlDelete = "<?php echo $this->Html->url(array("controller" => "statements", "action" => "delete"));?>";
+                case 'personal_docs':
+
                     name = 'declaración jurada';
                     break;
-                case 'others':
-                    url = "<?php echo $this->Html->url(array("controller" => "others", "action" => "add"));?>";
-                    urlDelete = "<?php echo $this->Html->url(array("controller" => "others", "action" => "delete"));?>";
-                    name = 'otros';
-                    break;
-                /*case 'vacations':
-                    url = "<?php echo $this->Html->url(array("controller" => "vacations", "action" => "add"));?>";
-                    urlDelete = "<?php echo $this->Html->url(array("controller" => "vacations", "action" => "delete"));?>";
-                    name = 'vacación';
-                    break;
-                case 'memos':
-                    url = "<?php echo $this->Html->url(array("controller" => "memos", "action" => "add"));?>";
-                    urlDelete = "<?php echo $this->Html->url(array("controller" => "memos", "action" => "delete"));?>";
-                    name = 'memorandum';
-                    break;*/
                 default:
                     break;
             }
-
 
             if(action == 'delete')
             {
@@ -79,10 +59,10 @@
 
         $('.toggle_index_panel').click(function(){
             // If panel is showed, then it will be just hide
-            if($('#panel_' + $(this).attr('custom_type')).is(':visible'))
-                $('#panel_' + $(this).attr('custom_type')).slideToggle();
+            if($('#panel_' + $(this).attr('custom_tag')).is(':visible'))
+                $('#panel_' + $(this).attr('custom_tag')).slideToggle();
             else {
-                loadIndexPanel($(this).attr('custom_type'));
+                loadIndexPanel($(this).attr('custom_tag'));
             }
         });
 
@@ -134,54 +114,58 @@
 
     // -----------------------------------
     // Load the index/list panels
-    function loadIndexPanel(type)
+    function loadIndexPanel(tag)
     {
-        var url = '';
         var name = '';
 
-        switch (type) {
+        var urlLetter = "<?php echo $this->Html->url(array("controller"  =>  "letters", "action"  =>  "index"));?>";
+        var urlContract = "<?php echo $this->Html->url(array("controller"  =>  "contracts", "action"  =>  "index"));?>";
+        var urlCertificate = "<?php echo $this->Html->url(array("controller"  =>  "certificates", "action"  =>  "index"));?>";
+        var urlMemos = "<?php echo $this->Html->url(array("controller"  =>  "memos", "action"  =>  "index"));?>";
+        var urlPersonalDocs = "<?php echo $this->Html->url(array("controller"  =>  "personal_docs", "action"  =>  "index"));?>";
+
+        switch (tag) {
             case 'records':
-                url = "<?php echo $this->Html->url(array("controller"  =>  "records", "action"  =>  "index"));?>";
-                name = 'ANTECEDENTES';
-                break;
-            case 'personal_education':
-                url = "<?php echo $this->Html->url(array("controller"  =>  "personal_education", "action"  =>  "index"));?>";
-                name = 'EDUCACION PERSONAL';
+                name = 'ANTECEDENTES Y TITULOS';
+
+                ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 break;
             case 'jobs':
-                url = "<?php echo $this->Html->url(array("controller"  =>  "jobs", "action"  =>  "index"));?>";
                 name = 'EXPERIENCIAS DE TRABAJOS';
                 break;
+            case 'courses':
+                name = 'CURSOS REALIZADOS';
+                break;
+            case 'contracts':
+                name = 'CONTRATOS DE TRABAJO';
+                break;
             case 'statements':
-                url = "<?php echo $this->Html->url(array("controller"  =>  "statements", "action"  =>  "index"));?>";
-                name = 'DECLARACIONES JURADAS';
+                name = 'DECLARACIONES JURADAS DE BIENES Y RENTAS';
                 break;
-
-            /*case 'vacations':
-                url = "<?php //echo $this->Html->url(array("controller"  =>  "vacations", "action"  =>  "index"));?>";
-                name = 'VACACIONES';
+            case 'others':
+                name = 'OTROS';
                 break;
-            case 'memos':
-                url = "<?php //echo $this->Html->url(array("controller"  =>  "memos", "action"  =>  "index"));?>";
-                name = 'MEMORANDUMS';
-                break;*/
             default:
                 break;
         }
+    }
 
+    function ajaxLoadPanel(url, type, tag, panelName)
+    {
         $.ajax({
             url: url,
             type: 'POST',
             async: 'false',
-            success: function (indexDataPanel) {
-                $('#panel_' + type).html(indexDataPanel);
+            data: {documentTag: tag},
+            success: function ( indexDataPanel ) {
+                $('#panel_' + tag + '_' + type).html( indexDataPanel );
 
                 // If panel is hidden, then it will be showed
-                if( $('#panel_' + type).is(':hidden') )
-                    $('#panel_' + type).slideToggle();
+                if( $('#panel_' + tag).is(':hidden') )
+                    $('#panel_' + tag).slideToggle();
             },
             error: function (request, textStatus, errorThrown) {
-                alert('Error: No se pudo cargar la lista de ' + name + '.');
+                alert('Error: No se pudo cargar la lista de ' + panelName + '.');
             }
         });
     }
@@ -202,33 +186,24 @@
 	</div>
 	<!-- OTHER SECTION -->
     <div class='css-data_section' >
+        <div class='css-data_menu'>
+            <a href='javascript:void(0)' id="crud_action" type="letters" class="css-add_button" >Carta(+)</a>
+            <a href='javascript:void(0)' id="crud_action" type="contracts" class="css-add_button" >Contrato(+)</a>
+            <a href='javascript:void(0)' id="crud_action" type="certificates" class="css-add_button" >Certificado(+)</a>
+        </div>
+
         <?php
-        $areasArray = array(
-            array(type => 'records', title => 'Antecedentes y títulos', addButton => true),
-            array(type => 'jobs', title => 'Experiencias de trabajo', addButton => true),
-            array(type => 'personal_education', title => 'Cursos realizados', addButton => true),
-            array(type => 'job_contracts', title => 'Contratos de trabajo', addButton => true),
-            array(type => 'statements', title => 'Declaraciones juradas de bienes y rentas', addButton => true),
-            array(type => 'others', title => 'Otros', addButton => true)
-
-            /*,
-            array(type => 'vacations', title => 'Salidas, licencias y vacaciones', addButton => true),
-            array(type => 'memos', title => 'Memorandums', addButton => true)*/
-        );
-
-        foreach($areasArray as $area)
+        foreach($GLOBAL_TAGS as $key => $tag)
         {
         ?>
             <div class='css-data_subsection'>
-                <div class="css-button_div">
-                    <?php if($area['addButton']){?>
-                        <a href='javascript:void(0)' id="crud_action" type="<?php echo $area['type'] ?>" class="css-add_button" >Agregar(+)</a>
-                    <?php }// End if ?>
+                <div class='toggle_index_panel css-title_section css-title_section_<?php echo $key ?>' custom_tag='<?php echo $key ?>'>
+                    <h2><?php echo $tag ?></h2>
                 </div>
-                <div class='toggle_index_panel css-title_section css-title_section_<?php echo $area['type'] ?>' custom_type='<?php echo $area['type'] ?>'>
-                    <h2><?php echo $area['title'] ?></h2>
-                </div>
-                <div id='panel_<?php echo $area['type'] ?>' class='panel_to_toggle css-panel_to_toggle'>
+                <div id='panel_<?php echo $key ?>' class='panel_to_toggle css-panel_to_toggle'>
+                    <?php foreach($GLOBAL_DOCS as $keyDoc => $doc){ ?>
+                        <div id='panel_<?php echo $key . '_' . $keyDoc; ?>' ></div>
+                    <?php }?>
                 </div>
             </div>
         <?php

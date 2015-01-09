@@ -15,6 +15,9 @@ class EmployeesController extends FileAppController {
     }
 	
 	public function edit($id = null) {
+        $this->set('GLOBAL_DOCS', $this->GLOBAL_DOCS);
+        $this->set('GLOBAL_TAGS', $this->GLOBAL_TAGS);
+
         if(!$id) throw  new  NotFoundException(__('Id de empleado vacio'));
 		
 		$employee = $this->Employee->findById($id);
@@ -23,7 +26,7 @@ class EmployeesController extends FileAppController {
         // Stores the employee id that is current selected to be edited
         $this->Session->write('currentEmployeeID', $id);
 
-        if ($this->request->is(array('post', 'put')))
+        if($this->request->is(array('post', 'put')))
 		{
 			$this->Employee->id = $id;
 
@@ -39,8 +42,10 @@ class EmployeesController extends FileAppController {
             }
 		}
 		
-		if (!$this->request->data['Employee'])
+		if(!$this->request->data['Employee'])
 			$this->request->data  =  $employee;
+
+
 		
 		//$userinfo = $this->Userinfo->find('first', array('conditions' => array('USERID' => $id)));
 		//$this->set('userinfoView', $userinfo['Userinfo']);

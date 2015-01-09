@@ -34,3 +34,15 @@ Contratos
 Titulos / certificados
 Memorandums
 Documentos personales (Fotocopias de carnet)
+
+*******************
+*******************
+CARTA
+-----
+- Fecha
+- Autor
+- Destinatario
+- Asunto
+- Tags
+- Url archivo
+
