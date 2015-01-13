@@ -19,23 +19,24 @@
                 case 'letters':
                     url = "<?php echo $this->Html->url(array("controller" => "letters", "action" => "add"));?>";
                     urlDelete = "<?php echo $this->Html->url(array("controller" => "letters", "action" => "delete"));?>";
-                    name = 'antecedente';
+                    name = 'carta';
                     break;
                 case 'contracts':
 
-                    name = 'experiencia de trabajo';
+                    name = 'contrato de trabajo';
                     break;
                 case 'certificates':
-
-                    name = 'cursos realizados';
+                    url = "<?php echo $this->Html->url(array("controller" => "certificates", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "certificates", "action" => "delete"));?>";
+                    name = 'título/certificado';
                     break;
                 case 'memos':
 
-                    name = 'contratos de trabajo';
+                    name = 'memorandum';
                     break;
                 case 'personal_docs':
 
-                    name = 'declaración jurada';
+                    name = 'documento personal';
                     break;
                 default:
                     break;
@@ -60,7 +61,14 @@
         $('.toggle_index_panel').click(function(){
             // If panel is showed, then it will be just hide
             if($('#panel_' + $(this).attr('custom_tag')).is(':visible'))
+            {
                 $('#panel_' + $(this).attr('custom_tag')).slideToggle();
+                $('#panel_' + $(this).attr('custom_tag') + '_letters').html('');
+                $('#panel_' + $(this).attr('custom_tag') + '_contracts').html('');
+                $('#panel_' + $(this).attr('custom_tag') + '_certificates').html('');
+                $('#panel_' + $(this).attr('custom_tag') + '_memos').html('');
+                $('#panel_' + $(this).attr('custom_tag') + '_personal_docs').html('');
+            }
             else {
                 loadIndexPanel($(this).attr('custom_tag'));
             }
@@ -72,6 +80,7 @@
             title: '',
             resizable: false,
             closeOnEscape: true,
+            position: { my: "center top", at: "center top+5", of: "#container"},
             close: function(){
                 $('#dialog_content').html('');
             }
@@ -127,23 +136,33 @@
         switch (tag) {
             case 'records':
                 name = 'ANTECEDENTES Y TITULOS';
-
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
+                ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 break;
             case 'jobs':
                 name = 'EXPERIENCIAS DE TRABAJOS';
+                ajaxLoadPanel(urlLetter, 'letters', tag, name);
+                ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 break;
             case 'courses':
                 name = 'CURSOS REALIZADOS';
+                ajaxLoadPanel(urlLetter, 'letters', tag, name);
+                ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 break;
             case 'contracts':
                 name = 'CONTRATOS DE TRABAJO';
+                ajaxLoadPanel(urlLetter, 'letters', tag, name);
+                ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 break;
             case 'statements':
                 name = 'DECLARACIONES JURADAS DE BIENES Y RENTAS';
+                ajaxLoadPanel(urlLetter, 'letters', tag, name);
+                ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 break;
             case 'others':
                 name = 'OTROS';
+                ajaxLoadPanel(urlLetter, 'letters', tag, name);
+                ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 break;
             default:
                 break;
@@ -187,9 +206,13 @@
 	<!-- OTHER SECTION -->
     <div class='css-data_section' >
         <div class='css-data_menu'>
-            <a href='javascript:void(0)' id="crud_action" type="letters" class="css-add_button" >Carta(+)</a>
-            <a href='javascript:void(0)' id="crud_action" type="contracts" class="css-add_button" >Contrato(+)</a>
-            <a href='javascript:void(0)' id="crud_action" type="certificates" class="css-add_button" >Certificado(+)</a>
+            AGREGAR:
+            <a href='javascript:void(0)' id="crud_action" type="letters" class="css-add_button" >Carta</a>
+            <a href='javascript:void(0)' id="crud_action" type="contracts" class="css-add_button" >Contrato</a>
+            <a href='javascript:void(0)' id="crud_action" type="certificates" class="css-add_button" >Certificado</a>
+            <a href='javascript:void(0)' id="crud_action" type="contracts" class="css-add_button" >Contrato</a>
+            <a href='javascript:void(0)' id="crud_action" type="memos" class="css-add_button" >Memorandum</a>
+            <a href='javascript:void(0)' id="crud_action" type="personal_docs" class="css-add_button" >Documento personal</a>
         </div>
 
         <?php

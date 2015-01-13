@@ -11,13 +11,13 @@ class DocumentTag extends FileAppModel
         )
     );
 
-    public function deleteByDocId($docId)
+    public function getByDocIdAndType($docId, $type)
     {
-        return $this->query("DELETE FROM file_document_tags WHERE document_id = '$docId'", false);
+        return $this->query("SELECT * FROM file_document_tags WHERE document_id = '$docId' AND document_type = '$type'", false);
     }
 
-    public function getByDocId($docId)
+    public function deleteByDocIdAndType($docId, $type)
     {
-        return $this->query("SELECT * FROM file_document_tags WHERE document_id = '$docId'", false);
+        return $this->query("DELETE FROM file_document_tags WHERE document_id = '$docId' AND document_type = '$type'", false);
     }
 }

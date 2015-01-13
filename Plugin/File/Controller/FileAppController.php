@@ -14,9 +14,8 @@ class FileAppController extends AdminController {
 
     public $GLOBAL_DOCS = array(
         'letters' => 'Cartas',
-        'contracts' => 'Contratos',
-        'certificates' => 'Títulos y Certificados',
         'contracts' => 'Contratos de trabajo',
+        'certificates' => 'Títulos y Certificados',
         'memos' => 'Memorandums',
         'personal_docs' => 'Documentos personales'
     );

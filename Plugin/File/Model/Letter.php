@@ -48,7 +48,7 @@ class Letter extends FileAppModel
     {
         //return $this->query("SELECT * FROM file_letters WHERE employee_id = '$employeeId'", false);
 
-        $conditions = array('Letter.employee_id' => '1');
+        $conditions = array('Letter.employee_id' => $employeeId);
 
         $params = array(
             'conditions' => $conditions,
@@ -77,7 +77,7 @@ class Letter extends FileAppModel
 
         $params = array(
             'conditions' => $conditions,
-            'order' => array('Letter.date'),
+            'order' => array('Letter.date DESC'),
             'joins' => array(
                 array(
                     'table' => 'file_document_tags',

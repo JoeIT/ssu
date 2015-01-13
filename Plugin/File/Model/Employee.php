@@ -8,9 +8,11 @@ class Employee extends FileAppModel
         'Record' => array(
             'className' => 'FileRecord'
         ),
-        'PersonalEducation' => array(
-            'className' => 'FilePersonalEducation'
+        'Certificate' => array(
+            'className' => 'FileCertificate'
         ),
+
+
         'Job' => array(
             'className' => 'FileJob'
         ),
