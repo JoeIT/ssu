@@ -1,6 +1,7 @@
 <link href="<?php echo $this->webroot; ?>css/files-styles.css" rel="stylesheet">
 
 <script type="text/javascript">
+    var ajaxLoadIndex = 0;
     $(document).ready(function () {
 
         $('.panel_to_toggle').hide();
@@ -61,15 +62,11 @@
         $('.toggle_index_panel').click(function(){
             // If panel is showed, then it will be just hide
             if($('#panel_' + $(this).attr('custom_tag')).is(':visible'))
-            {
                 $('#panel_' + $(this).attr('custom_tag')).slideToggle();
-                $('#panel_' + $(this).attr('custom_tag') + '_letters').html('');
-                $('#panel_' + $(this).attr('custom_tag') + '_contracts').html('');
-                $('#panel_' + $(this).attr('custom_tag') + '_certificates').html('');
-                $('#panel_' + $(this).attr('custom_tag') + '_memos').html('');
-                $('#panel_' + $(this).attr('custom_tag') + '_personal_docs').html('');
-            }
-            else {
+            else
+            {
+                $('.panel_to_toggle').hide('slow');
+                $('.panel_table').html('');
                 loadIndexPanel($(this).attr('custom_tag'));
             }
         });
@@ -81,6 +78,9 @@
             resizable: false,
             closeOnEscape: true,
             position: { my: "center top", at: "center top+5", of: "#container"},
+            /*beforeSend:function(){
+                $('#dialog_content').html('<div class="loading"></div>');
+            },*/
             close: function(){
                 $('#dialog_content').html('');
             }
@@ -179,15 +179,21 @@
             success: function ( indexDataPanel ) {
                 $('#panel_' + tag + '_' + type).html( indexDataPanel );
 
-                // If panel is hidden, then it will be showed
-                if( $('#panel_' + tag).is(':hidden') )
-                    $('#panel_' + tag).slideToggle();
+                showPanelAfterLoadComplete(tag);
             },
             error: function (request, textStatus, errorThrown) {
                 alert('Error: No se pudo cargar la lista de ' + panelName + '.');
             }
         });
     }
+
+    function showPanelAfterLoadComplete(tag)
+    {
+        // If panel is hidden, then it will be showed
+        if( $('#panel_' + tag).is(':hidden') )
+            $('#panel_' + tag).slideToggle();
+    }
+
 </script>
 
 <h1>DATOS DEL EMPLEADO</h1>
@@ -225,7 +231,7 @@
                 </div>
                 <div id='panel_<?php echo $key ?>' class='panel_to_toggle css-panel_to_toggle'>
                     <?php foreach($GLOBAL_DOCS as $keyDoc => $doc){ ?>
-                        <div id='panel_<?php echo $key . '_' . $keyDoc; ?>' ></div>
+                        <div id='panel_<?php echo $key . '_' . $keyDoc; ?>' class='panel_table' ></div>
                     <?php }?>
                 </div>
             </div>

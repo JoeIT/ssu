@@ -4,8 +4,8 @@
 // This is an ajax view
 echo $this->Form->create('Letter');
 echo $this->Form->input('date', array('label' => 'Fecha de expedición', 'dateFormat' => 'DMY', 'class' => 'css-date_area', 'minYear' => date('Y') - 100, 'maxYear' => date('Y'), 'separator' => '/'));
-echo $this->Form->input('addressee', array('label' => 'Destinatario'));
-echo $this->Form->input('subject', array('label' => 'Asunto'));
+echo $this->Form->input('addressee', array('label' => 'Destinatario(*)'));
+echo $this->Form->input('subject', array('label' => 'Asunto(*)'));
 echo $this->Form->input('contents', array('label' => 'Contenido', 'rows' => '3'));
 
 //$selected = array('records', 'contracts');

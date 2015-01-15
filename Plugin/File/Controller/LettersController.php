@@ -35,7 +35,7 @@ class LettersController extends FileAppController
         $selected = array();
         if($id != null)
         {
-            $docTags = $this->DocumentTag->getByDocId($id);
+            $docTags = $this->DocumentTag->getByDocIdAndType($id, 'letter');
             foreach($docTags as $dt)
             {
                 // Load on $selected array the document tags
@@ -54,12 +54,15 @@ class LettersController extends FileAppController
             $this->request->data['Letter']['employee_id'] = $this->Session->read('currentEmployeeID');
 			//$this->request->data['Letter']['registred_datetime'] = '';
 
+            $this->Letter->set($this->request->data);
             if($this->Letter->validates())
             {
                 if($this->Letter->save($this->request->data))
                 {
                     // Deleting all document tags
                     $this->DocumentTag->deleteByDocIdAndType($this->Letter->id, $this->_classType);
+
+                    print_r( $this->request->data['Letter']['tags'] );
 
                     // Saving document tags
                     foreach($this->request->data['Letter']['tags'] as $tag)
@@ -73,11 +76,22 @@ class LettersController extends FileAppController
 
                         $this->DocumentTag->save($data);
                     }
+
+                    //$this->Session->setFlash('Carta guardada!!');
                     $this->set('saved', true);
                 }
                 else
                     $this->set('errorMessage', 'NOTA: Ocurrió un problema al guardar la información!!');
             }
+            else
+            {
+                foreach( $this->request->data['Letter']['tags'] as $tag )
+                {
+                    array_push($selected, $tag);
+                }
+                $this->set('selected', $selected);
+            }
+
         }
 
         if (!$this->request->data['Letter'])
@@ -98,12 +112,12 @@ class LettersController extends FileAppController
 
         $tagsBelong = $this->DocumentTag->getByDocIdAndType($id, $this->_classType);
 
-        if( count($tagsBelong) > 0 )
+        if( count($tagsBelong) > 1 ) {
             echo 'Este documento esta relacionado con los siguientes tags:';
 
-        foreach($tagsBelong as $tag)
-        {
-            echo '</br>- ' . $this->GLOBAL_TAGS[ $tag['0']['tag'] ];
+            foreach ($tagsBelong as $tag) {
+                echo '</br>- ' . $this->GLOBAL_TAGS[$tag['0']['tag']];
+            }
         }
 
         if( $this->request->is(array('post')) )

@@ -33,7 +33,7 @@ class CertificatesController extends FileAppController
         $selected = array();
         if($id != null)
         {
-            $docTags = $this->DocumentTag->getByDocId($id);
+            $docTags = $this->DocumentTag->getByDocIdAndType($id, 'certificate');
             foreach($docTags as $dt)
             {
                 // Load on $selected array the document tags
@@ -49,8 +49,9 @@ class CertificatesController extends FileAppController
             else
                 $this->Certificate->create();
 
-            $this->request->data['Certificate']['employee_id'] = $this->Session->read('currentEmployeeID');            
+            $this->request->data['Certificate']['employee_id'] = $this->Session->read('currentEmployeeID');
 
+            $this->Certificate->set($this->request->data);
             if($this->Certificate->validates())
             {
                 if($this->Certificate->save($this->request->data))
@@ -75,6 +76,14 @@ class CertificatesController extends FileAppController
                 else
                     $this->set('errorMessage', 'NOTA: Ocurrió un problema al guardar la información!!');
             }
+            else
+            {
+                foreach( $this->request->data['Certificate']['tags'] as $tag )
+                {
+                    array_push($selected, $tag);
+                }
+                $this->set('selected', $selected);
+            }
         }
 
         if (!$this->request->data['Certificate'])
@@ -95,12 +104,12 @@ class CertificatesController extends FileAppController
 
         $tagsBelong = $this->DocumentTag->getByDocIdAndType($id, $this->_classType);
 
-        if( count($tagsBelong) > 0 )
+        if( count($tagsBelong) > 0 ) {
             echo 'Este documento esta relacionado con los siguientes tags:';
 
-        foreach($tagsBelong as $tag)
-        {
-            echo '</br>- ' . $this->GLOBAL_TAGS[$tag['0']['tag']];
+            foreach ($tagsBelong as $tag) {
+                echo '</br>- ' . $this->GLOBAL_TAGS[$tag['0']['tag']];
+            }
         }
 
         if($this->request->is(array('post')))
