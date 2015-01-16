@@ -1,7 +1,7 @@
 <link href="<?php echo $this->webroot; ?>css/files-styles.css" rel="stylesheet">
 
 <script type="text/javascript">
-    var ajaxLoadIndex = 0;
+    var loadsRemaining = 0;
     $(document).ready(function () {
 
         $('.panel_to_toggle').hide();
@@ -32,7 +32,8 @@
                     name = 'título/certificado';
                     break;
                 case 'memos':
-
+                    url = "<?php echo $this->Html->url(array("controller" => "memos", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "memos", "action" => "delete"));?>";
                     name = 'memorandum';
                     break;
                 case 'personal_docs':
@@ -77,7 +78,8 @@
             title: '',
             resizable: false,
             closeOnEscape: true,
-            position: { my: "center top", at: "center top+5", of: "#container"},
+            zIndex: 1000,
+            position: { my: "center top", at: "center top+15", of: "#container"},
             /*beforeSend:function(){
                 $('#dialog_content').html('<div class="loading"></div>');
             },*/
@@ -136,33 +138,45 @@
         switch (tag) {
             case 'records':
                 name = 'ANTECEDENTES Y TITULOS';
+                loadsRemaining = 3;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
+                ajaxLoadPanel(urlMemos, 'memos', tag, name);
                 break;
             case 'jobs':
                 name = 'EXPERIENCIAS DE TRABAJOS';
+                loadsRemaining = 3;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
+                ajaxLoadPanel(urlMemos, 'memos', tag, name);
                 break;
             case 'courses':
                 name = 'CURSOS REALIZADOS';
+                loadsRemaining = 3;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
+                ajaxLoadPanel(urlMemos, 'memos', tag, name);
                 break;
             case 'contracts':
                 name = 'CONTRATOS DE TRABAJO';
+                loadsRemaining = 3;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
+                ajaxLoadPanel(urlMemos, 'memos', tag, name);
                 break;
             case 'statements':
                 name = 'DECLARACIONES JURADAS DE BIENES Y RENTAS';
+                loadsRemaining = 3;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
+                ajaxLoadPanel(urlMemos, 'memos', tag, name);
                 break;
             case 'others':
                 name = 'OTROS';
+                loadsRemaining = 3;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
+                ajaxLoadPanel(urlMemos, 'memos', tag, name);
                 break;
             default:
                 break;
@@ -179,7 +193,7 @@
             success: function ( indexDataPanel ) {
                 $('#panel_' + tag + '_' + type).html( indexDataPanel );
 
-                showPanelAfterLoadComplete(tag);
+                showPanelAfterLoadComplete( tag );
             },
             error: function (request, textStatus, errorThrown) {
                 alert('Error: No se pudo cargar la lista de ' + panelName + '.');
@@ -189,9 +203,14 @@
 
     function showPanelAfterLoadComplete(tag)
     {
-        // If panel is hidden, then it will be showed
-        if( $('#panel_' + tag).is(':hidden') )
-            $('#panel_' + tag).slideToggle();
+        loadsRemaining -= 1;
+
+        if(loadsRemaining == 0)
+        {
+            // If panel is hidden, then it will be showed
+            if( $('#panel_' + tag).is(':hidden') )
+                $('#panel_' + tag).slideToggle();
+        }
     }
 
 </script>
@@ -213,12 +232,11 @@
     <div class='css-data_section' >
         <div class='css-data_menu'>
             AGREGAR:
-            <a href='javascript:void(0)' id="crud_action" type="letters" class="css-add_button" >Carta</a>
-            <a href='javascript:void(0)' id="crud_action" type="contracts" class="css-add_button" >Contrato</a>
-            <a href='javascript:void(0)' id="crud_action" type="certificates" class="css-add_button" >Certificado</a>
-            <a href='javascript:void(0)' id="crud_action" type="contracts" class="css-add_button" >Contrato</a>
-            <a href='javascript:void(0)' id="crud_action" type="memos" class="css-add_button" >Memorandum</a>
-            <a href='javascript:void(0)' id="crud_action" type="personal_docs" class="css-add_button" >Documento personal</a>
+            <a href='javascript:void(0)' id="crud_action" type="letters" class="css-action_button" >Carta</a>
+            <a href='javascript:void(0)' id="crud_action" type="contracts" class="css-action_button" >Contrato</a>
+            <a href='javascript:void(0)' id="crud_action" type="certificates" class="css-action_button" >Certificado</a>
+            <a href='javascript:void(0)' id="crud_action" type="memos" class="css-action_button" >Memorandum</a>
+            <a href='javascript:void(0)' id="crud_action" type="personal_docs" class="css-action_button" >Documento personal</a>
         </div>
 
         <?php

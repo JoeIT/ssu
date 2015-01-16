@@ -10,14 +10,12 @@ class LettersController extends FileAppController
     public function index()
     {
         $this->layout = false;
-        $tag = $this->request->data('documentTag');
 
-        //print_r($this->Letter->findByEmployeeAndTag($this->Session->read('currentEmployeeID'), $tag, $this->_classTag));
-
-        $this->set('lettersList',
-            $this->Letter->findByEmployeeAndTag($this->Session->read('currentEmployeeID'), $tag, $this->_classType)
+        $this->set('lettersList', $this->Letter->findByEmployeeAndTag(
+                $this->Session->read('currentEmployeeID'),
+                $this->request->data('documentTag'),
+                $this->_classType)
         );
-        $this->set(compact('tag'));
     }
 
     // This is an ajax action
@@ -62,8 +60,6 @@ class LettersController extends FileAppController
                     // Deleting all document tags
                     $this->DocumentTag->deleteByDocIdAndType($this->Letter->id, $this->_classType);
 
-                    print_r( $this->request->data['Letter']['tags'] );
-
                     // Saving document tags
                     foreach($this->request->data['Letter']['tags'] as $tag)
                     {
@@ -91,7 +87,6 @@ class LettersController extends FileAppController
                 }
                 $this->set('selected', $selected);
             }
-
         }
 
         if (!$this->request->data['Letter'])
@@ -114,10 +109,11 @@ class LettersController extends FileAppController
 
         if( count($tagsBelong) > 1 ) {
             echo 'Este documento esta relacionado con los siguientes tags:';
-
-            foreach ($tagsBelong as $tag) {
+            foreach ($tagsBelong as $tag)
+            {
                 echo '</br>- ' . $this->GLOBAL_TAGS[$tag['0']['tag']];
             }
+            echo '</br></br>';
         }
 
         if( $this->request->is(array('post')) )

@@ -5,17 +5,18 @@ echo  $this->Form->create('Memo');
 
 <table border="0" class="css-view_table">
     <tr>
-        <th>Tipo:</th>
-    </tr>
-    <tr>
-        <td><?php echo $memo['Memo']['type']; ?></td>
-    </tr>
-    <tr>
         <th>Fecha de expedición:</th>
     </tr>
     <tr>
         <td><?php echo $memo['Memo']['expedition_date']; ?></td>
     </tr>
+	<tr>
+        <th>Código:</th>
+    </tr>
+    <tr>
+        <td><?php echo $memo['Memo']['code']; ?></td>
+    </tr>
+    
     <tr>
         <th>Descripción:</th>
     </tr>
@@ -26,7 +27,7 @@ echo  $this->Form->create('Memo');
         <th>Contenido:</th>
     </tr>
     <tr>
-        <td><?php echo $memo['Memo']['content']; ?></td>
+        <td><?php echo h($memo['Memo']['content_text']); ?></td>
     </tr>
 </table>
 </br>

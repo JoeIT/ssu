@@ -35,9 +35,7 @@ class Certificate extends FileAppModel
 
     public function findByEmployee($employeeId)
     {
-        //return $this->query("SELECT * FROM file_certificates WHERE employee_id = '$employeeId' ORDER BY expedition_date", false);
-		
-		$conditions = array('Certificate.employee_id' => '1');
+        $conditions = array('Certificate.employee_id' => $employeeId);
 
         $params = array(
             'conditions' => $conditions,

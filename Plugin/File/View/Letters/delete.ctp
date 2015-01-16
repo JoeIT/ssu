@@ -26,7 +26,7 @@ echo  $this->Form->create('Letter');
         <th>Contenido:</th>
     </tr>
     <tr>
-        <td><?php echo h($letter['Letter']['contents']); ?></td>
+        <td><?php echo h($letter['Letter']['content_text']); ?></td>
     </tr>
 </table>
 </br>

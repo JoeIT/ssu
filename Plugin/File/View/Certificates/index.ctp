@@ -2,7 +2,7 @@
 
 <table border="1" class="css-index_table">
     <tr>
-        <th>FECHA DE EXPEDICION</th>
+        <th>FECHA</th>
         <th>TITULO</th>
         <th>INSTITUCION</th>
         <th>UBICACION</th>
@@ -14,13 +14,25 @@
 
     foreach  ($certificatesList  as  $certificate):  ?>
         <tr>
-            <td><?php echo date("d/m/Y", strtotime($certificate[Certificate]['expedition_date']));  ?></td>
-            <td><?php echo $certificate[Certificate]['titulation_grade'];  ?></td>
-            <td><?php echo $certificate[Certificate]['institution'];  ?></td>
-            <td><?php echo $certificate[Certificate]['location'];  ?></td>
-            <td>
-                <a href='javascript:void(0)' id="crud_action" type="certificates" id_type="<?php echo $certificate[Certificate]['id']; ?>" >Modificar</a>
-                <a href='javascript:void(0)' id="crud_action" type="certificates" action="delete" id_type="<?php echo $certificate[Certificate]['id']; ?>" >Eliminar</a>
+            <td class="css-td_perfect_fit"><?php echo date("d/M/Y", strtotime($certificate['Certificate']['expedition_date']));  ?></td>
+            <td><?php echo $certificate['Certificate']['titulation_grade'];  ?></td>
+            <td><?php echo $certificate['Certificate']['institution'];  ?></td>
+            <td><?php echo $certificate['Certificate']['location'];  ?></td>
+            <td class="css-td_perfect_fit">
+                <a href='javascript:void(0)'
+                   id="crud_action"
+                   type="certificates"
+                   id_type="<?php echo $certificate['Certificate']['id']; ?>"
+                   class="css-action_button css-mini_action_button"
+                >Modificar</a>
+
+                <a href='javascript:void(0)'
+                   id="crud_action"
+                   type="certificates"
+                   action="delete"
+                   id_type="<?php echo $certificate['Certificate']['id']; ?>"
+                   class="css-action_button css-mini_action_button css-delete_button"
+                >Eliminar</a>
             </td>
         </tr>
     <?php  endforeach;  ?>

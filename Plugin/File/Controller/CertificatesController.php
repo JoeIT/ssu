@@ -13,8 +13,10 @@ class CertificatesController extends FileAppController
         
 		$tag = $this->request->data('documentTag');
 
-        $this->set('certificatesList',
-            $this->Certificate->findByEmployeeAndTag($this->Session->read('currentEmployeeID'), $tag, $this->_classType)
+        $this->set('certificatesList', $this->Certificate->findByEmployeeAndTag(
+                $this->Session->read('currentEmployeeID'),
+                $this->request->data('documentTag'),
+                $this->_classType)
         );
     }
 
@@ -33,7 +35,7 @@ class CertificatesController extends FileAppController
         $selected = array();
         if($id != null)
         {
-            $docTags = $this->DocumentTag->getByDocIdAndType($id, 'certificate');
+            $docTags = $this->DocumentTag->getByDocIdAndType($id, $this->_classType);
             foreach($docTags as $dt)
             {
                 // Load on $selected array the document tags
@@ -97,19 +99,20 @@ class CertificatesController extends FileAppController
 
         $certificate = $this->Certificate->findById($id);
 
-        $this->set(compact('certificate'));
+        $this->set(compact($this->_classType));
         $this->set('deleted', false);
 		
 		$this->loadModel('File.DocumentTag');
 
         $tagsBelong = $this->DocumentTag->getByDocIdAndType($id, $this->_classType);
 
-        if( count($tagsBelong) > 0 ) {
+        if( count($tagsBelong) > 1 )
+        {
             echo 'Este documento esta relacionado con los siguientes tags:';
-
             foreach ($tagsBelong as $tag) {
                 echo '</br>- ' . $this->GLOBAL_TAGS[$tag['0']['tag']];
             }
+            echo '</br></br>';
         }
 
         if($this->request->is(array('post')))

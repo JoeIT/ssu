@@ -35,8 +35,8 @@ Titulos / certificados
 Memorandums
 Documentos personales (Fotocopias de carnet)
 
-*******************
-*******************
+*********************
+*********************
 CARTA
 -----
 - Fecha
@@ -45,4 +45,24 @@ CARTA
 - Asunto
 - Tags
 - Url archivo
-
+______________________
+CONTRATO
+---------
+- 
+______________________
+CERTIFICADO
+-----------
+- Fecha
+- Título obtenido
+- Institución
+- Ubicación
+- Descripción
+- Contenido
+______________________
+MEMORANDUM
+----------
+- Fecha
+- Código
+- Remitente
+- Descripción
+- Contenido

@@ -34,7 +34,7 @@ class Letter extends FileAppModel
             'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
             'allowEmpty' => false
         ),
-        'contents' => array(
+        'content_text' => array(
             'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
             'allowEmpty' => true
         ),

@@ -1,20 +1,38 @@
+<h3>MEMORANDUMS</h3>
+
 <table border="1" class="css-index_table">
     <tr>
-        <th>TIPO</th>
-        <th>FECHA DE EXPEDICION</th>
+        <th>FECHA</th>
+		<th>CODIGO</th>
         <th>DESCRIPCION</th>
         <th>CONTENIDO</th>
         <th></th>
     </tr>
-    <?php  foreach  ($memosList  as  $memo):  ?>
+    <?php
+    if( count($memosList) == 0)
+        echo "<tr><td colspan='20' align='center'>NO HAY REGISTROS</td></tr>";
+
+    foreach  ($memosList  as  $memo): ?>
     <tr>
-        <td><?php  echo  $memo[0]['type'];  ?></td>
-        <td><?php  echo  date("d/m/Y", strtotime($memo[0]['expedition_date']));  ?></td>
-        <td><?php  echo  $memo[0]['description'];  ?></td>
-        <td><?php  echo  $memo[0]['content'];  ?></td>
-        <td>
-            <a href='javascript:void(0)' id="crud_action" type="memos" id_type="<?php echo $memo[0]['id']; ?>" >Modificar</a>
-            <a href='javascript:void(0)' id="crud_action" type="memos" action="delete" id_type="<?php echo $memo[0]['id']; ?>" >Eliminar</a>
+        <td class="css-td_perfect_fit"><?php echo date("d/M/Y", strtotime($memo['Memo']['expedition_date'])); ?></td>
+        <td><?php echo $memo['Memo']['code']; ?></td>
+        <td><?php echo $memo['Memo']['description']; ?></td>
+        <td><?php echo $memo['Memo']['content_text']; ?></td>
+        <td class="css-td_perfect_fit">
+            <a href='javascript:void(0)'
+               id="crud_action"
+               type="memos"
+               id_type="<?php echo $memo['Memo']['id']; ?>"
+               class="css-action_button css-mini_action_button"
+            >Modificar</a>
+
+            <a href='javascript:void(0)'
+               id="crud_action"
+               type="memos"
+               action="delete"
+               id_type="<?php echo $memo['Memo']['id']; ?>"
+               class="css-action_button css-mini_action_button css-delete_button"
+            >Eliminar</a>
         </td>
     </tr>
 <?php  endforeach;  ?>

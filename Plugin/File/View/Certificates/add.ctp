@@ -1,5 +1,3 @@
-<h3>Certificado:</h3>
-
 <?php
 // This is an ajax view
 echo $this->Form->create('Certificate');
@@ -7,7 +5,8 @@ echo $this->Form->input('expedition_date', array('label' => 'Fecha de expedició
 echo $this->Form->input('titulation_grade', array('label' => 'Título obtenido(*)'));
 echo $this->Form->input('institution', array('label' => 'Institución(*)'));
 echo $this->Form->input('location', array('label' => 'Ubicación'));
-echo $this->Form->input('description', array('label' => 'Descripción', 'rows' => '3'));
+echo $this->Form->input('description', array('label' => 'Descripción'));
+echo $this->Form->input('content_text', array('label' => 'Contenido', 'rows' => '2'));
 echo $this->Form->input('tags', array('multiple' => 'checkbox', 'options' => $GLOBAL_TAGS, 'selected' => $selected));
 
 echo $this->Form->input('id', array('type' => 'hidden'));
@@ -20,7 +19,7 @@ if($saved == true)
 {
     echo "<script>
             loadIndexPanel('certificates');
-            $('#dialog_content').dialog('close');  //close containing dialog
+            $('#dialog_content').dialog('close');  //Close containing dialog
         </script>";
 }
 
