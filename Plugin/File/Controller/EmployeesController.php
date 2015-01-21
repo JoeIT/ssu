@@ -35,7 +35,7 @@ class EmployeesController extends FileAppController {
                 if($this->Employee->save($this->request->data))
                 {
                     $this->Session->setFlash(__('La información guardada exitosamente.'));
-                    return  $this->redirect(array('action' => 'index'));
+                    return $this->redirect(array('action' => 'index'));
                 }
 
                 $this->Session->setFlash(__('No se pudo guardar la información del empleado.'));

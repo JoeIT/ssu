@@ -34,6 +34,12 @@ echo  $this->Form->create('Certificate');
     <tr>
         <td><?php echo h($certificate['Certificate']['description']); ?></td>
     </tr>
+    <tr>
+        <th>Contenido:</th>
+    </tr>
+    <tr>
+        <td><?php echo h($certificate['Certificate']['content_text']); ?></td>
+    </tr>
 </table>
 </br>
 

@@ -11,6 +11,12 @@ class Employee extends FileAppModel
         'Certificate' => array(
             'className' => 'FileCertificate'
         ),
+        'Memo' => array(
+            'className' => 'FileMemo'
+        ),
+        'PersonalRequirement' => array(
+            'className' => 'FilePersonalRequirement'
+        ),
 
 
         'Job' => array(
@@ -21,9 +27,6 @@ class Employee extends FileAppModel
         ),
         'Vacation' => array(
             'className' => 'FileVacation'
-        ),
-        'Memo' => array(
-            'className' => 'FileMemo'
         )
     );
 

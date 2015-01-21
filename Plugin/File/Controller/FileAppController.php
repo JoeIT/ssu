@@ -3,6 +3,8 @@ App::uses('AdminController', 'Controller');
 
 class FileAppController extends AdminController {
 
+    public $FILES_PATH_ROOT = 'd:/FILES/';
+
     public $GLOBAL_TAGS = array(
         'records' => 'Antecedentes y títulos',
         'jobs' => 'Experiencia de trabajo',
@@ -13,10 +15,11 @@ class FileAppController extends AdminController {
     );
 
     public $GLOBAL_DOCS = array(
-        'letters' => 'Cartas',
-        'contracts' => 'Contratos de trabajo',
-        'certificates' => 'Títulos y Certificados',
-        'memos' => 'Memorandums',
-        'personal_docs' => 'Documentos personales'
+        'letters' => 'Carta',
+        'contracts' => 'Contrato de trabajo',
+        'certificates' => 'Título/Certificado',
+        'memos' => 'Memorandum',
+        'personal_requirements' => 'Req. de personal',
+        'personal_docs' => 'Doc. personal'
     );
 }

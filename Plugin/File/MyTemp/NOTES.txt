@@ -10,7 +10,6 @@ echo $html->image('employee.jpg', array("alt" => "Empleado", 'fullBase' => true)
 echo $this->Html->image('File.employee.png', array("alt" => "Empleado"));
 
 
-
 * LINKS
 ----------
 // Link with image
@@ -19,7 +18,7 @@ echo $this->Html->link(
 				array('controller' => 'employees', 'action' => 'index', 'comments' => false), 
 				array('escape' => false)
 		);
-		
+
 * URLS
 -------
 // Root url

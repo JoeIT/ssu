@@ -36,6 +36,11 @@
                     urlDelete = "<?php echo $this->Html->url(array("controller" => "memos", "action" => "delete"));?>";
                     name = 'memorandum';
                     break;
+                case 'personal_requirements':
+                    url = "<?php echo $this->Html->url(array("controller" => "personal_requirements", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "personal_requirements", "action" => "delete"));?>";
+                    name = 'requerimiento de personal';
+                    break;
                 case 'personal_docs':
 
                     name = 'documento personal';
@@ -133,50 +138,57 @@
         var urlContract = "<?php echo $this->Html->url(array("controller"  =>  "contracts", "action"  =>  "index"));?>";
         var urlCertificate = "<?php echo $this->Html->url(array("controller"  =>  "certificates", "action"  =>  "index"));?>";
         var urlMemos = "<?php echo $this->Html->url(array("controller"  =>  "memos", "action"  =>  "index"));?>";
+        var urlPersonalReq = "<?php echo $this->Html->url(array("controller"  =>  "personal_requirements", "action"  =>  "index"));?>";
         var urlPersonalDocs = "<?php echo $this->Html->url(array("controller"  =>  "personal_docs", "action"  =>  "index"));?>";
 
         switch (tag) {
             case 'records':
                 name = 'ANTECEDENTES Y TITULOS';
-                loadsRemaining = 3;
+                loadsRemaining = 4;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
+                ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
                 break;
             case 'jobs':
                 name = 'EXPERIENCIAS DE TRABAJOS';
-                loadsRemaining = 3;
+                loadsRemaining = 4;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
+                ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
                 break;
             case 'courses':
                 name = 'CURSOS REALIZADOS';
-                loadsRemaining = 3;
+                loadsRemaining = 4;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
+                ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
                 break;
             case 'contracts':
                 name = 'CONTRATOS DE TRABAJO';
-                loadsRemaining = 3;
+                loadsRemaining = 4;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
+                ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
                 break;
             case 'statements':
                 name = 'DECLARACIONES JURADAS DE BIENES Y RENTAS';
-                loadsRemaining = 3;
+                loadsRemaining = 4;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
+                ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
                 break;
             case 'others':
                 name = 'OTROS';
-                loadsRemaining = 3;
+                loadsRemaining = 4;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
+                ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
                 break;
             default:
                 break;
@@ -232,11 +244,9 @@
     <div class='css-data_section' >
         <div class='css-data_menu'>
             AGREGAR:
-            <a href='javascript:void(0)' id="crud_action" type="letters" class="css-action_button" >Carta</a>
-            <a href='javascript:void(0)' id="crud_action" type="contracts" class="css-action_button" >Contrato</a>
-            <a href='javascript:void(0)' id="crud_action" type="certificates" class="css-action_button" >Certificado</a>
-            <a href='javascript:void(0)' id="crud_action" type="memos" class="css-action_button" >Memorandum</a>
-            <a href='javascript:void(0)' id="crud_action" type="personal_docs" class="css-action_button" >Documento personal</a>
+            <?php foreach($GLOBAL_DOCS as $keyDoc => $doc){ ?>
+            <a href='javascript:void(0)' id="crud_action" type="<?php echo $keyDoc; ?>" class="css-action_button" ><?php echo $doc; ?></a>
+            <?php }?>
         </div>
 
         <?php

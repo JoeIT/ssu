@@ -47,7 +47,7 @@ CARTA
 - Url archivo
 ______________________
 CONTRATO
----------
+--------
 - 
 ______________________
 CERTIFICADO
@@ -66,3 +66,28 @@ MEMORANDUM
 - Remitente
 - Descripción
 - Contenido
+______________________
+PEDIDO DE PERSONAL
+------------------
+- Codigo
+- Fecha emisión
+
+- Area
+- Division/Unidad
+- Puesto a cubrir
+- A partir de
+- Hasta
+
+- Razón del pedido
+- Sustituye a
+- Reemplazante
+
+- Otros comentarios
+
+- Solicitante
+- Fecha
+
+- Informe superior inmediato
+- Fecha
+
+- Aprobado por

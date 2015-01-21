@@ -9,8 +9,18 @@ class MemosController extends FileAppController
     public function index()
     {
         $this->layout = false;
-		
-		$this->set('memosList', $this->Memo->findByEmployeeAndTag(
+
+        /*$memosList = $this->Memo->findByEmployeeAndTag(
+            $this->Session->read('currentEmployeeID'),
+            $this->request->data('documentTag'),
+            $this->_classType);
+
+        if( count($memosList) == 0 )
+            return;
+
+        $this->set(compact('memosList'));*/
+
+        $this->set('memosList', $this->Memo->findByEmployeeAndTag(
 			$this->Session->read('currentEmployeeID'),
 			$this->request->data('documentTag'),
 			$this->_classType)
