@@ -7,9 +7,8 @@ echo $this->Form->input('institution', array('label' => 'Institución(*)'));
 echo $this->Form->input('location', array('label' => 'Ubicación'));
 echo $this->Form->input('description', array('label' => 'Descripción'));
 echo $this->Form->input('content_text', array('label' => 'Contenido', 'rows' => '2'));
-echo $this->Form->input('tags', array('multiple' => 'checkbox', 'options' => $GLOBAL_TAGS, 'selected' => $selected));
-
 echo $this->Form->input('id', array('type' => 'hidden'));
+
 echo $this->Js->submit('GUARDAR', array(
     //Create ajax submit button
     'update' => '#dialog_content'
