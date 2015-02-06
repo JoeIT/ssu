@@ -93,3 +93,7 @@ PEDIDO DE PERSONAL
 - Aprobado por
 ______________________
 http://www.jamesfairhurst.co.uk/posts/view/cakephp_contact_form_with_file_uploads
+
+______________________
+- Hacer actualizar la lista de algun documento, cuando se agrega el mismo
+- 

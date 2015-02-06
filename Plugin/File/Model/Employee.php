@@ -5,8 +5,8 @@ App::uses('FileAppModel',  'File.Model');
 class Employee extends FileAppModel
 {
     public $hasMany = array(
-        'Record' => array(
-            'className' => 'FileRecord'
+        'Letter' => array(
+            'className' => 'FileLetter'
         ),
         'Certificate' => array(
             'className' => 'FileCertificate'
@@ -17,11 +17,11 @@ class Employee extends FileAppModel
         'PersonalRequirement' => array(
             'className' => 'FilePersonalRequirement'
         ),
-
-
-        'Job' => array(
-            'className' => 'FileJob'
+        'Document' => array(
+            'className' => 'FileDocument'
         ),
+
+
         'Statement' => array(
             'className' => 'FileStatement'
         ),

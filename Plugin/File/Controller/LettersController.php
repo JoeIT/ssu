@@ -52,8 +52,7 @@ class LettersController extends FileAppController
             $this->request->data['Letter']['employee_id'] = $this->Session->read('currentEmployeeID');
 			//$this->request->data['Letter']['registred_datetime'] = '';
 
-            //print_r($this->request->data['Letter']);
-            echo "<br/>digital_file: " . $this->request->data['Letter']['digital_file'];
+            //echo "<br/>digital_file: " . $this->request->data['Letter']['digital_file'];
 
             $this->Letter->set($this->request->data['Letter']);
             if($this->Letter->validates())

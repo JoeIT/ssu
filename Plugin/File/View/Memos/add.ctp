@@ -2,7 +2,7 @@
 // This is an ajax view
 echo $this->Form->create('Memo');
 echo $this->Form->input('expedition_date', array('label' => 'Fecha de expedición', 'dateFormat' => 'DMY', 'class' => 'css-date_area', 'minYear' => date('Y') - 100, 'maxYear' => date('Y'), 'separator' => '/'));
-echo $this->Form->input('code', array('label' => 'Codigo(*)'));
+echo $this->Form->input('code', array('label' => 'Cite No(*)'));
 echo $this->Form->input('description', array('label' => 'Descripción'));
 echo $this->Form->input('content_text', array('label' => 'Contenido', 'rows' => '3'));
 echo $this->Form->input('tags', array('multiple' => 'checkbox', 'options' => $GLOBAL_TAGS, 'selected' => $selected));
