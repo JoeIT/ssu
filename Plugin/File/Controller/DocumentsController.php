@@ -52,18 +52,28 @@ class DocumentsController extends FileAppController
             $this->request->data['Document']['employee_id'] = $this->Session->read('currentEmployeeID');
 			//print_r($this->request->data['Document']);
 
-            //mkdir('d:/New');
+            $rootDir = Router::url('/', true);
 
-            $physicalFile = fopen('d:/New/newImage.jpg' ,'w');
+            //echo '<br/>Dir: ' . $rootDir;
 
-            fwrite($physicalFile, base64_decode($this->request->data['Document']['file_name']) );
+            //$base_64 = $this->request->data['Document']['file_base64'];
+            //$f = finfo_open();
+            //echo '<br/>Size: ' . finfo_buffer($f, $base_64, FILEINFO_MIME_TYPE);
+
+            //- Comprobar q la extension del archivo sea la permitida
+            //- Comprobar que el tamaño del archivo sea el correcto
+
+            $physicalFile = fopen($rootDir . 'newImage.pdf' ,'w');
+
+            fwrite($physicalFile, base64_decode($this->request->data['Document']['file_base64']));
             fclose( $physicalFile );
-
-            //echo '<br/>' . Router::url('/', true);
 
             $this->Document->set( $this->request->data['Document'] );
             if($this->Document->validates())
             {
+                //echo '<br/>' . Router::url('/', true);
+                //mkdir('d:/New');
+                //- Guardar archivo en directorio con nombres -> codigo de empleado -> tag
                 /*
                 if($this->Document->save($this->request->data))
                 {

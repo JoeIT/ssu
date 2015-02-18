@@ -2,13 +2,19 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
+    $('.docs_submit_button').click(function(){
+        //alert('Hello button');
+    });
+
     $('#DocumentDigitalFile').change(function(event){
+        $('#DocumentFileName').val( $('#DocumentDigitalFile').val() );
+
         /*
         var tmppath = URL.createObjectURL( event.target.files[0] );
         //$("img").fadeIn("fast").attr( 'src', URL.createObjectURL( event.target.files[0]) );
         $("#DocumentFileName").val( tmppath );
         */
-        $('#DocumentDigitalFile').val();
+        //$('#DocumentDigitalFile').val();
         //--------------------------------
         var files = event.target.files;
         var file = files[0];
@@ -19,7 +25,7 @@ $(document).ready(function(){
 
             reader.onload = function(readerEvt)
             {
-                $("#DocumentFileName").val( btoa( readerEvt.target.result ) );
+                $("#DocumentFileBase64").val( btoa( readerEvt.target.result ) );
             };
 
             reader.readAsBinaryString(file);
@@ -40,8 +46,9 @@ $(document).ready(function(){
 echo $this->Form->create('Document', array('type' => 'file'));
 echo $this->Form->input('name', array('label' => 'Documento(*)'));
 echo $this->Form->input('description', array('label' => 'Descripción'));
-echo $this->Form->input('file_name', array('type' => 'hidden', 'label' => 'FILE NAME'));
-echo $this->Form->input('digital_file', array('type' => 'file', 'label' => 'Documento digital'));
+echo $this->Form->input('file_base64', array('type' => 'hidden'));
+echo $this->Form->input('file_name', array('type' => 'hidden'));
+echo $this->Form->input('digital_file', array('type' => 'file', 'label' => 'Documento digital', 'class' => 'css-file_chooser'));
 
 //echo '<input type="file" name="fileToUpload" id="fileToUpload">';
 echo $this->Form->input('tags', array('multiple' => 'checkbox', 'options' => $GLOBAL_TAGS, 'selected' => $selected));
@@ -53,7 +60,8 @@ echo $this->Form->input('id', array('type' => 'hidden'));
 
 echo $this->Js->submit('GUARDAR', array(
     //Create ajax submit button
-    'update' => '#dialog_content'
+    'update' => '#dialog_content',
+    'class' => 'docs_submit_button'
 ));
 
 if($saved == true)

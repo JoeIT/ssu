@@ -32,6 +32,7 @@ class Document extends FileAppModel
                 'allowEmpty' => TRUE,
             ),
             'mimeType' => array(
+                //'rule' => array('mimeType', array('image/gif','image/png','image/jpg','image/jpeg')),
                 'rule' => array('mimeType', array('image/gif','image/png','image/jpg','image/jpeg')),
                 'message' => 'Archivo no permitido.',
                 'required' => FALSE,
@@ -45,7 +46,6 @@ class Document extends FileAppModel
                 'last' => TRUE,
             )
         )
-
     );
 
     public function findByEmployee($employeeId)
