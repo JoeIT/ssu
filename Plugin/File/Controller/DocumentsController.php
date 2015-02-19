@@ -75,7 +75,6 @@ class DocumentsController extends FileAppController
                 fwrite($physicalFile, base64_decode($this->request->data['Document']['file_base64']));
                 fclose( $physicalFile );
 
-                /*
                 if($this->Document->save($this->request->data))
                 {
                     // Deleting all document tags
@@ -99,7 +98,7 @@ class DocumentsController extends FileAppController
                 }
                 else
                     $this->set('errorMessage', 'NOTA: Ocurrió un problema al guardar la información!!');
-                */
+
             }
             else
             {
