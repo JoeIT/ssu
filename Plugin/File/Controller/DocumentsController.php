@@ -50,11 +50,7 @@ class DocumentsController extends FileAppController
                 $this->Document->create();
 
             $this->request->data['Document']['employee_id'] = $this->Session->read('currentEmployeeID');
-			//print_r($this->request->data['Document']);
-
-            $rootDir = Router::url('/', true);
-
-            //echo '<br/>Dir: ' . $rootDir;
+            //print_r($this->request->data['Document']);
 
             //$base_64 = $this->request->data['Document']['file_base64'];
             //$f = finfo_open();
@@ -63,17 +59,22 @@ class DocumentsController extends FileAppController
             //- Comprobar q la extension del archivo sea la permitida
             //- Comprobar que el tamaño del archivo sea el correcto
 
-            $physicalFile = fopen($rootDir . 'newImage.pdf' ,'w');
-
-            fwrite($physicalFile, base64_decode($this->request->data['Document']['file_base64']));
-            fclose( $physicalFile );
-
             $this->Document->set( $this->request->data['Document'] );
             if($this->Document->validates())
             {
-                //echo '<br/>' . Router::url('/', true);
-                //mkdir('d:/New');
-                //- Guardar archivo en directorio con nombres -> codigo de empleado -> tag
+                $codEmployee = 'abc-123';
+                $fileName = 'nombre_file.pdf';
+                $folderDocType = 'DOCS';
+
+                //- Guardar archivo en directorio con nombres -> codigo de empleado -> document_type
+                $this->request->data['Document']['digital_file'] = $codEmployee . DS . $folderDocType . DS . $fileName;
+                $folder_url = $this->DIGITAL_DOCS_PATH . DS . $codEmployee . DS . $folderDocType;
+                $dir = new Folder($folder_url, true);
+
+                $physicalFile = fopen($folder_url . DS . $fileName, 'w');
+                fwrite($physicalFile, base64_decode($this->request->data['Document']['file_base64']));
+                fclose( $physicalFile );
+
                 /*
                 if($this->Document->save($this->request->data))
                 {

@@ -3,7 +3,7 @@ App::uses('AdminController', 'Controller');
 
 class FileAppController extends AdminController {
 
-    public $FILES_PATH_ROOT = 'd:/FILES/';
+    public $DIGITAL_DOCS_PATH = 'Digital_Docs';
 
     public $GLOBAL_TAGS = array(
         'records' => 'Antecedentes y títulos',
@@ -22,4 +22,6 @@ class FileAppController extends AdminController {
         'personal_requirements' => 'Req. de personal',
         'documents' => 'Doc. personal'
     );
+
+    //App::uses('Folder', 'Utility');
 }

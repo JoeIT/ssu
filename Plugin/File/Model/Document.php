@@ -23,7 +23,8 @@ class Document extends FileAppModel
         'description' => array(
             'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
             'allowEmpty' => true
-        ),
+        )
+    /*    ,
         'digital_file' => array(
             'uploadError' => array(
                 'rule' => 'uploadError',
@@ -45,7 +46,7 @@ class Document extends FileAppModel
                 'allowEmpty' => TRUE,
                 'last' => TRUE,
             )
-        )
+        )*/
     );
 
     public function findByEmployee($employeeId)

@@ -96,6 +96,8 @@ Configure::write('Dispatcher.filters', array(
  * Configures default file logging options
  */
 App::uses('CakeLog', 'Log');
+App::uses('Folder', 'Utility');
+
 CakeLog::config('debug', array(
 	'engine' => 'FileLog',
 	'scopes' => array('notice', 'info', 'debug'),

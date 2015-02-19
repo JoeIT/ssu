@@ -23,6 +23,12 @@ echo $this->Html->link(
 -------
 // Root url
 echo $this->webroot
+// http url on Controller
+$rootDir = Router::url('/', true);
+// Root
+WWW_ROOT
+// Separator
+DS
 
 
 JQUERY

@@ -94,6 +94,7 @@ PEDIDO DE PERSONAL
 ______________________
 http://www.jamesfairhurst.co.uk/posts/view/cakephp_contact_form_with_file_uploads
 
+http://almsaeedstudio.com/preview
 ______________________
 - Hacer actualizar la lista de algun documento, cuando se agrega el mismo
-- 
+- Validar los documentos subidos, su extension y tamaño.
