@@ -41,6 +41,9 @@ class Employee extends FileAppModel
 		'maternal_surname' => array(
 			'rule' => 'alphaNumeric'
 		),
+        'code' => array(
+            'rule' => 'alphaNumeric'
+        ),
 		'born_date' => array(
 			'rule' => 'date',
             'allowEmpty' => false
@@ -52,7 +55,8 @@ class Employee extends FileAppModel
             'rule' => 'alphaNumeric'
         ),
         'ci' => array(
-            'rule' => array('minLength' => '5')
+            'rule' => array('minLength', '5'),
+            'message' => 'Este campo debe de tener al menos 5 caracteres'
         ),
         'gender' => array(
             'rule' => 'alphaNumeric',
@@ -66,7 +70,8 @@ class Employee extends FileAppModel
             'rule' => array('custom', '/^[a-z0-9 .\-]+$/i')
         ),
         'phone' => array(
-            'rule' => array('minLength' => '8')
+            'rule' => array('minLength', '7'),
+            'message' => 'Este campo debe de tener al menos 7 caracteres'
         )
 	);
 }

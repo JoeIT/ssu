@@ -6,6 +6,14 @@
 
         $('.panel_to_toggle').hide();
 
+        $('.code_build_name').keyup(function(){
+            buildCode();
+        });
+
+        $('.code_build_date').change(function(){
+            buildCode();
+        });
+
         $(document).on('click', '#crud_action', function () {
             var title = '';
             var action = $(this).attr('action');
@@ -230,6 +238,19 @@
             if( $('#panel_' + tag).is(':hidden') )
                 $('#panel_' + tag).slideToggle();
         }
+    }
+
+    function buildCode()
+    {
+        var name = $('#EmployeeName').val().toUpperCase().substring(0, 1);
+        var paternal = $('#EmployeePaternalSurname').val().toUpperCase().substring(0, 1);
+        var maternal = $('#EmployeeMaternalSurname').val().toUpperCase().substring(0, 1);
+
+        var day = $('#EmployeeBornDateDay').val();
+        var month = $('#EmployeeBornDateMonth').val();
+        var year = $('#EmployeeBornDateYear').val().substring(2, 4);
+
+        $('#code_label').html( paternal + maternal + name + '-' + year + '' + month + '' + day );
     }
 
 </script>
