@@ -250,7 +250,7 @@
         var month = $('#EmployeeBornDateMonth').val();
         var year = $('#EmployeeBornDateYear').val().substring(2, 4);
 
-        $('#code_label').html( paternal + maternal + name + '-' + year + '' + month + '' + day );
+        $('#code_label').html( paternal + maternal + name + year + '' + month + '' + day );
     }
 
 </script>

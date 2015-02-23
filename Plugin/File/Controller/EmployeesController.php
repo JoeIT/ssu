@@ -29,13 +29,30 @@ class EmployeesController extends FileAppController {
         if($this->request->is(array('post', 'put')))
 		{
 			$this->Employee->id = $id;
+            //print_r($this->request->data['Employee']);
+
+            // Rebuilding the code
+            $name = substr($this->request->data['Employee']['name'], 0, 1);
+            $paternal = substr($this->request->data['Employee']['paternal_surname'], 0, 1);
+            $maternal = substr($this->request->data['Employee']['maternal_surname'], 0, 1);
+            $year = substr($this->request->data['Employee']['born_date']['year'], 2, 2);
+
+            $this->request->data['Employee']['code'] = $paternal
+                                                    . $maternal
+                                                    . $name
+                                                    . $year
+                                                    . $this->request->data['Employee']['born_date']['month']
+                                                    . $this->request->data['Employee']['born_date']['day'];
+
+            //echo 'DATA: ' . $this->request->data['Employee']['code'];
+            //$this->Employee->set( $this->request->data['Employee'] );
 
             if($this->Employee->validates())
             {
                 if($this->Employee->save($this->request->data))
                 {
                     $this->Session->setFlash(__('La información guardada exitosamente.'));
-                    return $this->redirect(array('action' => 'index'));
+                    //return $this->redirect(array('action' => 'index'));
                 }
 
                 $this->Session->setFlash(__('No se pudo guardar la información del empleado.'));
@@ -44,8 +61,6 @@ class EmployeesController extends FileAppController {
 		
 		if(!$this->request->data['Employee'])
 			$this->request->data  =  $employee;
-
-
 		
 		//$userinfo = $this->Userinfo->find('first', array('conditions' => array('USERID' => $id)));
 		//$this->set('userinfoView', $userinfo['Userinfo']);
