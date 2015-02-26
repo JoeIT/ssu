@@ -22,6 +22,7 @@ class PersonalRequirementsController extends FileAppController
     {
         $this->layout = false;
         $this->loadModel('File.DocumentTag');
+        $this->loadModel('File.Employee');
 
         if($id != null)
             $personalRequirement = $this->PersonalRequirement->findById($id);
@@ -49,6 +50,8 @@ class PersonalRequirementsController extends FileAppController
                 $this->PersonalRequirement->create();
 
             $this->request->data['PersonalRequirement']['employee_id'] = $this->Session->read('currentEmployeeID');
+            $fileName = '1.pdf';
+            $this->request->data['PersonalRequirement']['digital_file'] = $fileName;
 
             $this->PersonalRequirement->set($this->request->data);
             if($this->PersonalRequirement->validates())
@@ -70,6 +73,19 @@ class PersonalRequirementsController extends FileAppController
 
                         $this->DocumentTag->save($data);
                     }
+
+                    $employee = $this->Employee->findById($this->Session->read('currentEmployeeID'));
+                    $folderDocType = 'PERSONAL_REQUIREMENTS';
+
+                    //- Guardar archivo en directorio con nombres -> codigo de empleado -> document_type
+                    $this->request->data['PersonalRequirement']['digital_file'] = $employee['Employee']['code'] . DS . $folderDocType . DS . $fileName;
+                    $folder_url = $this->DIGITAL_DOCS_PATH . DS . $employee['Employee']['code'] . DS . $folderDocType;
+                    $dir = new Folder($folder_url, true);
+
+                    $physicalFile = fopen($folder_url . DS . $fileName, 'w');
+                    fwrite($physicalFile, base64_decode($this->request->data['PersonalRequirement']['file_base64']));
+                    fclose( $physicalFile );
+
                     $this->set('saved', true);
                 }
                 else

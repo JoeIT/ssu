@@ -22,6 +22,4 @@ class FileAppController extends AdminController {
         'personal_requirements' => 'Req. de personal',
         'documents' => 'Doc. personal'
     );
-
-    //App::uses('Folder', 'Utility');
 }

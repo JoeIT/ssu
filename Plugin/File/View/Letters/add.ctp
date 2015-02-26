@@ -6,7 +6,8 @@ echo $this->Form->input('addressee', array('label' => 'Destinatario(*)'));
 echo $this->Form->input('subject', array('label' => 'Asunto(*)'));
 echo $this->Form->input('content_text', array('label' => 'Contenido', 'rows' => '3'));
 
-//echo $this->Form->input('digital_file', array('type' => 'file', 'label' => 'Copia digital'));
+echo $this->Form->input('file_base64', array('type' => 'hidden'));
+echo $this->Form->input('digital_file', array('type' => 'file', 'label' => 'Documento digital', 'class' => 'css-file_chooser'));
 
 //$selected = array('records', 'contracts');
 //echo $form->input('Model.name', array('multiple' => 'checkbox', 'options' => $options, 'selected' => $selected));

@@ -47,7 +47,6 @@ echo $this->Form->create('Document', array('type' => 'file'));
 echo $this->Form->input('name', array('label' => 'Documento(*)'));
 echo $this->Form->input('description', array('label' => 'Descripción'));
 echo $this->Form->input('file_base64', array('type' => 'hidden'));
-echo $this->Form->input('file_name', array('type' => 'hidden'));
 echo $this->Form->input('digital_file', array('type' => 'file', 'label' => 'Documento digital', 'class' => 'css-file_chooser'));
 
 //echo '<input type="file" name="fileToUpload" id="fileToUpload">';

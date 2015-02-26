@@ -6,6 +6,10 @@
 
         $('.panel_to_toggle').hide();
 
+        $('#profile_image').click(function(){
+
+        });
+
         $('.code_build_name').keyup(function(){
             buildCode();
         });
@@ -131,7 +135,7 @@
     function loadDialogPanel( url, title )
     {
         // http://preloaders.net/
-        $('#dialog_content').html('<?php echo $this->Html->image('File.loading.gif', array("alt" => "Cargando...", "class" => "center")); ?>');
+        $('#dialog_content').html('<?php echo $this->Html->image('File.loading.gif', array("alt" => "Cargando...", "class" => "css-img_center")); ?>');
         $('#dialog_content').dialog('option', 'title', title);
         //$.ajax({async:false});
         $('#dialog_content').load( url + '?' + $.now() ).dialog('open');
@@ -263,9 +267,7 @@
 		<div class=''>
 			<h2>Detalles</h2>
 		</div>
-		<?php echo $this->Html->image('File.Test_no_avatar.jpg', array("alt" => "Fotografía", "class" => "center")); ?>
-        </br>
-        </br>
+
 		<?php echo $this->fetch('employee_info'); ?>
 	</div>
 	<!-- OTHER SECTION -->

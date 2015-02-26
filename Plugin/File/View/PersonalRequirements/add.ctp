@@ -34,6 +34,8 @@ echo $this->Form->input('approved_by', array('label' => 'Aprobado por'));
 ?>
 <hr>
 <?php
+echo $this->Form->input('file_base64', array('type' => 'hidden'));
+echo $this->Form->input('digital_file', array('type' => 'file', 'label' => 'Documento digital', 'class' => 'css-file_chooser'));
 echo $this->Form->input('tags', array('multiple' => 'checkbox', 'options' => $GLOBAL_TAGS, 'selected' => $selected));
 
 echo $this->Form->input('id', array('type' => 'hidden'));

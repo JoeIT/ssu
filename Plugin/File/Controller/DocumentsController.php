@@ -23,6 +23,7 @@ class DocumentsController extends FileAppController
     {
         $this->layout = false;
         $this->loadModel('File.DocumentTag');
+        $this->loadModel('File.Employee');
 
         if($id != null)
             $document = $this->Document->findById($id);
@@ -49,7 +50,10 @@ class DocumentsController extends FileAppController
             else
                 $this->Document->create();
 
+            $fileName = '1.pdf';
+
             $this->request->data['Document']['employee_id'] = $this->Session->read('currentEmployeeID');
+            $this->request->data['Document']['digital_file'] = $fileName;
             //print_r($this->request->data['Document']);
 
             //$base_64 = $this->request->data['Document']['file_base64'];
@@ -62,19 +66,6 @@ class DocumentsController extends FileAppController
             $this->Document->set( $this->request->data['Document'] );
             if($this->Document->validates())
             {
-                $codEmployee = 'abc-123';
-                $fileName = 'nombre_file.pdf';
-                $folderDocType = 'DOCS';
-
-                //- Guardar archivo en directorio con nombres -> codigo de empleado -> document_type
-                $this->request->data['Document']['digital_file'] = $codEmployee . DS . $folderDocType . DS . $fileName;
-                $folder_url = $this->DIGITAL_DOCS_PATH . DS . $codEmployee . DS . $folderDocType;
-                $dir = new Folder($folder_url, true);
-
-                $physicalFile = fopen($folder_url . DS . $fileName, 'w');
-                fwrite($physicalFile, base64_decode($this->request->data['Document']['file_base64']));
-                fclose( $physicalFile );
-
                 if($this->Document->save($this->request->data))
                 {
                     // Deleting all document tags
@@ -93,7 +84,20 @@ class DocumentsController extends FileAppController
                         $this->DocumentTag->save($data);
                     }
 
-                    //$this->Session->setFlash('Carta guardada!!');
+                    $employee = $this->Employee->findById($this->Session->read('currentEmployeeID'));
+                    $folderDocType = 'DOCS';
+
+                    //- Guardar archivo en directorio con nombres -> codigo de empleado -> document_type
+                    $this->request->data['Document']['digital_file'] = $employee['Employee']['code'] . DS . $folderDocType . DS . $fileName;
+                    $folder_url = $this->DIGITAL_DOCS_PATH . DS . $employee['Employee']['code'] . DS . $folderDocType;
+                    //$folder_url = '/useraclSQL/file/img/' . DS . $employee['Employee']['code'] . DS . $folderDocType;
+                    $dir = new Folder($folder_url, true);
+
+                    $physicalFile = fopen($folder_url . DS . $fileName, 'w');
+                    fwrite($physicalFile, base64_decode($this->request->data['Document']['file_base64']));
+                    fclose( $physicalFile );
+
+                    //$this->Session->setFlash('Documento guardado!!');
                     $this->set('saved', true);
                 }
                 else

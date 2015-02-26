@@ -23,6 +23,7 @@ class LettersController extends FileAppController
     {
         $this->layout = false;
         $this->loadModel('File.DocumentTag');
+        $this->loadModel('File.Employee');
 
         if($id != null)
             $letter = $this->Letter->findById($id);
@@ -50,6 +51,8 @@ class LettersController extends FileAppController
                 $this->Letter->create();
 
             $this->request->data['Letter']['employee_id'] = $this->Session->read('currentEmployeeID');
+            $fileName = '1.pdf';
+            $this->request->data['Letter']['digital_file'] = $fileName;
 			//$this->request->data['Letter']['registred_datetime'] = '';
 
             //echo "<br/>digital_file: " . $this->request->data['Letter']['digital_file'];
@@ -74,6 +77,18 @@ class LettersController extends FileAppController
 
                         $this->DocumentTag->save($data);
                     }
+
+                    $employee = $this->Employee->findById($this->Session->read('currentEmployeeID'));
+                    $folderDocType = 'LETTERS';
+
+                    //- Guardar archivo en directorio con nombres -> codigo de empleado -> document_type
+                    $this->request->data['Letter']['digital_file'] = $employee['Employee']['code'] . DS . $folderDocType . DS . $fileName;
+                    $folder_url = $this->DIGITAL_DOCS_PATH . DS . $employee['Employee']['code'] . DS . $folderDocType;
+                    $dir = new Folder($folder_url, true);
+
+                    $physicalFile = fopen($folder_url . DS . $fileName, 'w');
+                    fwrite($physicalFile, base64_decode($this->request->data['Letter']['file_base64']));
+                    fclose( $physicalFile );
 
                     //$this->Session->setFlash('Carta guardada!!');
                     $this->set('saved', true);

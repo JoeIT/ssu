@@ -5,6 +5,8 @@ echo $this->Form->input('expedition_date', array('label' => 'Fecha de expedició
 echo $this->Form->input('code', array('label' => 'Cite No(*)'));
 echo $this->Form->input('description', array('label' => 'Descripción'));
 echo $this->Form->input('content_text', array('label' => 'Contenido', 'rows' => '3'));
+echo $this->Form->input('file_base64', array('type' => 'hidden'));
+echo $this->Form->input('digital_file', array('type' => 'file', 'label' => 'Documento digital', 'class' => 'css-file_chooser'));
 echo $this->Form->input('tags', array('multiple' => 'checkbox', 'options' => $GLOBAL_TAGS, 'selected' => $selected));
 
 echo $this->Form->input('id', array('type' => 'hidden'));

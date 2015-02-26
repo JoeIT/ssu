@@ -36,10 +36,12 @@ class Employee extends FileAppModel
             'allowEmpty' => false
         ),
         'paternal_surname' => array(
-		    'rule' => 'alphaNumeric'
+		    'rule' => 'alphaNumeric',
+            'allowEmpty' => false
 		),
 		'maternal_surname' => array(
-			'rule' => 'alphaNumeric'
+			'rule' => 'alphaNumeric',
+            'allowEmpty' => false
 		),
         'code' => array(
             'rule' => 'alphaNumeric'
@@ -49,14 +51,15 @@ class Employee extends FileAppModel
             'allowEmpty' => false
 		),
         'born_country' => array(
-            'rule' => 'alphaNumeric'
+            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i')
         ),
         'born_city' => array(
-            'rule' => 'alphaNumeric'
+            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i')
         ),
         'ci' => array(
             'rule' => array('minLength', '5'),
-            'message' => 'Este campo debe de tener al menos 5 caracteres'
+            'message' => 'Este campo debe de tener al menos 5 caracteres',
+            'allowEmpty' => false
         ),
         'gender' => array(
             'rule' => 'alphaNumeric',
@@ -67,11 +70,13 @@ class Employee extends FileAppModel
             'allowEmpty' => false
         ),
         'address' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i')
+            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'allowEmpty' => true
         ),
         'phone' => array(
             'rule' => array('minLength', '7'),
-            'message' => 'Este campo debe de tener al menos 7 caracteres'
+            'message' => 'Este campo debe de tener al menos 7 caracteres',
+            'allowEmpty' => true
         )
 	);
 }

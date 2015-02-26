@@ -32,6 +32,7 @@ class MemosController extends FileAppController
     {
         $this->layout = false;
         $this->loadModel('File.DocumentTag');
+        $this->loadModel('File.Employee');
 
         if($id != null)
             $memo = $this->Memo->findById($id);
@@ -59,6 +60,8 @@ class MemosController extends FileAppController
                 $this->Memo->create();
 
             $this->request->data['Memo']['employee_id'] = $this->Session->read('currentEmployeeID');
+            $fileName = '1.pdf';
+            $this->request->data['Memo']['digital_file'] = $fileName;
 
             $this->Memo->set($this->request->data);
             if($this->Memo->validates())
@@ -80,6 +83,19 @@ class MemosController extends FileAppController
 
                         $this->DocumentTag->save($data);
                     }
+
+                    $employee = $this->Employee->findById($this->Session->read('currentEmployeeID'));
+                    $folderDocType = 'MEMOS';
+
+                    //- Guardar archivo en directorio con nombres -> codigo de empleado -> document_type
+                    $this->request->data['Memo']['digital_file'] = $employee['Employee']['code'] . DS . $folderDocType . DS . $fileName;
+                    $folder_url = $this->DIGITAL_DOCS_PATH . DS . $employee['Employee']['code'] . DS . $folderDocType;
+                    $dir = new Folder($folder_url, true);
+
+                    $physicalFile = fopen($folder_url . DS . $fileName, 'w');
+                    fwrite($physicalFile, base64_decode($this->request->data['Memo']['file_base64']));
+                    fclose( $physicalFile );
+
                     $this->set('saved', true);
                 }
                 else

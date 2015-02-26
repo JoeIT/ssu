@@ -25,6 +25,7 @@ class CertificatesController extends FileAppController
     {
         $this->layout = false;
 		$this->loadModel('File.DocumentTag');
+        $this->loadModel('File.Employee');
 
         if($id != null)
             $certificate = $this->Certificate->findById($id);
@@ -52,6 +53,8 @@ class CertificatesController extends FileAppController
                 $this->Certificate->create();
 
             $this->request->data['Certificate']['employee_id'] = $this->Session->read('currentEmployeeID');
+            $fileName = '1.pdf';
+            $this->request->data['Certificate']['digital_file'] = $fileName;
 
             $this->Certificate->set($this->request->data);
             if($this->Certificate->validates())
@@ -72,7 +75,20 @@ class CertificatesController extends FileAppController
                         ));
 
                         $this->DocumentTag->save($data);
-                    }					
+                    }
+
+                    $employee = $this->Employee->findById($this->Session->read('currentEmployeeID'));
+                    $folderDocType = 'CERTIFICATES';
+
+                    //- Guardar archivo en directorio con nombres -> codigo de empleado -> document_type
+                    $this->request->data['Certificate']['digital_file'] = $employee['Employee']['code'] . DS . $folderDocType . DS . $fileName;
+                    $folder_url = $this->DIGITAL_DOCS_PATH . DS . $employee['Employee']['code'] . DS . $folderDocType;
+                    $dir = new Folder($folder_url, true);
+
+                    $physicalFile = fopen($folder_url . DS . $fileName, 'w');
+                    fwrite($physicalFile, base64_decode($this->request->data['Certificate']['file_base64']));
+                    fclose( $physicalFile );
+
                     $this->set('saved', true);
 				}
                 else

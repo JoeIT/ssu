@@ -9,6 +9,11 @@ echo $this->Form->input('description', array('label' => 'Descripción'));
 echo $this->Form->input('content_text', array('label' => 'Contenido', 'rows' => '2'));
 echo $this->Form->input('id', array('type' => 'hidden'));
 
+echo $this->Form->input('file_base64', array('type' => 'hidden'));
+echo $this->Form->input('digital_file', array('type' => 'file', 'label' => 'Documento digital', 'class' => 'css-file_chooser'));
+
+echo $this->Form->input('tags', array('multiple' => 'checkbox', 'options' => $GLOBAL_TAGS, 'selected' => $selected));
+
 echo $this->Js->submit('GUARDAR', array(
     //Create ajax submit button
     'update' => '#dialog_content'

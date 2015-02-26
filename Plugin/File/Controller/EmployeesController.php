@@ -17,6 +17,10 @@ class EmployeesController extends FileAppController {
 	public function edit($id = null) {
         $this->set('GLOBAL_DOCS', $this->GLOBAL_DOCS);
         $this->set('GLOBAL_TAGS', $this->GLOBAL_TAGS);
+        $this->set('DIGITAL_DOCS_PATH', $this->DIGITAL_DOCS_PATH);
+
+
+        //echo "PATH: " . IMAGE_HTTP_PATH;
 
         if(!$id) throw  new  NotFoundException(__('Id de empleado vacio'));
 		
@@ -37,12 +41,19 @@ class EmployeesController extends FileAppController {
             $maternal = substr($this->request->data['Employee']['maternal_surname'], 0, 1);
             $year = substr($this->request->data['Employee']['born_date']['year'], 2, 2);
 
-            $this->request->data['Employee']['code'] = $paternal
+            $this->request->data['Employee']['code'] = strtoupper($paternal
                                                     . $maternal
                                                     . $name
                                                     . $year
                                                     . $this->request->data['Employee']['born_date']['month']
-                                                    . $this->request->data['Employee']['born_date']['day'];
+                                                    . $this->request->data['Employee']['born_date']['day']);
+
+            $this->request->data['Employee']['name'] = strtoupper($this->request->data['Employee']['name']);
+            $this->request->data['Employee']['paternal_surname'] = strtoupper($this->request->data['Employee']['paternal_surname']);
+            $this->request->data['Employee']['maternal_surname'] = strtoupper($this->request->data['Employee']['maternal_surname']);
+            $this->request->data['Employee']['ci'] = strtoupper($this->request->data['Employee']['ci']);
+
+            print_r( $this->request->data['Employee'] );
 
             //echo 'DATA: ' . $this->request->data['Employee']['code'];
             //$this->Employee->set( $this->request->data['Employee'] );
