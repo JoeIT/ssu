@@ -4,38 +4,13 @@ $this->start('employee_info');
 
 echo $this->Form->create('Employee', array('type' => 'file'));
 
-$photo = 'File.Test_no_avatar.jpg';
-
-$folder = new Folder(ROOT);
-echo 'TEST: ' . $folder->inPath('File');
-//echo 'TEST: ' . $folder->path;
-
-
-$file_path = $DIGITAL_DOCS_PATH .  DS . $this->request->data['Employee']['code'] . DS . 'profile_photo.jpg';
-
-//'/useraclSQL/file/img/Test_no_avatar.jpg'
-
-//$photo = $file_path;
-//echo "</br>FILE: $file_path";
-
-/*
-echo '</br>PATH: ' . IMAGES . 'algo.jpg';
-echo '</br>PATH: ' . TMP;
-echo '</br>PATH: ' . WEBROOT_DIR;
-echo '</br>PATH: ' . ROOT;
-echo '</br>PATH: ' . $this->webroot;
-echo '</br>PATH: ' . Router::fullbaseUrl();
-echo '</br>PATH: ' . $html->webroot;
-
-if(!file_exists($file_path)) {
-    $photo = $file_path;
-}
-else{
-    echo "</br>NO FOTOOOO!!!";
-}
-*/
+$photo = 'File.default/Test_no_avatar.jpg';
+$file_path =  $this->request->data['Employee']['code'] . '/profile_photo.jpg';
+if(file_exists($DIGITAL_DOCS_PATH . $file_path))
+    $photo = 'File.PERSONAL/'. $file_path;
 
 echo $this->Html->image($photo, array("alt" => "Fotografía perfil", "id" => "profile_image", "class" => "css-img_center"));
+
 echo '</br></br>';
 
 echo $this->Form->file('profile_photo', array('label' => 'Fotografía'));

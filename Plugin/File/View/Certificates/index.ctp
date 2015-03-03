@@ -6,6 +6,7 @@
         <th>TITULO</th>
         <th>INSTITUCION</th>
         <th>UBICACION</th>
+        <th>DIGITAL</th>
         <th></th>
     </tr>
     <?php
@@ -18,6 +19,14 @@
             <td><?php echo $certificate['Certificate']['titulation_grade'];  ?></td>
             <td><?php echo $certificate['Certificate']['institution'];  ?></td>
             <td><?php echo $certificate['Certificate']['location'];  ?></td>
+            <td>
+                <?php
+                if( !empty($certificate['Certificate']['digital_file']) && $certificate['Certificate']['digital_file'] != null ){ ?>
+                    <a href="<?php
+                    echo '/useraclSQL/file/img/PERSONAL/' . $certificate['Employee']['code'] . '/CERTIFICATES/' .$certificate['Certificate']['digital_file'];
+                    ?>" target="_blank">Si</a>
+                <?php } ?>
+            </td>
             <td class="css-td_perfect_fit">
                 <a href='javascript:void(0)'
                    id="crud_action"

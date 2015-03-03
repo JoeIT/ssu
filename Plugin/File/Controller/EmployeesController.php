@@ -19,6 +19,9 @@ class EmployeesController extends FileAppController {
         $this->set('GLOBAL_TAGS', $this->GLOBAL_TAGS);
         $this->set('DIGITAL_DOCS_PATH', $this->DIGITAL_DOCS_PATH);
 
+        //echo 'DIR: ' . WWW_ROOT . 'documents' . DS . 'archivo.txt';
+        //echo 'DIR: ' . Router::url('File', true) . 'documents' . DS . 'archivo.txt';
+        //echo 'DIR: ' . $this->webroot . 'File/PCI123/' . 'archivo.txt';
 
         //echo "PATH: " . IMAGE_HTTP_PATH;
 
@@ -53,15 +56,17 @@ class EmployeesController extends FileAppController {
             $this->request->data['Employee']['maternal_surname'] = strtoupper($this->request->data['Employee']['maternal_surname']);
             $this->request->data['Employee']['ci'] = strtoupper($this->request->data['Employee']['ci']);
 
-            print_r( $this->request->data['Employee'] );
-
-            //echo 'DATA: ' . $this->request->data['Employee']['code'];
             //$this->Employee->set( $this->request->data['Employee'] );
-
             if($this->Employee->validates())
             {
                 if($this->Employee->save($this->request->data))
                 {
+                    $dir = new Folder($this->DIGITAL_DOCS_PATH . DS . $employee['Employee']['code'], true);
+                    move_uploaded_file(
+                        $this->data['Employee']['profile_photo']['tmp_name'],
+                        $this->DIGITAL_DOCS_PATH . $this->request->data['Employee']['code'] . '/profile_photo.jpg'
+                    );
+
                     $this->Session->setFlash(__('La información guardada exitosamente.'));
                     //return $this->redirect(array('action' => 'index'));
                 }

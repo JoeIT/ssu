@@ -3,7 +3,8 @@ App::uses('AdminController', 'Controller');
 
 class FileAppController extends AdminController {
 
-    public $DIGITAL_DOCS_PATH = 'Digital_Docs';
+    //public $DIGITAL_DOCS_PATH = 'Digital_Docs';
+    public $DIGITAL_DOCS_PATH = 'C:/Aplicaciones/useraclSQL/Plugin/File/webroot/img/PERSONAL/';
 
     public $GLOBAL_TAGS = array(
         'records' => 'Antecedentes y títulos',

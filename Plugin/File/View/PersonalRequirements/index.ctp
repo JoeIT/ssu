@@ -9,6 +9,7 @@
         <th>SUSTITUYE A</th>
         <th>SOLICITANTE</th>
         <th>APROBADO</th>
+        <th>DIGITAL</th>
         <th></th>
     </tr>
     <?php
@@ -24,6 +25,14 @@
             <td><?php echo $personalRequirement['PersonalRequirement']['supersede']; ?></td>
             <td><?php echo $personalRequirement['PersonalRequirement']['petitioner']; ?></td>
             <td><?php echo $personalRequirement['PersonalRequirement']['approved_by']; ?></td>
+            <td>
+                <?php
+                if( !empty($personalRequirement['PersonalRequirement']['digital_file']) && $personalRequirement['PersonalRequirement']['digital_file'] != null ){ ?>
+                    <a href="<?php
+                    echo '/useraclSQL/file/img/PERSONAL/' . $personalRequirement['Employee']['code'] . '/PERSONAL_REQUIREMENTS/' .$personalRequirement['PersonalRequirement']['digital_file'];
+                    ?>" target="_blank">Si</a>
+                <?php } ?>
+            </td>
             <td class="css-td_perfect_fit">
                 <a href='javascript:void(0)'
                    id="crud_action"

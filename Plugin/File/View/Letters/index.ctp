@@ -6,6 +6,7 @@
         <th>REMITENTE</th>
         <th>DESTINATARIO</th>
         <th>ASUNTO</th>
+        <th>DIGITAL</th>
         <th></th>
     </tr>
     <?php
@@ -18,6 +19,14 @@
             <td><?php echo $letter['Employee']['name']; ?></td>
             <td><?php echo $letter['Letter']['addressee']; ?></td>
             <td><?php echo $letter['Letter']['subject']; ?></td>
+            <td>
+                <?php
+                if( !empty($letter['Letter']['digital_file']) && $letter['Letter']['digital_file'] != null ){ ?>
+                    <a href="<?php
+                    echo '/useraclSQL/file/img/PERSONAL/' . $letter['Employee']['code'] . '/LETTERS/' .$letter['Letter']['digital_file'];
+                    ?>" target="_blank">Si</a>
+                <?php } ?>
+            </td>
             <td class="css-td_perfect_fit">
                 <a href='javascript:void(0)'
                    id="crud_action"

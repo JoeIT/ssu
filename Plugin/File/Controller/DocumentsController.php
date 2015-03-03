@@ -102,7 +102,6 @@ class DocumentsController extends FileAppController
                 }
                 else
                     $this->set('errorMessage', 'NOTA: Ocurrió un problema al guardar la información!!');
-
             }
             else
             {

@@ -4,6 +4,7 @@
     <tr>
         <th>DOCUMENTO</th>
         <th>DESCRIPCION</th>
+        <th>DIGITAL</th>
         <th></th>
     </tr>
     <?php
@@ -14,6 +15,14 @@
         <tr>
             <td><?php echo $document['Document']['name']; ?></td>
             <td><?php echo $document['Document']['description']; ?></td>
+            <td>
+                <?php
+                if( !empty($document['Document']['digital_file']) && $document['Document']['digital_file'] != null ){ ?>
+                <a href="<?php
+                echo '/useraclSQL/file/img/PERSONAL/' . $document['Employee']['code'] . '/DOCS/' .$document['Document']['digital_file'];
+                ?>" target="_blank">Si</a>
+                <?php } ?>
+            </td>
             <td class="css-td_perfect_fit">
                 <a href='javascript:void(0)'
                    id="crud_action"

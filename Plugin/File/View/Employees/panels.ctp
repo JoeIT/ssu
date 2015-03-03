@@ -4,11 +4,9 @@
     var loadsRemaining = 0;
     $(document).ready(function () {
 
+        $('#EmployeeProfilePhoto').val('');
+
         $('.panel_to_toggle').hide();
-
-        $('#profile_image').click(function(){
-
-        });
 
         $('.code_build_name').keyup(function(){
             buildCode();
@@ -135,7 +133,7 @@
     function loadDialogPanel( url, title )
     {
         // http://preloaders.net/
-        $('#dialog_content').html('<?php echo $this->Html->image('File.loading.gif', array("alt" => "Cargando...", "class" => "css-img_center")); ?>');
+        $('#dialog_content').html('<?php echo $this->Html->image('File.default/loading.gif', array("alt" => "Cargando...", "class" => "css-img_center")); ?>');
         $('#dialog_content').dialog('option', 'title', title);
         //$.ajax({async:false});
         $('#dialog_content').load( url + '?' + $.now() ).dialog('open');
@@ -298,6 +296,5 @@
         ?>
 	</div>
 </div>
-
 <div id='dialog_content'>
 </div>
