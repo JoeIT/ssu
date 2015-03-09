@@ -1,3 +1,6 @@
+<?php
+if( count($certificatesList) > 0){
+?>
 <h3>CERTIFICADOS Y TITULOS</h3>
 
 <table border="1" class="css-index_table">
@@ -10,10 +13,7 @@
         <th></th>
     </tr>
     <?php
-    if( count($certificatesList) == 0)
-        echo "<tr><td colspan='20' align='center'>NO HAY REGISTROS</td></tr>";
-
-    foreach  ($certificatesList  as  $certificate):  ?>
+    foreach  ($certificatesList  as  $certificate){ ?>
         <tr>
             <td class="css-td_perfect_fit"><?php echo date("d/M/Y", strtotime($certificate['Certificate']['expedition_date']));  ?></td>
             <td><?php echo $certificate['Certificate']['titulation_grade'];  ?></td>
@@ -44,6 +44,5 @@
                 >Eliminar</a>
             </td>
         </tr>
-    <?php  endforeach;  ?>
-    <?php  unset($info);  ?>
+    <?php  }}  ?>
 </table>

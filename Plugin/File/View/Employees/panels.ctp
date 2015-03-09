@@ -33,7 +33,8 @@
                     name = 'carta';
                     break;
                 case 'contracts':
-
+                    url = "<?php echo $this->Html->url(array("controller" => "contracts", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "contracts", "action" => "delete"));?>";
                     name = 'contrato de trabajo';
                     break;
                 case 'certificates':
@@ -92,10 +93,11 @@
             autoOpen: false,
             modal: true,
             title: '',
+            width: 'auto',
             resizable: false,
             closeOnEscape: true,
-            zIndex: 1000,
-            position: { my: "center top", at: "center top+15", of: "#container"},
+            //zIndex: 1000,
+            //position: { my: "center top", at: "center top+15", of: "#container"},
             /*beforeSend:function(){
                 $('#dialog_content').html('<div class="loading"></div>');
             },*/
@@ -103,40 +105,21 @@
                 $('#dialog_content').html('');
             }
         });
-
-        // PARA BORRAR
-        /*
-        $('#ajax_content2').dialog({
-            autoOpen: false,
-            modal: true,
-            title: 'Registro de declaración jurada',
-            buttons: [
-                {
-                    text: 'Aceptar',
-                    click: function() {
-                        alert('La info fue guardada.');
-                    }
-                },
-                {
-                    text: 'Cerrar',
-                    click: function() {
-                        $(this).dialog('close');
-                    }
-                }
-            ],
-            close: function(){
-            }
-        });*/
-        //-----------------------------
     });
 
     function loadDialogPanel( url, title )
     {
         // http://preloaders.net/
         $('#dialog_content').html('<?php echo $this->Html->image('File.default/loading.gif', array("alt" => "Cargando...", "class" => "css-img_center")); ?>');
-        $('#dialog_content').dialog('option', 'title', title);
         //$.ajax({async:false});
-        $('#dialog_content').load( url + '?' + $.now() ).dialog('open');
+        $('#dialog_content').load( url + '?' + $.now(), function(){
+            $(this).dialog({
+                title: title,
+                position: { my: "center top", at: "center top+30", of: window}
+            });
+
+            $(this).dialog('open');
+        });
     }
 
     // -----------------------------------
@@ -157,6 +140,7 @@
                 name = 'ANTECEDENTES Y TITULOS';
                 loadsRemaining = 4;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
+                ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
                 ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
@@ -166,6 +150,7 @@
                 name = 'EXPERIENCIAS DE TRABAJOS';
                 loadsRemaining = 4;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
+                ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
                 ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
@@ -175,6 +160,7 @@
                 name = 'CURSOS REALIZADOS';
                 loadsRemaining = 4;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
+                ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
                 ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
@@ -184,6 +170,7 @@
                 name = 'CONTRATOS DE TRABAJO';
                 loadsRemaining = 4;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
+                ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
                 ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
@@ -193,6 +180,7 @@
                 name = 'DECLARACIONES JURADAS DE BIENES Y RENTAS';
                 loadsRemaining = 4;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
+                ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
                 ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
@@ -202,6 +190,7 @@
                 name = 'OTROS';
                 loadsRemaining = 4;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
+                ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
                 ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
@@ -217,7 +206,7 @@
         $.ajax({
             url: url,
             type: 'POST',
-            async: 'false',
+            async: 'true',
             data: {documentTag: tag},
             success: function ( indexDataPanel ) {
                 $('#panel_' + tag + '_' + type).html( indexDataPanel );
@@ -257,6 +246,10 @@
 
 </script>
 
+<?php
+echo $this->Html->link('<<< PRINCIPAL', '/file/employees/index');
+?>
+
 <h1>DATOS DEL EMPLEADO</h1>
 
 <!-- OTHER SECTION -->
@@ -269,6 +262,10 @@
 		<?php echo $this->fetch('employee_info'); ?>
 	</div>
 	<!-- OTHER SECTION -->
+    <?php
+    if(!empty($this->request->data['Employee']['id']))
+    {
+    ?>
     <div class='css-data_section' >
         <div class='css-data_menu'>
             AGREGAR:
@@ -276,7 +273,6 @@
             <a href='javascript:void(0)' id="crud_action" type="<?php echo $keyDoc; ?>" class="css-action_button" ><?php echo $doc; ?></a>
             <?php }?>
         </div>
-
         <?php
         foreach($GLOBAL_TAGS as $key => $tag)
         {
@@ -295,6 +291,31 @@
         } // Foreach end
         ?>
 	</div>
+    <?php
+    }
+    else{
+    ?>
+        <div class='css-data_section' >
+            <div class='css-data_menu'>
+                AGREGAR:
+                <?php foreach($GLOBAL_DOCS as $keyDoc => $doc){ ?>
+                    <button class="css-action_button" ><?php echo $doc; ?></button>
+                <?php }?>
+            </div>
+            <?php
+            foreach($GLOBAL_TAGS as $key => $tag)
+            { ?>
+                <div class='css-data_subsection'>
+                    <div class='toggle_index_panel css-title_section css-title_section_<?php echo $key ?>' >
+                        <h2><?php echo $tag ?></h2>
+                    </div>
+                </div>
+            <?php
+            } // Foreach end
+            ?>
+        </div>
+    <?php
+    } ?>
 </div>
 <div id='dialog_content'>
 </div>

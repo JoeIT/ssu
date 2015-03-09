@@ -108,4 +108,20 @@ class PersonalRequirement extends FileAppModel
         );
         return $this->find('all', $params);
     }
+
+    public function nextFileNameAvailable($employeeId)
+    {
+        $params = array(
+            'conditions' => array('PersonalRequirement.employee_id' => $employeeId),
+            //'fields' => array('MAX(Document.digital_file) AS lastFileName'),
+            'order' => array('PersonalRequirement.digital_file DESC')
+        );
+        $maxFile = $this->find('first', $params);
+        $fileArray = explode('.', $maxFile['PersonalRequirement']['digital_file']);
+
+        if(count($fileArray) > 1)
+            return ($fileArray[0] + 1) . '.' . $fileArray[1];
+        else
+            return ($fileArray[0] + 1) . $this->FILE_EXTENSION;
+    }
 }

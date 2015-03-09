@@ -25,15 +25,13 @@ class DocumentsController extends FileAppController
         $this->loadModel('File.DocumentTag');
         $this->loadModel('File.Employee');
 
-        if($id != null)
-            $document = $this->Document->findById($id);
-
         $this->set('saved', false);
         $this->set('GLOBAL_TAGS', $this->GLOBAL_TAGS);
 
         $selected = array();
         if($id != null)
         {
+            $document = $this->Document->findById($id);
             $docTags = $this->DocumentTag->getByDocIdAndType($id, 'document');
             foreach($docTags as $dt)
             {
@@ -50,9 +48,10 @@ class DocumentsController extends FileAppController
             else
                 $this->Document->create();
 
-            $fileName = '1.pdf';
-
             $this->request->data['Document']['employee_id'] = $this->Session->read('currentEmployeeID');
+            $fileName = $document['Document']['digital_file'];
+            if(empty($fileName))
+                $fileName = $this->Document->nextFileNameAvailable($this->Session->read('currentEmployeeID'));
             $this->request->data['Document']['digital_file'] = $fileName;
             //print_r($this->request->data['Document']);
 

@@ -51,10 +51,12 @@ class LettersController extends FileAppController
                 $this->Letter->create();
 
             $this->request->data['Letter']['employee_id'] = $this->Session->read('currentEmployeeID');
-            $fileName = '1.pdf';
+            $fileName = $letter['Letter']['digital_file'];
+            if(empty($fileName))
+                $fileName = $this->Letter->nextFileNameAvailable($this->Session->read('currentEmployeeID'));
             $this->request->data['Letter']['digital_file'] = $fileName;
-			//$this->request->data['Letter']['registred_datetime'] = '';
 
+			//$this->request->data['Letter']['registred_datetime'] = '';
             //echo "<br/>digital_file: " . $this->request->data['Letter']['digital_file'];
 
             $this->Letter->set($this->request->data['Letter']);

@@ -79,4 +79,12 @@ class Employee extends FileAppModel
             'allowEmpty' => true
         )
 	);
+
+    public function listOrderByDate()
+    {
+        $params = array(
+            'order' => array('Employee.registred_datetime DESC')
+        );
+        return $this->find('all', $params);
+    }
 }

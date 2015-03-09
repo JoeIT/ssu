@@ -2,11 +2,16 @@
 </head>
 
 <body>
-
 <table align="center">
     <tr>
         <th>Nuevos contratados</th>
     </tr>
+
+
+
+
+
+
     <tr>
         <td>
             <?php echo $this->Html->link(
@@ -31,7 +36,5 @@
                 array('escape' => false)); ?>
         </td>
     </tr>
-
 </table>
-
 </body>

@@ -50,7 +50,9 @@ class PersonalRequirementsController extends FileAppController
                 $this->PersonalRequirement->create();
 
             $this->request->data['PersonalRequirement']['employee_id'] = $this->Session->read('currentEmployeeID');
-            $fileName = '1.pdf';
+            $fileName = $personalRequirement['PersonalRequirement']['digital_file'];
+            if(empty($fileName))
+                $fileName = $this->PersonalRequirement->nextFileNameAvailable($this->Session->read('currentEmployeeID'));
             $this->request->data['PersonalRequirement']['digital_file'] = $fileName;
 
             $this->PersonalRequirement->set($this->request->data);

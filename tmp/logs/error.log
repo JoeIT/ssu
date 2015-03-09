@@ -24313,3 +24313,407 @@ Request URL: /useraclSQL/file/img/PERSONAL/DOCS/PCI800220/1.pdf
 Stack Trace:
 #0 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-03-05 14:36:31 Error: [NotFoundException] Id de empleado vacio
+Request URL: /useraclSQL/file/employees/edit
+Stack Trace:
+#0 [internal function]: EmployeesController->edit()
+#1 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#2 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#4 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-05 15:44:43 Error: [PDOException] SQLSTATE[22007]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Conversion failed when converting date and/or time from character string.
+Request URL: /useraclSQL/file/employees/edit
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(776): PDO->exec('INSERT INTO [fi...')
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('INSERT INTO [fi...', Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO [fi...')
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(359): DboSource->create(Object(Employee), Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Model.php(1854): Sqlserver->create(Object(Employee), Array, Array)
+#5 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(64): Model->save(Array)
+#6 [internal function]: EmployeesController->edit()
+#7 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#8 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#10 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-03-05 16:01:15 Error: Fatal Error (1): Cannot use object of type Employee as array in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php, line 95]
+2015-03-05 16:01:15 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/employees/edit/1
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\Aplicaciones...', 95)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\Aplicaciones...', 95, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\Aplicaciones...', 95, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 16:01:40 Error: Fatal Error (1): Cannot use object of type Employee as array in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php, line 95]
+2015-03-05 16:01:40 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/employees/edit/1
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\Aplicaciones...', 95)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\Aplicaciones...', 95, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\Aplicaciones...', 95, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 16:02:21 Error: Fatal Error (1): Cannot use object of type Employee as array in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php, line 97]
+2015-03-05 16:02:21 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/employees/edit/1
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\Aplicaciones...', 97)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\Aplicaciones...', 97, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\Aplicaciones...', 97, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 16:12:39 Error: Fatal Error (1): Call to undefined method View::redirect() in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Employees\panels.ctp, line 243]
+2015-03-05 16:12:39 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/employees/edit/6
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Aplicaciones...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Aplicaciones...', 243, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Aplicaciones...', 243, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 16:12:43 Error: Fatal Error (1): Call to undefined method View::redirect() in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Employees\panels.ctp, line 243]
+2015-03-05 16:12:43 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/employees/edit/6
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Aplicaciones...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Aplicaciones...', 243, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Aplicaciones...', 243, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 16:12:55 Error: Fatal Error (1): Call to undefined method View::redirect() in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Employees\panels.ctp, line 243]
+2015-03-05 16:12:55 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/employees/edit/6
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Aplicaciones...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Aplicaciones...', 243, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Aplicaciones...', 243, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 16:13:05 Error: Fatal Error (1): Call to undefined method View::redirect() in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Employees\panels.ctp, line 243]
+2015-03-05 16:13:05 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/employees/edit/1
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Aplicaciones...', 243)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Aplicaciones...', 243, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Aplicaciones...', 243, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-05 16:15:39 Error: [MissingControllerException] Controller class EmployeesController could not be found.
+Exception Attributes: array (
+  'class' => 'EmployeesController',
+  'plugin' => NULL,
+)
+Request URL: /useraclSQL/Employees/index
+Stack Trace:
+#0 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-06 17:07:15 Error: [MissingControllerException] Controller class ContractsController could not be found.
+Exception Attributes: array (
+  'class' => 'ContractsController',
+  'plugin' => 'File',
+)
+Request URL: /useraclSQL/file/contracts/add?1425658035349=
+Stack Trace:
+#0 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-06 17:12:15 Error: [MissingTableException] Table file_contracts for model Contract was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'file_contracts',
+  'class' => 'Contract',
+  'ds' => 'default',
+)
+Request URL: /useraclSQL/file/contracts/add?1425658334165=
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Model.php(3551): Model->setSource('contracts')
+#1 C:\cakephp-2.5.4\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\cakephp-2.5.4\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 C:\cakephp-2.5.4\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Contract', 'fields')
+#4 C:\Aplicaciones\useraclSQL\Plugin\File\View\Contracts\add.ctp(3): FormHelper->create('Contract')
+#5 C:\cakephp-2.5.4\Cake\View\View.php(948): include('C:\Aplicaciones...')
+#6 C:\cakephp-2.5.4\Cake\View\View.php(910): View->_evaluate('C:\Aplicaciones...', Array)
+#7 C:\cakephp-2.5.4\Cake\View\View.php(471): View->_render('C:\Aplicaciones...')
+#8 C:\cakephp-2.5.4\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#9 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(198): Controller->render()
+#10 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ContractsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-03-06 17:12:34 Error: [MissingTableException] Table file_contracts for model Contract was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'file_contracts',
+  'class' => 'Contract',
+  'ds' => 'default',
+)
+Request URL: /useraclSQL/file/contracts/add?1425658353552=
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Model.php(3551): Model->setSource('contracts')
+#1 C:\cakephp-2.5.4\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\cakephp-2.5.4\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 C:\cakephp-2.5.4\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Contract', 'fields')
+#4 C:\Aplicaciones\useraclSQL\Plugin\File\View\Contracts\add.ctp(3): FormHelper->create('Contract')
+#5 C:\cakephp-2.5.4\Cake\View\View.php(948): include('C:\Aplicaciones...')
+#6 C:\cakephp-2.5.4\Cake\View\View.php(910): View->_evaluate('C:\Aplicaciones...', Array)
+#7 C:\cakephp-2.5.4\Cake\View\View.php(471): View->_render('C:\Aplicaciones...')
+#8 C:\cakephp-2.5.4\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#9 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(198): Controller->render()
+#10 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ContractsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-03-06 17:15:03 Error: [MissingTableException] Table file_contracts for model Contract was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'file_contracts',
+  'class' => 'Contract',
+  'ds' => 'default',
+)
+Request URL: /useraclSQL/file/contracts/add?1425658502979=
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Model.php(3551): Model->setSource('contracts')
+#1 C:\cakephp-2.5.4\Cake\Model\Model.php(1369): Model->getDataSource()
+#2 C:\cakephp-2.5.4\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#3 C:\cakephp-2.5.4\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Contract', 'fields')
+#4 C:\Aplicaciones\useraclSQL\Plugin\File\View\Contracts\add.ctp(3): FormHelper->create('Contract', Array)
+#5 C:\cakephp-2.5.4\Cake\View\View.php(948): include('C:\Aplicaciones...')
+#6 C:\cakephp-2.5.4\Cake\View\View.php(910): View->_evaluate('C:\Aplicaciones...', Array)
+#7 C:\cakephp-2.5.4\Cake\View\View.php(471): View->_render('C:\Aplicaciones...')
+#8 C:\cakephp-2.5.4\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#9 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(198): Controller->render()
+#10 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ContractsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-03-07 14:25:16 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php, line 135]
+2015-03-07 14:25:16 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/letters/add?1425734773916=
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\cakephp-2.5....', 135)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\cakephp-2.5....', 135, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\cakephp-2.5....', 135, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-07 14:25:17 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\cakephp-2.5.4\Cake\Model\Datasource\CakeSession.php, line 663]
+2015-03-07 14:25:17 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/contracts/add?1425734755371=
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\cakephp-2.5....', 663)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\cakephp-2.5....', 663, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\cakephp-2.5....', 663, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-07 14:25:17 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\cakephp-2.5.4\Cake\Model\Datasource\CakeSession.php, line 663]
+2015-03-07 14:25:17 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/employees/edit/1
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\cakephp-2.5....', 663)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\cakephp-2.5....', 663, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\cakephp-2.5....', 663, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-07 19:19:57 Warning: Warning (2): preg_match(): Delimiter must not be alphanumeric or backslash in [C:\cakephp-2.5.4\Cake\Model\Validator\CakeValidationRule.php, line 279]
+Trace:
+preg_match - [internal], line ??
+CakeValidationRule::process() - C:\cakephp-2.5.4\Cake\Model\Validator\CakeValidationRule.php, line 279
+CakeValidationSet::validate() - C:\cakephp-2.5.4\Cake\Model\Validator\CakeValidationSet.php, line 135
+ModelValidator::errors() - C:\cakephp-2.5.4\Cake\Model\ModelValidator.php, line 267
+ModelValidator::validates() - C:\cakephp-2.5.4\Cake\Model\ModelValidator.php, line 99
+Model::validates() - C:\cakephp-2.5.4\Cake\Model\Model.php, line 3367
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 62
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-07 19:21:55 Warning: Warning (2): preg_match(): Delimiter must not be alphanumeric or backslash in [C:\cakephp-2.5.4\Cake\Model\Validator\CakeValidationRule.php, line 279]
+Trace:
+preg_match - [internal], line ??
+CakeValidationRule::process() - C:\cakephp-2.5.4\Cake\Model\Validator\CakeValidationRule.php, line 279
+CakeValidationSet::validate() - C:\cakephp-2.5.4\Cake\Model\Validator\CakeValidationSet.php, line 135
+ModelValidator::errors() - C:\cakephp-2.5.4\Cake\Model\ModelValidator.php, line 267
+ModelValidator::validates() - C:\cakephp-2.5.4\Cake\Model\ModelValidator.php, line 99
+Model::validates() - C:\cakephp-2.5.4\Cake\Model\Model.php, line 3367
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 62
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-07 19:31:25 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Contracts\index.ctp, line 16]
+Trace:
+include - APP\Plugin\File\View\Contracts\index.ctp, line 16
+View::_evaluate() - C:\cakephp-2.5.4\Cake\View\View.php, line 948
+View::_render() - C:\cakephp-2.5.4\Cake\View\View.php, line 910
+View::render() - C:\cakephp-2.5.4\Cake\View\View.php, line 471
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-07 19:57:30 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Contracts\index.ctp, line 16]
+Trace:
+include - APP\Plugin\File\View\Contracts\index.ctp, line 16
+View::_evaluate() - C:\cakephp-2.5.4\Cake\View\View.php, line 948
+View::_render() - C:\cakephp-2.5.4\Cake\View\View.php, line 910
+View::render() - C:\cakephp-2.5.4\Cake\View\View.php, line 471
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-07 19:57:36 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Contracts\index.ctp, line 16]
+Trace:
+include - APP\Plugin\File\View\Contracts\index.ctp, line 16
+View::_evaluate() - C:\cakephp-2.5.4\Cake\View\View.php, line 948
+View::_render() - C:\cakephp-2.5.4\Cake\View\View.php, line 910
+View::render() - C:\cakephp-2.5.4\Cake\View\View.php, line 471
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-08 03:35:12 Error: [MissingViewException] View file "C:\Aplicaciones\useraclSQL\Plugin\File\View\Files\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Aplicaciones\\useraclSQL\\Plugin\\File\\View\\Files\\index.ctp',
+)
+Request URL: /useraclSQL/file/files
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\cakephp-2.5.4\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FilesController), Object(CakeRequest))
+#4 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-09 13:48:35 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php, line 101]
+Trace:
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 101
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-09 13:56:13 Error: Fatal Error (1): Call to undefined method DocumentsController::nextDocAvailable() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\DocumentsController.php, line 44]
+2015-03-09 13:56:14 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/documents/add?1425905772940=
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\Aplicaciones...', 44)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\Aplicaciones...', 44, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\Aplicaciones...', 44, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-09 14:05:29 Warning: Warning (2): Missing argument 1 for Document::nextDocAvailable(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\DocumentsController.php on line 44 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Document.php, line 88]
+Trace:
+Document::nextDocAvailable() - APP\Plugin\File\Model\Document.php, line 88
+DocumentsController::add() - APP\Plugin\File\Controller\DocumentsController.php, line 44
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-09 14:05:30 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Operand data type text is invalid for max operator.
+Request URL: /useraclSQL/file/documents/add?1425906328814=
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  MAX(Doc...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  MAX(Doc...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  MAX(Doc...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  MAX(Doc...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Document), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Document), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Document.php(95): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\DocumentsController.php(44): Document->nextDocAvailable()
+#10 [internal function]: DocumentsController->add()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentsController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(DocumentsController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-09 14:06:35 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Operand data type text is invalid for max operator.
+Request URL: /useraclSQL/file/documents/add?1425906394807=
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  MAX(Doc...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  MAX(Doc...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  MAX(Doc...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  MAX(Doc...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Document), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Document), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Document.php(95): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\DocumentsController.php(44): Document->nextDocAvailable(NULL)
+#10 [internal function]: DocumentsController->add()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentsController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(DocumentsController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-09 14:07:49 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Operand data type text is invalid for max operator.
+Request URL: /useraclSQL/file/documents/add?1425906469319=
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  MAX(Doc...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  MAX(Doc...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  MAX(Doc...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  MAX(Doc...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Document), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Document), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Document.php(95): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\DocumentsController.php(44): Document->nextDocAvailable(NULL)
+#10 [internal function]: DocumentsController->add()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentsController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(DocumentsController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-09 14:22:59 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]The text, ntext, and image data types cannot be compared or sorted, except when using IS NULL or LIKE operator.
+Request URL: /useraclSQL/file/documents/add?1425907378840=
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  TOP 1 [...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  TOP 1 [...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  TOP 1 [...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  TOP 1 [...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Document), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Document), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('first', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Document.php(95): Model->find('first', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\DocumentsController.php(44): Document->nextDocAvailable(NULL)
+#10 [internal function]: DocumentsController->add()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(DocumentsController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(DocumentsController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-09 15:41:00 Error: Fatal Error (1): Call to a member function nextFileNameAvailable() on a non-object in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalRequirementsController.php, line 53]
+2015-03-09 15:41:00 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/personal_requirements/add/1
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\Aplicaciones...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\Aplicaciones...', 53, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\Aplicaciones...', 53, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-09 15:42:43 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalRequirementsController.php, line 65]
+Trace:
+PersonalRequirementsController::add() - APP\Plugin\File\Controller\PersonalRequirementsController.php, line 65
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+

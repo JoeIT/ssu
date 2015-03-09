@@ -64,4 +64,20 @@ class Memo extends FileAppModel
         );
         return $this->find('all', $params);
     }
+
+    public function nextFileNameAvailable($employeeId)
+    {
+        $params = array(
+            'conditions' => array('Memo.employee_id' => $employeeId),
+            //'fields' => array('MAX(Document.digital_file) AS lastFileName'),
+            'order' => array('Memo.digital_file DESC')
+        );
+        $maxFile = $this->find('first', $params);
+        $fileArray = explode('.', $maxFile['Memo']['digital_file']);
+
+        if(count($fileArray) > 1)
+            return ($fileArray[0] + 1) . '.' . $fileArray[1];
+        else
+            return ($fileArray[0] + 1) . $this->FILE_EXTENSION;
+    }
 }

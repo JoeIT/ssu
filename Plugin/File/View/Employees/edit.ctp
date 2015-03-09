@@ -9,7 +9,7 @@ $file_path =  $this->request->data['Employee']['code'] . '/profile_photo.jpg';
 if(file_exists($DIGITAL_DOCS_PATH . $file_path))
     $photo = 'File.PERSONAL/'. $file_path;
 
-echo $this->Html->image($photo, array("alt" => "Fotografía perfil", "id" => "profile_image", "class" => "css-img_center"));
+echo $this->Html->image($photo, array("alt" => "Fotografía perfil", "id" => "profile_image", "class" => "css-img_center", "width" => "200px"));
 
 echo '</br></br>';
 

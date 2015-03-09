@@ -23,4 +23,14 @@ class FileAppController extends AdminController {
         'personal_requirements' => 'Req. de personal',
         'documents' => 'Doc. personal'
     );
+
+    public $CONTRACT_TIME = array(
+        'c' => 'Completo',
+        'm' => 'Medio tiempo'
+    );
+
+    public $CONTRACT_TERMS = array(
+        'f' => 'Fijo',
+        't' => 'Temporal'
+    );
 }

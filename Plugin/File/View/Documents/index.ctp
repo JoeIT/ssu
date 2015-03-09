@@ -1,3 +1,7 @@
+<?php
+if( count($documentsList) > 0){
+?>
+
 <h3>DOCUMENTOS PERSONALES</h3>
 
 <table border="1" class="css-index_table">
@@ -40,5 +44,5 @@
                 >Eliminar</a>
             </td>
         </tr>
-    <?php } ?>
+    <?php }} ?>
 </table>

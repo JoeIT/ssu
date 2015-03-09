@@ -1,3 +1,7 @@
+<?php
+if( count($lettersList) > 0){
+?>
+
 <h3>CARTAS</h3>
 
 <table border="1" class="css-index_table">
@@ -10,9 +14,6 @@
         <th></th>
     </tr>
     <?php
-    if( count($lettersList) == 0)
-        echo "<tr><td colspan='20' align='center'>NO HAY REGISTROS</td></tr>";
-
     foreach ($lettersList  as  $letter){ ?>
         <tr>
             <td class="css-td_perfect_fit"><?php echo date("d/M/Y", strtotime($letter['Letter']['date'])); ?></td>
@@ -44,5 +45,5 @@
                 >Eliminar</a>
             </td>
         </tr>
-    <?php } ?>
+    <?php }} ?>
 </table>

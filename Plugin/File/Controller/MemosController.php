@@ -60,7 +60,9 @@ class MemosController extends FileAppController
                 $this->Memo->create();
 
             $this->request->data['Memo']['employee_id'] = $this->Session->read('currentEmployeeID');
-            $fileName = '1.pdf';
+            $fileName = $memo['Memo']['digital_file'];
+            if(empty($fileName))
+                $fileName = $this->Memo->nextFileNameAvailable($this->Session->read('currentEmployeeID'));
             $this->request->data['Memo']['digital_file'] = $fileName;
 
             $this->Memo->set($this->request->data);

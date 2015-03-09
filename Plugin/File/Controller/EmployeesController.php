@@ -4,39 +4,46 @@ App::uses('FileAppController', 'File.Controller');
 class EmployeesController extends FileAppController {
 	public $helpers = array('Html', 'Form');
 
-    public function index() {
-	}
+    public function index()
+    {
+        $this->Session->write('currentEmployeeID', '');
 
-    public function panels() {
+        //$last = listOrderByDate();
+
+
     }
 
-    public function newEmployee() {
-        //$this->layout = 'some';
-    }
-	
-	public function edit($id = null) {
+    public function panels()
+    {}
+
+    public function edit($id = null) {
         $this->set('GLOBAL_DOCS', $this->GLOBAL_DOCS);
         $this->set('GLOBAL_TAGS', $this->GLOBAL_TAGS);
         $this->set('DIGITAL_DOCS_PATH', $this->DIGITAL_DOCS_PATH);
 
-        //echo 'DIR: ' . WWW_ROOT . 'documents' . DS . 'archivo.txt';
-        //echo 'DIR: ' . Router::url('File', true) . 'documents' . DS . 'archivo.txt';
-        //echo 'DIR: ' . $this->webroot . 'File/PCI123/' . 'archivo.txt';
+        //if(!$id) throw  new  NotFoundException(__('Id de empleado vacio'));
+        //if(!$employee) throw new NotFoundException(__('Empleado no encontrado'));
 
-        //echo "PATH: " . IMAGE_HTTP_PATH;
+        $lastCode = '';
 
-        if(!$id) throw  new  NotFoundException(__('Id de empleado vacio'));
-		
-		$employee = $this->Employee->findById($id);
-		if(!$employee) throw new NotFoundException(__('Empleado no encontrado'));
+        if($id != null)
+        {
+            $employee = $this->Employee->findById($id);
+            $lastCode = $employee['Employee']['code'];
 
-        // Stores the employee id that is current selected to be edited
-        $this->Session->write('currentEmployeeID', $id);
+            // Stores the employee id that is current selected to be edited
+            $this->Session->write('currentEmployeeID', $id);
+        }
 
         if($this->request->is(array('post', 'put')))
 		{
-			$this->Employee->id = $id;
-            //print_r($this->request->data['Employee']);
+			if($id != null)
+                $this->Employee->id = $id;
+            else {
+                $this->Employee->create();
+                date_default_timezone_set('America/La_Paz');
+                $this->request->data['Employee']['registred_datetime'] = date('Y-m-d H:i:s');
+            }
 
             // Rebuilding the code
             $name = substr($this->request->data['Employee']['name'], 0, 1);
@@ -56,19 +63,35 @@ class EmployeesController extends FileAppController {
             $this->request->data['Employee']['maternal_surname'] = strtoupper($this->request->data['Employee']['maternal_surname']);
             $this->request->data['Employee']['ci'] = strtoupper($this->request->data['Employee']['ci']);
 
+
+
             //$this->Employee->set( $this->request->data['Employee'] );
             if($this->Employee->validates())
             {
                 if($this->Employee->save($this->request->data))
                 {
-                    $dir = new Folder($this->DIGITAL_DOCS_PATH . DS . $employee['Employee']['code'], true);
-                    move_uploaded_file(
-                        $this->data['Employee']['profile_photo']['tmp_name'],
-                        $this->DIGITAL_DOCS_PATH . $this->request->data['Employee']['code'] . '/profile_photo.jpg'
-                    );
+                    $newPathCode = $this->DIGITAL_DOCS_PATH . $this->request->data['Employee']['code'];
+
+                    if(empty($lastCode))
+                        $dir = new Folder($newPathCode, true);
+
+                    if(!empty($lastCode) && $lastCode != $this->request->data['Employee']['code'])
+                        rename(
+                            $this->DIGITAL_DOCS_PATH . $lastCode,
+                            $newPathCode
+                        );
+
+                    if(!empty($this->data['Employee']['profile_photo']['tmp_name']))
+                    {
+                        move_uploaded_file(
+                            $this->data['Employee']['profile_photo']['tmp_name'],
+                            $newPathCode . '/profile_photo.jpg'
+                        );
+                    }
 
                     $this->Session->setFlash(__('La información guardada exitosamente.'));
                     //return $this->redirect(array('action' => 'index'));
+                    return $this->redirect(array('action' => 'edit/' . $this->Employee->id));
                 }
 
                 $this->Session->setFlash(__('No se pudo guardar la información del empleado.'));

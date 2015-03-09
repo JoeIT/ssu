@@ -53,7 +53,9 @@ class CertificatesController extends FileAppController
                 $this->Certificate->create();
 
             $this->request->data['Certificate']['employee_id'] = $this->Session->read('currentEmployeeID');
-            $fileName = '1.pdf';
+            $fileName = $certificate['Certificate']['digital_file'];
+            if(empty($fileName))
+                $fileName = $this->Certificate->nextFileNameAvailable($this->Session->read('currentEmployeeID'));
             $this->request->data['Certificate']['digital_file'] = $fileName;
 
             $this->Certificate->set($this->request->data);

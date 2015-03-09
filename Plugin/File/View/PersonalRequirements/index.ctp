@@ -1,3 +1,7 @@
+<?php
+if( count($personalRequirementsList) > 0){
+?>
+
 <h3>REQUERIMIENTO DE PERSONAL</h3>
 
 <table border="1" class="css-index_table">
@@ -16,7 +20,7 @@
     if( count($personalRequirementsList) == 0)
         echo "<tr><td colspan='20' align='center'>NO HAY REGISTROS</td></tr>";
 
-    foreach  ($personalRequirementsList  as  $personalRequirement):  ?>
+    foreach ($personalRequirementsList  as  $personalRequirement){ ?>
         <tr>
             <td class="css-td_perfect_fit"><?php echo date("d/M/Y", strtotime($personalRequirement['PersonalRequirement']['expedition_date']));  ?></td>
             <td><?php echo $personalRequirement['PersonalRequirement']['code']; ?></td>
@@ -50,6 +54,5 @@
                     >Eliminar</a>
             </td>
         </tr>
-    <?php  endforeach;  ?>
-    <?php  unset($info);  ?>
+    <?php }} ?>
 </table>
