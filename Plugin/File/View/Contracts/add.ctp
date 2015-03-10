@@ -1,3 +1,26 @@
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $('#ContractDigitalFile').change(function(event){
+            $('#ContractFileName').val( $('#ContractDigitalFile').val() );
+
+            var files = event.target.files;
+            var file = files[0];
+
+            if (files && file)
+            {
+                var reader = new FileReader();
+
+                reader.onload = function(readerEvt)
+                {
+                    $("#ContractFileBase64").val( btoa( readerEvt.target.result ) );
+                };
+
+                reader.readAsBinaryString(file);
+            }
+        });
+    });
+</script>
 <?php
 // This is an ajax view
 echo $this->Form->create('Contract', array('type' => 'file'));

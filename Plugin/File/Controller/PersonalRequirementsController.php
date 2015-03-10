@@ -1,16 +1,16 @@
 <?php
 App::uses('FileAppController', 'File.Controller');
 
-class PersonalRequirementsController extends FileAppController
+class PersonalrequirementsController extends FileAppController
 {
 	public $helpers = array('Html', 'Form');
-	private $_classType = 'personal_requirement';
+	private $_classType = 'personalrequirement';
 	
     public function index()
     {
         $this->layout = false;
 
-        $this->set('personalRequirementsList', $this->PersonalRequirement->findByEmployeeAndTag(
+        $this->set('personalRequirementsList', $this->Personalrequirement->findByEmployeeAndTag(
 			$this->Session->read('currentEmployeeID'),
 			$this->request->data('documentTag'),
 			$this->_classType)
@@ -25,7 +25,7 @@ class PersonalRequirementsController extends FileAppController
         $this->loadModel('File.Employee');
 
         if($id != null)
-            $personalRequirement = $this->PersonalRequirement->findById($id);
+            $personalrequirement = $this->Personalrequirement->findById($id);
 
         $this->set('saved', false);
 		$this->set('GLOBAL_TAGS', $this->GLOBAL_TAGS);
@@ -45,30 +45,35 @@ class PersonalRequirementsController extends FileAppController
         if($this->request->is(array('post', 'put')))
         {
             if($id != null)
-                $this->PersonalRequirement->id = $id;
+                $this->Personalrequirement->id = $id;
             else
-                $this->PersonalRequirement->create();
+                $this->Personalrequirement->create();
 
-            $this->request->data['PersonalRequirement']['employee_id'] = $this->Session->read('currentEmployeeID');
-            $fileName = $personalRequirement['PersonalRequirement']['digital_file'];
+            $this->request->data['Personalrequirement']['employee_id'] = $this->Session->read('currentEmployeeID');
+            $fileName = $personalrequirement['Personalrequirement']['digital_file'];
             if(empty($fileName))
-                $fileName = $this->PersonalRequirement->nextFileNameAvailable($this->Session->read('currentEmployeeID'));
-            $this->request->data['PersonalRequirement']['digital_file'] = $fileName;
+                $fileName = $this->Personalrequirement->nextFileNameAvailable($this->Session->read('currentEmployeeID'));
+            $this->request->data['Personalrequirement']['digital_file'] = $fileName;
 
-            $this->PersonalRequirement->set($this->request->data);
-            if($this->PersonalRequirement->validates())
+            //print_r($this->request->data);
+            //print_r($this->request->data['Personalrequirement']);
+            //print_r($this->Personalrequirement);
+            //print_r($personalrequirement);
+
+            $this->Personalrequirement->set($this->request->data);
+            if($this->Personalrequirement->validates())
             {
-                if($this->PersonalRequirement->save($this->request->data))
+                if($this->Personalrequirement->save($this->request->data))
                 {
                     // Deleting all document tags
-                    $this->DocumentTag->deleteByDocIdAndType($this->PersonalRequirement->id, $this->_classType);
+                    $this->DocumentTag->deleteByDocIdAndType($this->Personalrequirement->id, $this->_classType);
 
                     // Saving document tags
-                    foreach($this->request->data['PersonalRequirement']['tags'] as $tag)
+                    foreach($this->request->data['Personalrequirement']['tags'] as $tag)
                     {
                         $this->DocumentTag->create();
                         $data = array('DocumentTag' => array(
-                            'document_id' => $this->PersonalRequirement->id,
+                            'document_id' => $this->Personalrequirement->id,
                             'tag' => $tag,
                             'document_type' => $this->_classType
                         ));
@@ -80,12 +85,12 @@ class PersonalRequirementsController extends FileAppController
                     $folderDocType = 'PERSONAL_REQUIREMENTS';
 
                     //- Guardar archivo en directorio con nombres -> codigo de empleado -> document_type
-                    $this->request->data['PersonalRequirement']['digital_file'] = $employee['Employee']['code'] . DS . $folderDocType . DS . $fileName;
+                    //$this->request->data['Personalrequirement']['digital_file'] = $employee['Employee']['code'] . DS . $folderDocType . DS . $fileName;
                     $folder_url = $this->DIGITAL_DOCS_PATH . DS . $employee['Employee']['code'] . DS . $folderDocType;
                     $dir = new Folder($folder_url, true);
 
                     $physicalFile = fopen($folder_url . DS . $fileName, 'w');
-                    fwrite($physicalFile, base64_decode($this->request->data['PersonalRequirement']['file_base64']));
+                    fwrite($physicalFile, base64_decode($this->request->data['Personalrequirement']['file_base64']));
                     fclose( $physicalFile );
 
                     $this->set('saved', true);
@@ -95,7 +100,7 @@ class PersonalRequirementsController extends FileAppController
             }
             else
             {
-                foreach( $this->request->data['PersonalRequirement']['tags'] as $tag )
+                foreach( $this->request->data['Personalrequirement']['tags'] as $tag )
                 {
                     array_push($selected, $tag);
                 }
@@ -103,8 +108,8 @@ class PersonalRequirementsController extends FileAppController
             }
         }
 
-        if (!$this->request->data['PersonalRequirement'])
-            $this->request->data  = $personalRequirement;
+        if (!$this->request->data['Personalrequirement'])
+            $this->request->data  = $personalrequirement;
     }
 
     // This is an ajax action
@@ -112,9 +117,9 @@ class PersonalRequirementsController extends FileAppController
     {
         $this->layout = false;
 
-        $personalRequirement = $this->PersonalRequirement->findById($id);
+        $personalrequirement = $this->Personalrequirement->findById($id);
 
-        $this->set(compact('personalRequirement'));
+        $this->set(compact('personalrequirement'));
         $this->set('deleted', false);
 
         $this->loadModel('File.DocumentTag');
@@ -132,7 +137,7 @@ class PersonalRequirementsController extends FileAppController
 
         if($this->request->is(array('post')))
         {
-            if($this->PersonalRequirement->delete($id))
+            if($this->Personalrequirement->delete($id))
             {
                 // Deleting all document tags
                 $this->DocumentTag->deleteByDocIdAndType($id, $this->_classType);

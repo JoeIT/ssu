@@ -20,7 +20,7 @@ class FileAppController extends AdminController {
         'contracts' => 'Contrato de trabajo',
         'certificates' => 'Título/Certificado',
         'memos' => 'Memorandum',
-        'personal_requirements' => 'Req. de personal',
+        'personalrequirements' => 'Req. de personal',
         'documents' => 'Doc. personal'
     );
 

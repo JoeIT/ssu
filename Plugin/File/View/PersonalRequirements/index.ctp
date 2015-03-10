@@ -22,34 +22,34 @@ if( count($personalRequirementsList) > 0){
 
     foreach ($personalRequirementsList  as  $personalRequirement){ ?>
         <tr>
-            <td class="css-td_perfect_fit"><?php echo date("d/M/Y", strtotime($personalRequirement['PersonalRequirement']['expedition_date']));  ?></td>
-            <td><?php echo $personalRequirement['PersonalRequirement']['code']; ?></td>
-            <td><?php echo $personalRequirement['PersonalRequirement']['area']; ?></td>
-            <td><?php echo $personalRequirement['PersonalRequirement']['unit']; ?></td>
-            <td><?php echo $personalRequirement['PersonalRequirement']['supersede']; ?></td>
-            <td><?php echo $personalRequirement['PersonalRequirement']['petitioner']; ?></td>
-            <td><?php echo $personalRequirement['PersonalRequirement']['approved_by']; ?></td>
+            <td class="css-td_perfect_fit"><?php echo date("d/M/Y", strtotime($personalRequirement['Personalrequirement']['expedition_date']));  ?></td>
+            <td><?php echo $personalRequirement['Personalrequirement']['code']; ?></td>
+            <td><?php echo $personalRequirement['Personalrequirement']['area']; ?></td>
+            <td><?php echo $personalRequirement['Personalrequirement']['unit']; ?></td>
+            <td><?php echo $personalRequirement['Personalrequirement']['supersede']; ?></td>
+            <td><?php echo $personalRequirement['Personalrequirement']['petitioner']; ?></td>
+            <td><?php echo $personalRequirement['Personalrequirement']['approved_by']; ?></td>
             <td>
                 <?php
-                if( !empty($personalRequirement['PersonalRequirement']['digital_file']) && $personalRequirement['PersonalRequirement']['digital_file'] != null ){ ?>
+                if( !empty($personalRequirement['Personalrequirement']['digital_file']) && $personalRequirement['Personalrequirement']['digital_file'] != null ){ ?>
                     <a href="<?php
-                    echo '/useraclSQL/file/img/PERSONAL/' . $personalRequirement['Employee']['code'] . '/PERSONAL_REQUIREMENTS/' .$personalRequirement['PersonalRequirement']['digital_file'];
+                    echo '/useraclSQL/file/img/PERSONAL/' . $personalRequirement['Employee']['code'] . '/PERSONAL_REQUIREMENTS/' .$personalRequirement['Personalrequirement']['digital_file'];
                     ?>" target="_blank">Si</a>
                 <?php } ?>
             </td>
             <td class="css-td_perfect_fit">
                 <a href='javascript:void(0)'
                    id="crud_action"
-                   type="personal_requirements"
-                   id_type="<?php echo $personalRequirement['PersonalRequirement']['id']; ?>"
+                   type="personalrequirements"
+                   id_type="<?php echo $personalRequirement['Personalrequirement']['id']; ?>"
                    class="css-action_button css-mini_action_button"
                     >Modificar</a>
 
                 <a href='javascript:void(0)'
                    id="crud_action"
-                   type="personal_requirements"
+                   type="personalrequirements"
                    action="delete"
-                   id_type="<?php echo $personalRequirement['PersonalRequirement']['id']; ?>"
+                   id_type="<?php echo $personalRequirement['Personalrequirement']['id']; ?>"
                    class="css-action_button css-mini_action_button css-delete_button"
                     >Eliminar</a>
             </td>

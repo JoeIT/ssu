@@ -1,6 +1,29 @@
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $('#MemoDigitalFile').change(function(event){
+            $('#MemoFileName').val( $('#MemoDigitalFile').val() );
+
+            var files = event.target.files;
+            var file = files[0];
+
+            if (files && file)
+            {
+                var reader = new FileReader();
+
+                reader.onload = function(readerEvt)
+                {
+                    $("#MemoFileBase64").val( btoa( readerEvt.target.result ) );
+                };
+
+                reader.readAsBinaryString(file);
+            }
+        });
+    });
+</script>
 <?php
 // This is an ajax view
-echo $this->Form->create('Memo');
+echo $this->Form->create('Memo', array('type' => 'file'));
 echo $this->Form->input('expedition_date', array('label' => 'Fecha de expedición', 'dateFormat' => 'DMY', 'class' => 'css-date_area', 'minYear' => date('Y') - 100, 'maxYear' => date('Y'), 'separator' => '/'));
 echo $this->Form->input('code', array('label' => 'Cite No(*)'));
 echo $this->Form->input('description', array('label' => 'Descripción'));

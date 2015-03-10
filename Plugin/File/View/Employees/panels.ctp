@@ -47,9 +47,9 @@
                     urlDelete = "<?php echo $this->Html->url(array("controller" => "memos", "action" => "delete"));?>";
                     name = 'memorandum';
                     break;
-                case 'personal_requirements':
-                    url = "<?php echo $this->Html->url(array("controller" => "personal_requirements", "action" => "add"));?>";
-                    urlDelete = "<?php echo $this->Html->url(array("controller" => "personal_requirements", "action" => "delete"));?>";
+                case 'personalrequirements':
+                    url = "<?php echo $this->Html->url(array("controller" => "personalrequirements", "action" => "add"));?>";
+                    urlDelete = "<?php echo $this->Html->url(array("controller" => "personalrequirements", "action" => "delete"));?>";
                     name = 'requerimiento de personal';
                     break;
                 case 'documents':
@@ -132,7 +132,7 @@
         var urlContract = "<?php echo $this->Html->url(array("controller"  =>  "contracts", "action"  =>  "index"));?>";
         var urlCertificate = "<?php echo $this->Html->url(array("controller"  =>  "certificates", "action"  =>  "index"));?>";
         var urlMemos = "<?php echo $this->Html->url(array("controller"  =>  "memos", "action"  =>  "index"));?>";
-        var urlPersonalReq = "<?php echo $this->Html->url(array("controller"  =>  "personal_requirements", "action"  =>  "index"));?>";
+        var urlPersonalReq = "<?php echo $this->Html->url(array("controller"  =>  "personalrequirements", "action"  =>  "index"));?>";
         var urlDocuments = "<?php echo $this->Html->url(array("controller"  =>  "documents", "action"  =>  "index"));?>";
 
         switch (tag) {
@@ -143,7 +143,7 @@
                 ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
-                ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
+                ajaxLoadPanel(urlPersonalReq, 'personalrequirements', tag, name);
                 ajaxLoadPanel(urlDocuments, 'documents', tag, name);
                 break;
             case 'jobs':
@@ -153,7 +153,7 @@
                 ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
-                ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
+                ajaxLoadPanel(urlPersonalReq, 'personalrequirements', tag, name);
                 ajaxLoadPanel(urlDocuments, 'documents', tag, name);
                 break;
             case 'courses':
@@ -163,7 +163,7 @@
                 ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
-                ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
+                ajaxLoadPanel(urlPersonalReq, 'personalrequirements', tag, name);
                 ajaxLoadPanel(urlDocuments, 'documents', tag, name);
                 break;
             case 'contracts':
@@ -173,7 +173,7 @@
                 ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
-                ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
+                ajaxLoadPanel(urlPersonalReq, 'personalrequirements', tag, name);
                 ajaxLoadPanel(urlDocuments, 'documents', tag, name);
                 break;
             case 'statements':
@@ -183,7 +183,7 @@
                 ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
-                ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
+                ajaxLoadPanel(urlPersonalReq, 'personalrequirements', tag, name);
                 ajaxLoadPanel(urlDocuments, 'documents', tag, name);
                 break;
             case 'others':
@@ -193,7 +193,7 @@
                 ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
                 ajaxLoadPanel(urlMemos, 'memos', tag, name);
-                ajaxLoadPanel(urlPersonalReq, 'personal_requirements', tag, name);
+                ajaxLoadPanel(urlPersonalReq, 'personalrequirements', tag, name);
                 ajaxLoadPanel(urlDocuments, 'documents', tag, name);
                 break;
             default:

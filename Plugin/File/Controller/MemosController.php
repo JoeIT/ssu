@@ -90,7 +90,7 @@ class MemosController extends FileAppController
                     $folderDocType = 'MEMOS';
 
                     //- Guardar archivo en directorio con nombres -> codigo de empleado -> document_type
-                    $this->request->data['Memo']['digital_file'] = $employee['Employee']['code'] . DS . $folderDocType . DS . $fileName;
+                    //$this->request->data['Memo']['digital_file'] = $employee['Employee']['code'] . DS . $folderDocType . DS . $fileName;
                     $folder_url = $this->DIGITAL_DOCS_PATH . DS . $employee['Employee']['code'] . DS . $folderDocType;
                     $dir = new Folder($folder_url, true);
 

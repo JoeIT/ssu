@@ -59,7 +59,7 @@ class LettersController extends FileAppController
 			//$this->request->data['Letter']['registred_datetime'] = '';
             //echo "<br/>digital_file: " . $this->request->data['Letter']['digital_file'];
 
-            $this->Letter->set($this->request->data['Letter']);
+            $this->Letter->set($this->request->data);
             if($this->Letter->validates())
             {
                 if($this->Letter->save($this->request->data))
@@ -84,7 +84,7 @@ class LettersController extends FileAppController
                     $folderDocType = 'LETTERS';
 
                     //- Guardar archivo en directorio con nombres -> codigo de empleado -> document_type
-                    $this->request->data['Letter']['digital_file'] = $employee['Employee']['code'] . DS . $folderDocType . DS . $fileName;
+                    //$this->request->data['Letter']['digital_file'] = $employee['Employee']['code'] . DS . $folderDocType . DS . $fileName;
                     $folder_url = $this->DIGITAL_DOCS_PATH . DS . $employee['Employee']['code'] . DS . $folderDocType;
                     $dir = new Folder($folder_url, true);
 

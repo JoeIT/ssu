@@ -24717,3 +24717,158 @@ Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
 Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
 [main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
 
+2015-03-09 16:19:12 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalRequirementsController.php, line 67]
+Trace:
+PersonalRequirementsController::add() - APP\Plugin\File\Controller\PersonalRequirementsController.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-09 16:22:01 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalRequirementsController.php, line 67]
+Trace:
+PersonalRequirementsController::add() - APP\Plugin\File\Controller\PersonalRequirementsController.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-09 16:23:18 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalRequirementsController.php, line 67]
+Trace:
+PersonalRequirementsController::add() - APP\Plugin\File\Controller\PersonalRequirementsController.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-09 16:37:46 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalRequirementsController.php, line 67]
+Trace:
+PersonalRequirementsController::add() - APP\Plugin\File\Controller\PersonalRequirementsController.php, line 67
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-09 16:41:11 Error: [PDOException] SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert the value NULL into column 'expedition_date', table 'ssurrhh.dbo.file_personal_requirements'; column does not allow nulls. INSERT fails.
+Request URL: /useraclSQL/file/personal_requirements/add
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(776): PDO->exec('INSERT INTO [fi...')
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('INSERT INTO [fi...', Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO [fi...')
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(359): DboSource->create(Object(PersonalRequirement), Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Model.php(1854): Sqlserver->create(Object(PersonalRequirement), Array, Array)
+#5 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalRequirementsController.php(61): Model->save(Array)
+#6 [internal function]: PersonalRequirementsController->add()
+#7 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PersonalRequirementsController), Array)
+#8 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PersonalRequirementsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-03-09 16:41:59 Error: [PDOException] SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert the value NULL into column 'expedition_date', table 'ssurrhh.dbo.file_personal_requirements'; column does not allow nulls. INSERT fails.
+Request URL: /useraclSQL/file/personal_requirements/add
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(776): PDO->exec('INSERT INTO [fi...')
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('INSERT INTO [fi...', Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO [fi...')
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(359): DboSource->create(Object(PersonalRequirement), Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Model.php(1854): Sqlserver->create(Object(PersonalRequirement), Array, Array)
+#5 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalRequirementsController.php(61): Model->save(Array)
+#6 [internal function]: PersonalRequirementsController->add()
+#7 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PersonalRequirementsController), Array)
+#8 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PersonalRequirementsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-03-09 16:48:03 Error: [PDOException] SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert the value NULL into column 'expedition_date', table 'ssurrhh.dbo.file_personal_requirements'; column does not allow nulls. INSERT fails.
+Request URL: /useraclSQL/file/personal_requirements/add
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(776): PDO->exec('INSERT INTO [fi...')
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('INSERT INTO [fi...', Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO [fi...')
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(359): DboSource->create(Object(PersonalRequirement), Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Model.php(1854): Sqlserver->create(Object(PersonalRequirement), Array, Array)
+#5 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalRequirementsController.php(61): Model->save(Array)
+#6 [internal function]: PersonalRequirementsController->add()
+#7 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PersonalRequirementsController), Array)
+#8 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PersonalRequirementsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-03-09 16:48:07 Error: [PDOException] SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert the value NULL into column 'expedition_date', table 'ssurrhh.dbo.file_personal_requirements'; column does not allow nulls. INSERT fails.
+Request URL: /useraclSQL/file/personal_requirements/add
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(776): PDO->exec('INSERT INTO [fi...')
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('INSERT INTO [fi...', Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO [fi...')
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(359): DboSource->create(Object(PersonalRequirement), Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Model.php(1854): Sqlserver->create(Object(PersonalRequirement), Array, Array)
+#5 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalRequirementsController.php(61): Model->save(Array)
+#6 [internal function]: PersonalRequirementsController->add()
+#7 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PersonalRequirementsController), Array)
+#8 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PersonalRequirementsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-03-09 05:15:17 Error: [PDOException] SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert the value NULL into column 'expedition_date', table 'ssurrhh.dbo.file_personal_requirements'; column does not allow nulls. INSERT fails.
+Request URL: /useraclSQL/file/personal_requirements/add
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(776): PDO->exec('INSERT INTO [fi...')
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('INSERT INTO [fi...', Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO [fi...')
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(359): DboSource->create(Object(PersonalRequirement), Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Model.php(1854): Sqlserver->create(Object(PersonalRequirement), Array, Array)
+#5 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalRequirementsController.php(61): Model->save(Array)
+#6 [internal function]: PersonalRequirementsController->add()
+#7 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PersonalRequirementsController), Array)
+#8 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PersonalRequirementsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-03-09 05:15:47 Error: [PDOException] SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert the value NULL into column 'expedition_date', table 'ssurrhh.dbo.file_personal_requirements'; column does not allow nulls. INSERT fails.
+Request URL: /useraclSQL/file/personal_requirements/add
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(776): PDO->exec('INSERT INTO [fi...')
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('INSERT INTO [fi...', Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO [fi...')
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(359): DboSource->create(Object(PersonalRequirement), Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Model.php(1854): Sqlserver->create(Object(PersonalRequirement), Array, Array)
+#5 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalRequirementsController.php(61): Model->save(Array)
+#6 [internal function]: PersonalRequirementsController->add()
+#7 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PersonalRequirementsController), Array)
+#8 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(PersonalRequirementsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-03-09 18:22:14 Error: Fatal Error (1): Cannot use object of type PersonalRequirement as array in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalRequirementsController.php, line 60]
+2015-03-09 18:22:15 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/personal_requirements/add/1
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\Aplicaciones...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\Aplicaciones...', 60, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\Aplicaciones...', 60, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-09 18:22:24 Error: Fatal Error (1): Cannot use object of type PersonalRequirement as array in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalRequirementsController.php, line 60]
+2015-03-09 18:22:24 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/personal_requirements/add/1
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot use obje...', 'C:\Aplicaciones...', 60)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', 'C:\Aplicaciones...', 60, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', 'C:\Aplicaciones...', 60, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-10 02:21:24 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\PersonalrequirementsController.php, line 109]
+Trace:
+PersonalrequirementsController::add() - APP\Plugin\File\Controller\PersonalrequirementsController.php, line 109
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+

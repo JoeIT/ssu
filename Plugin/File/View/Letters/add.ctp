@@ -1,3 +1,42 @@
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $('#LetterDigitalFile').change(function(event){
+            $('#LetterFileName').val( $('#LetterDigitalFile').val() );
+
+            /*
+             var tmppath = URL.createObjectURL( event.target.files[0] );
+             //$("img").fadeIn("fast").attr( 'src', URL.createObjectURL( event.target.files[0]) );
+             $("#DocumentFileName").val( tmppath );
+             */
+            //$('#DocumentDigitalFile').val();
+            //--------------------------------
+            var files = event.target.files;
+            var file = files[0];
+
+            if (files && file)
+            {
+                var reader = new FileReader();
+
+                reader.onload = function(readerEvt)
+                {
+                    $("#LetterFileBase64").val( btoa( readerEvt.target.result ) );
+                };
+
+                reader.readAsBinaryString(file);
+            }
+
+            /*
+             if (window.File && window.FileReader && window.FileList && window.Blob) {
+             document.getElementById('DocumentDigitalFile').addEventListener('change', handleFileSelect, false);
+             } else {
+             alert('The File APIs are not fully supported in this browser.');
+             }*/
+        });
+    });
+</script>
+
 <?php
 // This is an ajax view
 echo $this->Form->create('Letter', array('type' => 'file'));
@@ -22,7 +61,7 @@ echo $this->Js->submit('GUARDAR', array(
 if($saved == true)
 {
     echo "<script>
-            loadIndexPanel('letters');
+            //loadIndexPanel('letters');
             $('#dialog_content').dialog('close');  //Close containing dialog
         </script>";
 }

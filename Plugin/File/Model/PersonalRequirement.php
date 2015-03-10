@@ -2,7 +2,7 @@
 
 App::uses('FileAppModel',  'File.Model');
 
-class PersonalRequirement extends FileAppModel
+class Personalrequirement extends FileAppModel
 {
     public $belongsTo = array(
         'Employee' => array(
@@ -13,7 +13,7 @@ class PersonalRequirement extends FileAppModel
     public $validate = array(
         'expedition_date' => array(
             'rule' => 'date',
-            'allowEmpty' => false
+            'allowEmpty' => true
         ),
         'code' => array(
             'rule' => array('custom', '/^[a-z0-9 \/.-]+$/i'),
@@ -75,24 +75,25 @@ class PersonalRequirement extends FileAppModel
 
     public function findByEmployee($employeeId)
     {
-        $conditions = array('PersonalRequirement.employee_id' => $employeeId);
+        $conditions = array('Personalrequirement.employee_id' => $employeeId);
 
         $params = array(
             'conditions' => $conditions,
-            'order' => array('PersonalRequirement.expedition_date DESC')
+            'order' => array('Personalrequirement.expedition_date DESC')
         );
         return $this->find('all', $params);
     }
 
     public function findByEmployeeAndTag($employeeId, $tag, $documentType)
     {
+        echo "TAG: $tag";
         $conditions = array(
-            'PersonalRequirement.employee_id' => $employeeId
+            'Personalrequirement.employee_id' => $employeeId
         );
 
         $params = array(
             'conditions' => $conditions,
-            'order' => array('PersonalRequirement.expedition_date DESC'),
+            'order' => array('Personalrequirement.expedition_date DESC'),
             'joins' => array(
                 array(
                     'table' => 'file_document_tags',
@@ -100,7 +101,7 @@ class PersonalRequirement extends FileAppModel
                     'type' => 'INNER',
                     'conditions' => array(
                         'DocumentTag.tag' => $tag,
-                        'DocumentTag.document_id = PersonalRequirement.id',
+                        'DocumentTag.document_id = Personalrequirement.id',
                         'DocumentTag.document_type' => $documentType
                     )
                 )
@@ -112,12 +113,12 @@ class PersonalRequirement extends FileAppModel
     public function nextFileNameAvailable($employeeId)
     {
         $params = array(
-            'conditions' => array('PersonalRequirement.employee_id' => $employeeId),
+            'conditions' => array('Personalrequirement.employee_id' => $employeeId),
             //'fields' => array('MAX(Document.digital_file) AS lastFileName'),
-            'order' => array('PersonalRequirement.digital_file DESC')
+            'order' => array('Personalrequirement.digital_file DESC')
         );
         $maxFile = $this->find('first', $params);
-        $fileArray = explode('.', $maxFile['PersonalRequirement']['digital_file']);
+        $fileArray = explode('.', $maxFile['Personalrequirement']['digital_file']);
 
         if(count($fileArray) > 1)
             return ($fileArray[0] + 1) . '.' . $fileArray[1];

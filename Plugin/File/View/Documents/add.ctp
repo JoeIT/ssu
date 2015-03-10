@@ -1,21 +1,9 @@
-
 <script type="text/javascript">
 $(document).ready(function(){
-
-    $('.docs_submit_button').click(function(){
-        //alert('Hello button');
-    });
 
     $('#DocumentDigitalFile').change(function(event){
         $('#DocumentFileName').val( $('#DocumentDigitalFile').val() );
 
-        /*
-        var tmppath = URL.createObjectURL( event.target.files[0] );
-        //$("img").fadeIn("fast").attr( 'src', URL.createObjectURL( event.target.files[0]) );
-        $("#DocumentFileName").val( tmppath );
-        */
-        //$('#DocumentDigitalFile').val();
-        //--------------------------------
         var files = event.target.files;
         var file = files[0];
 
@@ -30,13 +18,6 @@ $(document).ready(function(){
 
             reader.readAsBinaryString(file);
         }
-
-        /*
-        if (window.File && window.FileReader && window.FileList && window.Blob) {
-            document.getElementById('DocumentDigitalFile').addEventListener('change', handleFileSelect, false);
-        } else {
-            alert('The File APIs are not fully supported in this browser.');
-        }*/
     });
 });
 </script>

@@ -1,3 +1,26 @@
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        $('#CertificateDigitalFile').change(function(event){
+            $('#CertificateFileName').val( $('#CertificateDigitalFile').val() );
+
+            var files = event.target.files;
+            var file = files[0];
+
+            if (files && file)
+            {
+                var reader = new FileReader();
+
+                reader.onload = function(readerEvt)
+                {
+                    $("#CertificateFileBase64").val( btoa( readerEvt.target.result ) );
+                };
+
+                reader.readAsBinaryString(file);
+            }
+        });
+    });
+</script>
 <?php
 // This is an ajax view
 echo $this->Form->create('Certificate', array('type' => 'file'));

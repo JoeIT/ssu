@@ -11,11 +11,14 @@ class Employee extends FileAppModel
         'Certificate' => array(
             'className' => 'FileCertificate'
         ),
+        'Contract' => array(
+            'className' => 'FileContract'
+        ),
         'Memo' => array(
             'className' => 'FileMemo'
         ),
-        'PersonalRequirement' => array(
-            'className' => 'FilePersonalRequirement'
+        'Personalrequirement' => array(
+            'className' => 'FilePersonalrequirement'
         ),
         'Document' => array(
             'className' => 'FileDocument'
