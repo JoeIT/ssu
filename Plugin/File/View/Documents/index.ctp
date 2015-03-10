@@ -12,9 +12,6 @@ if( count($documentsList) > 0){
         <th></th>
     </tr>
     <?php
-    if( count($documentsList) == 0)
-        echo "<tr><td colspan='20' align='center'>NO HAY REGISTROS</td></tr>";
-
     foreach ($documentsList  as  $document){ ?>
         <tr>
             <td><?php echo $document['Document']['name']; ?></td>

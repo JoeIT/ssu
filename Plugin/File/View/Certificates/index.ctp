@@ -13,7 +13,7 @@ if( count($certificatesList) > 0){
         <th></th>
     </tr>
     <?php
-    foreach  ($certificatesList  as  $certificate){ ?>
+    foreach  ($certificatesList as $certificate){ ?>
         <tr>
             <td class="css-td_perfect_fit"><?php echo date("d/M/Y", strtotime($certificate['Certificate']['expedition_date']));  ?></td>
             <td><?php echo $certificate['Certificate']['titulation_grade'];  ?></td>

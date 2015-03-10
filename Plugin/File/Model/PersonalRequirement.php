@@ -86,7 +86,6 @@ class Personalrequirement extends FileAppModel
 
     public function findByEmployeeAndTag($employeeId, $tag, $documentType)
     {
-        echo "TAG: $tag";
         $conditions = array(
             'Personalrequirement.employee_id' => $employeeId
         );

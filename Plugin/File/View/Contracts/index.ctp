@@ -1,7 +1,6 @@
 <?php
 if( count($contractsList) > 0){
 ?>
-
 <h3>CONTRATOS DE TRABAJO</h3>
 
 <table border="1" class="css-index_table">
