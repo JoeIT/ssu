@@ -7,10 +7,17 @@ class EmployeesController extends FileAppController {
     public function index()
     {
         $this->Session->write('currentEmployeeID', '');
+        $this->set('DIGITAL_DOCS_PATH', $this->DIGITAL_DOCS_PATH);
 
-        //$last = listOrderByDate();
+        $birthdayEmployees = $this->Employee->getDailyBirthdays();
+        $this->set(compact('birthdayEmployees'));
 
+        $newlyHired = $this->Employee->listOrderByDate(5);
+        $this->set(compact('newlyHired'));
 
+        $notHired = $this->Employee->notHired();
+        $this->set(compact('notHired'));
+        //print_r($notHired);
     }
 
     public function panels()
@@ -20,6 +27,7 @@ class EmployeesController extends FileAppController {
         $this->set('GLOBAL_DOCS', $this->GLOBAL_DOCS);
         $this->set('GLOBAL_TAGS', $this->GLOBAL_TAGS);
         $this->set('DIGITAL_DOCS_PATH', $this->DIGITAL_DOCS_PATH);
+        $this->set('PROFESSIONAL_DEGREE', $this->PROFESSIONAL_DEGREE);
 
         //if(!$id) throw  new  NotFoundException(__('Id de empleado vacio'));
         //if(!$employee) throw new NotFoundException(__('Empleado no encontrado'));
@@ -62,8 +70,6 @@ class EmployeesController extends FileAppController {
             $this->request->data['Employee']['paternal_surname'] = strtoupper($this->request->data['Employee']['paternal_surname']);
             $this->request->data['Employee']['maternal_surname'] = strtoupper($this->request->data['Employee']['maternal_surname']);
             $this->request->data['Employee']['ci'] = strtoupper($this->request->data['Employee']['ci']);
-
-
 
             //$this->Employee->set( $this->request->data['Employee'] );
             if($this->Employee->validates())

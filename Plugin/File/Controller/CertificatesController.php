@@ -32,6 +32,7 @@ class CertificatesController extends FileAppController
 
         $this->set('saved', false);
 		$this->set('GLOBAL_TAGS', $this->GLOBAL_TAGS);
+		$this->set('CERTIFICATE_PROVISION', $this->CERTIFICATE_PROVISION);
 
         $selected = array();
         if($id != null)

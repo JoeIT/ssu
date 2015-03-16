@@ -25,7 +25,8 @@
 // This is an ajax view
 echo $this->Form->create('Certificate', array('type' => 'file'));
 echo $this->Form->input('expedition_date', array('label' => 'Fecha de expedición', 'dateFormat' => 'DMY', 'class' => 'css-date_area', 'minYear' => date('Y') - 100, 'maxYear' => date('Y'), 'separator' => '/'));
-echo $this->Form->input('titulation_grade', array('label' => 'Título obtenido(*)'));
+echo $this->Form->input('titulation_grade', array('label' => 'Título/Certificado(*)'));
+echo $this->Form->input('provision', array('label' => 'Provisión(*)', 'options' => $CERTIFICATE_PROVISION));
 echo $this->Form->input('institution', array('label' => 'Institución(*)'));
 echo $this->Form->input('location', array('label' => 'Ubicación'));
 echo $this->Form->input('description', array('label' => 'Descripción'));
@@ -45,7 +46,6 @@ echo $this->Js->submit('GUARDAR', array(
 if($saved == true)
 {
     echo "<script>
-            loadIndexPanel('certificates');
             $('#dialog_content').dialog('close');  //Close containing dialog
         </script>";
 }

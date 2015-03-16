@@ -50,7 +50,6 @@ echo $this->Js->submit('GUARDAR', array(
 if($saved == true)
 {
     echo "<script>
-            //loadIndexPanel('contracts');
             $('#dialog_content').dialog('close');  //Close containing dialog
         </script>";
 }

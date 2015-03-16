@@ -111,7 +111,7 @@ ______________________
 - Agregar subseccion para administrativos y salud
 - Agregar AdminLTE theme al proyecto
 - Hacer actualizar la lista de algun documento, cuando se agrega el mismo
-- En la ventana de empleado, no mostrar las listas de documentos que no contengan datos
+*** En la ventana de empleado, no mostrar las listas de documentos que no contengan datos
 - Validar los documentos subidos, su extension y tamaño.
 ***- Recuperar la foto de cada empleado
 ***- Guardar las imagenes de perfil de cada empleado

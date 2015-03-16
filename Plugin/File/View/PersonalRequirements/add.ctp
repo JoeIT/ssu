@@ -68,7 +68,6 @@ echo '</td></tr></table>';
 if($saved == true)
 {
     echo "<script>
-            //loadIndexPanel('personalrequirements');
             $('#dialog_content').dialog('close');  //Close containing dialog
         </script>";
 }

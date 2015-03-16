@@ -138,7 +138,7 @@
         switch (tag) {
             case 'records':
                 name = 'ANTECEDENTES Y TITULOS';
-                loadsRemaining = 4;
+                loadsRemaining = 6;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
@@ -148,7 +148,7 @@
                 break;
             case 'jobs':
                 name = 'EXPERIENCIAS DE TRABAJOS';
-                loadsRemaining = 4;
+                loadsRemaining = 6;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
@@ -158,7 +158,7 @@
                 break;
             case 'courses':
                 name = 'CURSOS REALIZADOS';
-                loadsRemaining = 4;
+                loadsRemaining = 6;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
@@ -168,7 +168,7 @@
                 break;
             case 'contracts':
                 name = 'CONTRATOS DE TRABAJO';
-                loadsRemaining = 4;
+                loadsRemaining = 6;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
@@ -178,7 +178,7 @@
                 break;
             case 'statements':
                 name = 'DECLARACIONES JURADAS DE BIENES Y RENTAS';
-                loadsRemaining = 4;
+                loadsRemaining = 6;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
@@ -188,7 +188,7 @@
                 break;
             case 'others':
                 name = 'OTROS';
-                loadsRemaining = 4;
+                loadsRemaining = 6;
                 ajaxLoadPanel(urlLetter, 'letters', tag, name);
                 ajaxLoadPanel(urlContract, 'contracts', tag, name);
                 ajaxLoadPanel(urlCertificate, 'certificates', tag, name);
@@ -247,7 +247,9 @@
 </script>
 
 <?php
-echo $this->Html->link('<<< PRINCIPAL', '/file/employees/index');
+echo $this->Html->link('<<< PRINCIPAL',
+    $this->Html->url(array("controller" => "employees", "action" => "index"), true),
+    array('class' =>  "css-action_button css-mini_action_button"));
 ?>
 
 <h1>DATOS DEL EMPLEADO</h1>
@@ -258,7 +260,6 @@ echo $this->Html->link('<<< PRINCIPAL', '/file/employees/index');
 		<div class=''>
 			<h2>Detalles</h2>
 		</div>
-
 		<?php echo $this->fetch('employee_info'); ?>
 	</div>
 	<!-- OTHER SECTION -->
@@ -284,7 +285,7 @@ echo $this->Html->link('<<< PRINCIPAL', '/file/employees/index');
                 <div id='panel_<?php echo $key ?>' class='panel_to_toggle css-panel_to_toggle'>
                     <?php foreach($GLOBAL_DOCS as $keyDoc => $doc){ ?>
                         <div id='panel_<?php echo $key . '_' . $keyDoc; ?>' class='panel_table' ></div>
-                    <?php }?>
+                    <?php } ?>
                 </div>
             </div>
         <?php

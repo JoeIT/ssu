@@ -24,6 +24,23 @@ class FileAppController extends AdminController {
         'documents' => 'Doc. personal'
     );
 
+    public $PROFESSIONAL_DEGREE = array(
+        'n' => 'Ninguno',
+        'd' => 'Doctorado',
+        'm' => 'Maestria',
+        'l' => 'Licenciatura',
+        's' => 'Técnico superior',
+        't' => 'Técnico medio',
+        'b' => 'Bachiller'
+    );
+
+    public $CERTIFICATE_PROVISION = array(
+        'z' => 'Ninguno',
+        'b' => 'Departamental',
+        'n' => 'Congreso nacional',
+        'i' => 'Congreso internacional'
+    );
+
     public $CONTRACT_TIME = array(
         'c' => 'Completo',
         'm' => 'Medio tiempo'

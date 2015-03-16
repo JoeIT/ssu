@@ -22,14 +22,6 @@ class Employee extends FileAppModel
         ),
         'Document' => array(
             'className' => 'FileDocument'
-        ),
-
-
-        'Statement' => array(
-            'className' => 'FileStatement'
-        ),
-        'Vacation' => array(
-            'className' => 'FileVacation'
         )
     );
 
@@ -83,10 +75,42 @@ class Employee extends FileAppModel
         )
 	);
 
-    public function listOrderByDate()
+    public function listOrderByDate($limit = 0, $order = 'DESC')
     {
         $params = array(
-            'order' => array('Employee.registred_datetime DESC')
+            'order' => array('Employee.registred_datetime ' . $order),
+            'limit' => $limit
+        );
+        return $this->find('all', $params);
+    }
+
+    public function getDailyBirthdays()
+    {
+        $params = array(
+            'conditions' => array('Employee.born_date LIKE' => '%-'. date('m-d')),
+            'order' => array('Employee.paternal_surname, Employee.maternal_surname, Employee.name')
+        );
+        return $this->find('all', $params);
+    }
+
+    public function notHired()
+    {
+        $aux = $this->query("SELECT e.id
+                              FROM dbo.file_employees e
+                              EXCEPT
+                              SELECT c.employee_id
+                              FROM dbo.file_contracts c
+                              WHERE c.end_date >= '" . date('Y-m-d') . "'");
+
+        $idNotHired = array();
+        foreach($aux as $id)
+        {
+            array_push($idNotHired, $id[0]['id']);
+        }
+
+        $params = array(
+            'conditions' => array('Employee.id' => $idNotHired),
+            'order' => array('Employee.paternal_surname, Employee.maternal_surname, Employee.name')
         );
         return $this->find('all', $params);
     }

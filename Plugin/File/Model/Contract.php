@@ -61,7 +61,7 @@ class Contract extends FileAppModel
 
         $params = array(
             'conditions' => $conditions,
-            'order' => array('Contract.start_date DESC')            
+            'order' => array('Contract.end_date DESC')
         );
         return $this->find('all', $params);
     }

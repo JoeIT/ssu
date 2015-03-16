@@ -42,7 +42,6 @@ echo $this->Js->submit('GUARDAR', array(
 if($saved == true)
 {
     echo "<script>
-            loadIndexPanel('documents');
             $('#dialog_content').dialog('close');  //Close containing dialog
         </script>";
 }
