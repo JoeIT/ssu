@@ -26,8 +26,8 @@
 echo $this->Form->create('Contract', array('type' => 'file'));
 
 echo $this->Form->input('number', array('label' => 'Contrato Nº(*)'));
-echo $this->Form->input('start_date', array('label' => 'Fecha de inicio', 'dateFormat' => 'DMY', 'class' => 'css-date_area', 'minYear' => date('Y') - 100, 'maxYear' => date('Y'), 'separator' => '/'));
-echo $this->Form->input('end_date', array('label' => 'Fecha de finalización', 'dateFormat' => 'DMY', 'class' => 'css-date_area', 'minYear' => date('Y') - 100, 'maxYear' => date('Y'), 'separator' => '/'));
+echo $this->Form->input('start_date', array('label' => 'Fecha de inicio', 'dateFormat' => 'DMY', 'class' => 'css-date_area', 'minYear' => date('Y') - 10, 'maxYear' => date('Y'), 'separator' => '/'));
+echo $this->Form->input('end_date', array('label' => 'Fecha de finalización', 'dateFormat' => 'DMY', 'class' => 'css-date_area', 'minYear' => date('Y'), 'maxYear' => date('Y') + 50, 'separator' => '/'));
 echo $this->Form->input('job', array('label' => 'Servicio a prestar(*)'));
 echo $this->Form->input('time', array('label' => 'Tiempo(*)', 'options' => $CONTRACT_TIME));
 echo $this->Form->input('salary', array('label' => 'Salario(*)'));

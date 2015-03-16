@@ -12,8 +12,8 @@ class EmployeesController extends FileAppController {
         $birthdayEmployees = $this->Employee->getDailyBirthdays();
         $this->set(compact('birthdayEmployees'));
 
-        $newlyHired = $this->Employee->listOrderByDate(5);
-        $this->set(compact('newlyHired'));
+        $newlyRegistered = $this->Employee->listOrderByDate(5);
+        $this->set(compact('newlyRegistered'));
 
         $notHired = $this->Employee->notHired();
         $this->set(compact('notHired'));

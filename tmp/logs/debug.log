@@ -10005,3 +10005,1514 @@ Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
 Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
 [main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
 
+2015-03-15 22:46:21 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:21 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:21 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:30 Debug: Notice (8): Undefined index: Employee in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php, line 107]
+Trace:
+EmployeesController::edit() - APP\Plugin\File\Controller\EmployeesController.php, line 107
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:30 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:30 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:30 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:36 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:36 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:36 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:40 Debug: Notice (8): Undefined index: Contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php, line 111]
+Trace:
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 111
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:40 Debug: Notice (8): Undefined variable: contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php, line 112]
+Trace:
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:40 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:40 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:40 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:46:40 Debug: Notice (8): Undefined variable: errorMessage in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Contracts\add.ctp, line 62]
+Trace:
+include - APP\Plugin\File\View\Contracts\add.ctp, line 62
+View::_evaluate() - C:\cakephp-2.5.4\Cake\View\View.php, line 948
+View::_render() - C:\cakephp-2.5.4\Cake\View\View.php, line 910
+View::render() - C:\cakephp-2.5.4\Cake\View\View.php, line 471
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:47:56 Debug: Notice (8): Undefined index: Contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php, line 111]
+Trace:
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 111
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:47:56 Debug: Notice (8): Undefined variable: contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php, line 112]
+Trace:
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:47:56 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:47:56 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:47:56 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:47:56 Debug: Notice (8): Undefined variable: errorMessage in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Contracts\add.ctp, line 62]
+Trace:
+include - APP\Plugin\File\View\Contracts\add.ctp, line 62
+View::_evaluate() - C:\cakephp-2.5.4\Cake\View\View.php, line 948
+View::_render() - C:\cakephp-2.5.4\Cake\View\View.php, line 910
+View::render() - C:\cakephp-2.5.4\Cake\View\View.php, line 471
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:48:35 Debug: Notice (8): Undefined index: Contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php, line 111]
+Trace:
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 111
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:48:35 Debug: Notice (8): Undefined variable: contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php, line 112]
+Trace:
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:48:36 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:48:36 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:48:36 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:48:36 Debug: Notice (8): Undefined variable: errorMessage in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Contracts\add.ctp, line 62]
+Trace:
+include - APP\Plugin\File\View\Contracts\add.ctp, line 62
+View::_evaluate() - C:\cakephp-2.5.4\Cake\View\View.php, line 948
+View::_render() - C:\cakephp-2.5.4\Cake\View\View.php, line 910
+View::render() - C:\cakephp-2.5.4\Cake\View\View.php, line 471
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:15 Debug: Notice (8): Undefined variable: contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php, line 58]
+Trace:
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 58
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:15 Debug: Notice (8): Undefined index: Contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Contract.php, line 102]
+Trace:
+Contract::nextFileNameAvailable() - APP\Plugin\File\Model\Contract.php, line 102
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 60
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:29 Debug: Notice (8): Undefined index: Employee in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php, line 107]
+Trace:
+EmployeesController::edit() - APP\Plugin\File\Controller\EmployeesController.php, line 107
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:29 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:29 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:29 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:31 Debug: Notice (8): Undefined index: Contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php, line 111]
+Trace:
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 111
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:31 Debug: Notice (8): Undefined variable: contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php, line 112]
+Trace:
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:31 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:31 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:31 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:31 Debug: Notice (8): Undefined variable: errorMessage in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Contracts\add.ctp, line 62]
+Trace:
+include - APP\Plugin\File\View\Contracts\add.ctp, line 62
+View::_evaluate() - C:\cakephp-2.5.4\Cake\View\View.php, line 948
+View::_render() - C:\cakephp-2.5.4\Cake\View\View.php, line 910
+View::render() - C:\cakephp-2.5.4\Cake\View\View.php, line 471
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:57 Debug: Notice (8): Undefined variable: contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php, line 58]
+Trace:
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 58
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:57 Debug: Notice (8): Undefined index: Contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Contract.php, line 102]
+Trace:
+Contract::nextFileNameAvailable() - APP\Plugin\File\Model\Contract.php, line 102
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 60
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:58 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:58 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:58 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:49:58 Debug: Notice (8): Undefined variable: errorMessage in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Contracts\add.ctp, line 62]
+Trace:
+include - APP\Plugin\File\View\Contracts\add.ctp, line 62
+View::_evaluate() - C:\cakephp-2.5.4\Cake\View\View.php, line 948
+View::_render() - C:\cakephp-2.5.4\Cake\View\View.php, line 910
+View::render() - C:\cakephp-2.5.4\Cake\View\View.php, line 471
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:04 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:04 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:04 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:05 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:05 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:05 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:05 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:05 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:05 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:06 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:06 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:06 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:06 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:06 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:06 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:07 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:07 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:07 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:11 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:11 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:11 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:15 Debug: Notice (8): Undefined index: Employee in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php, line 107]
+Trace:
+EmployeesController::edit() - APP\Plugin\File\Controller\EmployeesController.php, line 107
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:15 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:15 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:15 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:22 Debug: Notice (8): Undefined index: Contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php, line 111]
+Trace:
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 111
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:22 Debug: Notice (8): Undefined variable: contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php, line 112]
+Trace:
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 112
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:22 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:22 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:22 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:22 Debug: Notice (8): Undefined variable: errorMessage in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Contracts\add.ctp, line 62]
+Trace:
+include - APP\Plugin\File\View\Contracts\add.ctp, line 62
+View::_evaluate() - C:\cakephp-2.5.4\Cake\View\View.php, line 948
+View::_render() - C:\cakephp-2.5.4\Cake\View\View.php, line 910
+View::render() - C:\cakephp-2.5.4\Cake\View\View.php, line 471
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:55 Debug: Notice (8): Undefined variable: contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php, line 58]
+Trace:
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 58
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:55 Debug: Notice (8): Undefined index: Contract in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Contract.php, line 102]
+Trace:
+Contract::nextFileNameAvailable() - APP\Plugin\File\Model\Contract.php, line 102
+ContractsController::add() - APP\Plugin\File\Controller\ContractsController.php, line 60
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:55 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:55 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:55 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:55 Debug: Notice (8): Undefined variable: errorMessage in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Contracts\add.ctp, line 62]
+Trace:
+include - APP\Plugin\File\View\Contracts\add.ctp, line 62
+View::_evaluate() - C:\cakephp-2.5.4\Cake\View\View.php, line 948
+View::_render() - C:\cakephp-2.5.4\Cake\View\View.php, line 910
+View::render() - C:\cakephp-2.5.4\Cake\View\View.php, line 471
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:58 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:58 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:58 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:58 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:58 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:58 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:59 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:59 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:59 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:59 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:59 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:59 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:59 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:59 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:50:59 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:51:00 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:51:00 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:51:00 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:51:04 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:51:04 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:51:04 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:52:44 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:52:44 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:52:44 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:53:30 Debug: Strict (2048): Declaration of JavascriptHelper::value() should be compatible with Helper::value($options = Array, $field = NULL, $key = 'value') in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:53:30 Debug: Strict (2048): Declaration of JavascriptHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\JavascriptHelper.php, line 687]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-15 22:53:30 Debug: Strict (2048): Declaration of AjaxHelper::afterRender() should be compatible with Helper::afterRender($viewFile) in [C:\Aplicaciones\useraclSQL\View\Helper\AjaxHelper.php, line 1460]
+Trace:
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+App::load() - C:\cakephp-2.5.4\Cake\Core\App.php, line 547
+spl_autoload_call - [internal], line ??
+class_exists - [internal], line ??
+HelperCollection::load() - C:\cakephp-2.5.4\Cake\View\HelperCollection.php, line 130
+View::loadHelpers() - C:\cakephp-2.5.4\Cake\View\View.php, line 886
+View::__construct() - C:\cakephp-2.5.4\Cake\View\View.php, line 354
+Controller::_getViewObject() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 1241
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 940
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+

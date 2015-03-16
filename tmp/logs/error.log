@@ -27969,3 +27969,18 @@ Stack Trace:
 #3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-03-15 22:49:16 Error: [PDOException] SQLSTATE[23000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Cannot insert the value NULL into column 'employee_id', table 'ssurrhh.dbo.file_contracts'; column does not allow nulls. INSERT fails.
+Request URL: /useraclSQL/file/contracts/add
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(776): PDO->exec('INSERT INTO [fi...')
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('INSERT INTO [fi...', Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO [fi...')
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(359): DboSource->create(Object(Contract), Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Model.php(1854): Sqlserver->create(Object(Contract), Array, Array)
+#5 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\ContractsController.php(66): Model->save(Array)
+#6 [internal function]: ContractsController->add()
+#7 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ContractsController), Array)
+#8 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ContractsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}

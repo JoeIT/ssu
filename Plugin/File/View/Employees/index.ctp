@@ -64,8 +64,8 @@
     <div class="css-container">
         <!-- NUEVOS CONTRATADOS -->
         <div class="css-info_panels">
-            <h3>ULTIMAS CONTRATACIONES</h3>
-            <?php foreach($newlyHired as $employee){ ?>
+            <h3>ULTIMOS REGISTRADOS</h3>
+            <?php foreach($newlyRegistered as $employee){ ?>
                         <div class="css-employee_box">
                             <a href="<?php
                             echo $this->Html->url(array("controller" => "employees", "action" => "edit", $employee['Employee']['id']), true)
