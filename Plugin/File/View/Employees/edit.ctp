@@ -26,8 +26,8 @@ echo $this->Form->input('born_date', array('type' => 'date', 'label' => 'Fecha d
 echo $this->Form->input('born_country', array('label' => 'País de procedencia (*)'));
 echo $this->Form->input('born_city', array('label' => 'Ciudad de procedencia (*)'));
 echo $this->Form->input('ci', array('label' => 'Carnet identidad (*)'));
-echo $this->Form->input('gender', array('label' => 'Género', 'options' => array('m' => 'Masculino', 'f' => 'Femenino')));
-echo $this->Form->input('profile', array('label' => 'Perfíl', 'options' => array('a' => 'Administrativo', 's' => 'Salud', 'g' => 'Servicios de apoyo/generales')));
+echo $this->Form->input('gender', array('label' => 'Género', 'options' => $GENDER));
+echo $this->Form->input('profile', array('label' => 'Perfíl', 'options' => $PROFILE));
 echo $this->Form->input('professional_degree', array('label' => 'Grado profesional', 'options' => $PROFESSIONAL_DEGREE));
 
 echo $this->Form->input('address', array('label' => 'Dirección'));

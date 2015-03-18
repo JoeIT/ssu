@@ -64,6 +64,9 @@ class Employee extends FileAppModel
             'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
             'allowEmpty' => false
         ),
+        'professional_degree' => array(
+            'rule' => 'alphaNumeric'
+        ),
         'address' => array(
             'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
             'allowEmpty' => true
@@ -110,6 +113,64 @@ class Employee extends FileAppModel
 
         $params = array(
             'conditions' => array('Employee.id' => $idNotHired),
+            'order' => array('Employee.paternal_surname, Employee.maternal_surname, Employee.name')
+        );
+        return $this->find('all', $params);
+    }
+
+    public function search($name, $lastName, $code, $ci, $gender, $profile, $degree, $certificate)
+    {
+        $conditions = array();
+
+        if(!empty($name))
+            $conditions['name LIKE '] = "%$name%";
+        if(!empty($lastName)) {
+            $conditions['OR'] = array(
+                'paternal_surname LIKE ' => "%$lastName%",
+                'maternal_surname LIKE ' => "%$lastName%"
+            );
+        }
+        if(!empty($code))
+            $conditions['code LIKE '] = "%$code%";
+        if(!empty($ci))
+            $conditions['ci'] = "%$ci%";
+        if(!empty($gender))
+            $conditions['gender'] = $gender;
+        if(!empty($profile))
+            $conditions['profile'] = $profile;
+        if(!empty($degree))
+            $conditions['professional_degree'] = $degree;
+
+        $joinCertificates = array();
+
+        if(!empty($certificate))
+        {
+            $aux = array(
+                'table' => 'file_certificates',
+                'alias' => 'Certificate',
+                'type' => 'INNER',
+                'conditions' => array(
+                    'Certificate.employee_id = Employee.id',
+                    'Certificate.provision' => $certificate
+                )
+            );
+
+            array_push($joinCertificates, $aux);
+        }
+
+        $params = array(
+            'fields' => array('DISTINCT Employee.id',
+                'Employee.paternal_surname',
+                'Employee.maternal_surname',
+                'Employee.name',
+                'Employee.code',
+                'Employee.ci',
+                'Employee.gender',
+                'Employee.profile',
+                'Employee.professional_degree'
+            ),
+            'conditions' => $conditions,
+            'joins' => $joinCertificates,
             'order' => array('Employee.paternal_surname, Employee.maternal_surname, Employee.name')
         );
         return $this->find('all', $params);

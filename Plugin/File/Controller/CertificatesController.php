@@ -12,6 +12,7 @@ class CertificatesController extends FileAppController
         $this->layout = false;
         
 		$tag = $this->request->data('documentTag');
+        $this->set('CERTIFICATE_PROVISION', $this->CERTIFICATE_PROVISION);
 
         $this->set('certificatesList', $this->Certificate->findByEmployeeAndTag(
                 $this->Session->read('currentEmployeeID'),
@@ -115,6 +116,7 @@ class CertificatesController extends FileAppController
     public function delete($id = null)
     {
         $this->layout = false;
+        $this->set('CERTIFICATE_PROVISION', $this->CERTIFICATE_PROVISION);
 
         $certificate = $this->Certificate->findById($id);
 

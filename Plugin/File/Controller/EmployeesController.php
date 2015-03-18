@@ -8,6 +8,10 @@ class EmployeesController extends FileAppController {
     {
         $this->Session->write('currentEmployeeID', '');
         $this->set('DIGITAL_DOCS_PATH', $this->DIGITAL_DOCS_PATH);
+        $this->set('GENDER', $this->GENDER);
+        $this->set('PROFILE', $this->PROFILE);
+        $this->set('PROFESSIONAL_DEGREE', $this->PROFESSIONAL_DEGREE);
+        $this->set('CERTIFICATE_PROVISION', $this->CERTIFICATE_PROVISION);
 
         $birthdayEmployees = $this->Employee->getDailyBirthdays();
         $this->set(compact('birthdayEmployees'));
@@ -27,6 +31,8 @@ class EmployeesController extends FileAppController {
         $this->set('GLOBAL_DOCS', $this->GLOBAL_DOCS);
         $this->set('GLOBAL_TAGS', $this->GLOBAL_TAGS);
         $this->set('DIGITAL_DOCS_PATH', $this->DIGITAL_DOCS_PATH);
+        $this->set('GENDER', $this->GENDER);
+        $this->set('PROFILE', $this->PROFILE);
         $this->set('PROFESSIONAL_DEGREE', $this->PROFESSIONAL_DEGREE);
 
         //if(!$id) throw  new  NotFoundException(__('Id de empleado vacio'));
@@ -127,4 +133,25 @@ class EmployeesController extends FileAppController {
 		
 		//print_r($userinfo);
 	}
+
+    public function search()
+    {
+        $this->layout = false;
+
+        $lastName = $this->request->data('lastName');
+        $name = $this->request->data('name');
+        $code = $this->request->data('code');
+        $ci = $this->request->data('ci');
+        $gender = $this->request->data('gender');
+        $profile = $this->request->data('profile');
+        $degree = $this->request->data('degree');
+        $certificate = $this->request->data('certificate');
+
+        $result = $this->Employee->search($name, $lastName, $code, $ci, $gender, $profile, $degree, $certificate);
+        $this->set(compact('result'));
+        $this->set('GENDER', $this->GENDER);
+        $this->set('PROFILE', $this->PROFILE);
+        $this->set('PROFESSIONAL_DEGREE', $this->PROFESSIONAL_DEGREE);
+        $this->set('CERTIFICATE_PROVISION', $this->CERTIFICATE_PROVISION);
+    }
 }

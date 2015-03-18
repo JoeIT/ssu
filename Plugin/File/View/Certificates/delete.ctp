@@ -11,10 +11,16 @@ echo  $this->Form->create('Certificate');
         <td><?php echo $certificate['Certificate']['expedition_date']; ?></td>
     </tr>
     <tr>
-        <th>Título obtenido:</th>
+        <th>Título/Certificado:</th>
     </tr>
     <tr>
         <td><?php echo h($certificate['Certificate']['titulation_grade']); ?></td>
+    </tr>
+    <tr>
+        <th>Modalidad:</th>
+    </tr>
+    <tr>
+        <td><?php echo $CERTIFICATE_PROVISION[$certificate['Certificate']['provision']]; ?></td>
     </tr>
     <tr>
         <th>Institución:</th>

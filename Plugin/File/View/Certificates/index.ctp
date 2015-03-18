@@ -9,6 +9,7 @@ if( count($certificatesList) > 0){
         <th>TITULO</th>
         <th>INSTITUCION</th>
         <th>UBICACION</th>
+        <th>MODALIDAD</th>
         <th>DIGITAL</th>
         <th></th>
     </tr>
@@ -19,6 +20,7 @@ if( count($certificatesList) > 0){
             <td><?php echo $certificate['Certificate']['titulation_grade'];  ?></td>
             <td><?php echo $certificate['Certificate']['institution'];  ?></td>
             <td><?php echo $certificate['Certificate']['location'];  ?></td>
+            <td><?php echo $CERTIFICATE_PROVISION[$certificate['Certificate']['provision']];  ?></td>
             <td>
                 <?php
                 if( !empty($certificate['Certificate']['digital_file']) && $certificate['Certificate']['digital_file'] != null ){ ?>

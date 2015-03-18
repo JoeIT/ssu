@@ -104,24 +104,22 @@ http://www.jamesfairhurst.co.uk/posts/view/cakephp_contact_form_with_file_upload
 
 http://almsaeedstudio.com/preview
 ______________________
-*** Programar el registro de contratos
+
+-- CORREGIR ERROR DE PERDIDA DE ID DE EMPLEADO POR REFRESCAR OTRA TAB CON INDEX
 ??- Crear permisos para acceder a secciones
 - Crear sub-modulo de busqedas de personal
 - Crear sub-modulo de subida masiva de archivos
 - Agregar subseccion para administrativos y salud
 - Agregar AdminLTE theme al proyecto
 - Hacer actualizar la lista de algun documento, cuando se agrega el mismo
-*** En la ventana de empleado, no mostrar las listas de documentos que no contengan datos
 - Validar los documentos subidos, su extension y tamaño.
-***- Recuperar la foto de cada empleado
-***- Guardar las imagenes de perfil de cada empleado
-***- Guardar los archivos en carpeta de plugin
 - Limpiar datos de sesion(id del empleado) al salir del empleado
 - Evitar que se guarden datos con el mismo nombre
 - Mostrar en add el archivo cargado al lado del boton del chooser
 - Usar DatePickers en vez de los choosers
 
-
-- Mostrar los ultimos contratados
-- Mostrar los empleados que ya no tienen un contrato vigente
-- Mostrar los cumpleañeros del dia
+*** Programar el registro de contratos
+*** Recuperar la foto de cada empleado
+*** Guardar las imagenes de perfil de cada empleado
+*** Guardar los archivos en carpeta de plugin
+*** En la ventana de empleado, no mostrar las listas de documentos que no contengan datos

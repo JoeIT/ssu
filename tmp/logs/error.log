@@ -27984,3 +27984,906 @@ Stack Trace:
 #9 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ContractsController), Object(CakeRequest))
 #10 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2015-03-16 08:55:06 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php, line 135]
+2015-03-16 08:55:06 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/auth_acl/permissions
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\cakephp-2.5....', 135)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\cakephp-2.5....', 135, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\cakephp-2.5....', 135, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-16 11:32:36 Error: [MissingControllerException] Controller class EmployeeController could not be found.
+Exception Attributes: array (
+  'class' => 'EmployeeController',
+  'plugin' => 'File',
+)
+Request URL: /useraclSQL/file/employee/search
+Stack Trace:
+#0 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-16 12:02:52 Warning: Warning (2): Missing argument 1 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 143 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 143
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:02:52 Warning: Warning (2): Missing argument 2 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 143 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 143
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:02:52 Warning: Warning (2): Missing argument 3 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 143 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 143
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:02:52 Warning: Warning (2): Missing argument 4 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 143 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 143
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:02:52 Warning: Warning (2): Missing argument 5 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 143 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 143
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:02:52 Warning: Warning (2): Missing argument 6 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 143 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 143
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:04:30 Warning: Warning (2): Missing argument 1 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 143 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 143
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:04:30 Warning: Warning (2): Missing argument 2 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 143 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 143
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:04:30 Warning: Warning (2): Missing argument 3 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 143 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 143
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:04:30 Warning: Warning (2): Missing argument 4 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 143 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 143
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:04:30 Warning: Warning (2): Missing argument 5 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 143 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 143
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:04:30 Warning: Warning (2): Missing argument 6 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 143 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 143
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:07:24 Warning: Warning (2): Missing argument 1 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 144 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 144
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:07:24 Warning: Warning (2): Missing argument 2 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 144 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 144
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:07:24 Warning: Warning (2): Missing argument 3 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 144 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 144
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:07:24 Warning: Warning (2): Missing argument 4 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 144 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 144
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:07:24 Warning: Warning (2): Missing argument 5 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 144 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 144
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:07:24 Warning: Warning (2): Missing argument 6 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 144 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 144
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:10:18 Warning: Warning (2): Missing argument 1 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 144 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 144
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:10:18 Warning: Warning (2): Missing argument 2 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 144 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 144
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:10:18 Warning: Warning (2): Missing argument 3 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 144 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 144
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:10:18 Warning: Warning (2): Missing argument 4 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 144 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 144
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:10:18 Warning: Warning (2): Missing argument 5 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 144 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 144
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:10:18 Warning: Warning (2): Missing argument 6 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 144 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 144
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:26:22 Warning: Warning (2): Missing argument 1 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 145 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 145
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:26:22 Warning: Warning (2): Missing argument 2 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 145 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 145
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:26:22 Warning: Warning (2): Missing argument 3 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 145 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 145
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:26:22 Warning: Warning (2): Missing argument 4 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 145 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 145
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:26:22 Warning: Warning (2): Missing argument 5 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 145 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 145
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:26:22 Warning: Warning (2): Missing argument 6 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 145 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 145
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:44 Warning: Warning (2): Missing argument 1 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:44 Warning: Warning (2): Missing argument 2 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:44 Warning: Warning (2): Missing argument 3 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:44 Warning: Warning (2): Missing argument 4 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:44 Warning: Warning (2): Missing argument 5 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:44 Warning: Warning (2): Missing argument 6 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:48 Warning: Warning (2): Missing argument 1 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:48 Warning: Warning (2): Missing argument 2 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:48 Warning: Warning (2): Missing argument 3 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:48 Warning: Warning (2): Missing argument 4 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:48 Warning: Warning (2): Missing argument 5 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:48 Warning: Warning (2): Missing argument 6 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:51 Warning: Warning (2): Missing argument 1 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:51 Warning: Warning (2): Missing argument 2 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:51 Warning: Warning (2): Missing argument 3 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:51 Warning: Warning (2): Missing argument 4 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:51 Warning: Warning (2): Missing argument 5 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:27:51 Warning: Warning (2): Missing argument 6 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:28:45 Warning: Warning (2): Missing argument 1 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:28:45 Warning: Warning (2): Missing argument 2 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:28:45 Warning: Warning (2): Missing argument 3 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:28:45 Warning: Warning (2): Missing argument 4 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:28:45 Warning: Warning (2): Missing argument 5 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-16 12:28:45 Warning: Warning (2): Missing argument 6 for Employee::search(), called in C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php on line 147 and defined in [C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php, line 121]
+Trace:
+Employee::search() - APP\Plugin\File\Model\Employee.php, line 121
+EmployeesController::search() - APP\Plugin\File\Controller\EmployeesController.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-18 09:52:31 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Employees\index.ctp, line 219]
+Trace:
+include - APP\Plugin\File\View\Employees\index.ctp, line 219
+View::_evaluate() - C:\cakephp-2.5.4\Cake\View\View.php, line 948
+View::_render() - C:\cakephp-2.5.4\Cake\View\View.php, line 910
+View::render() - C:\cakephp-2.5.4\Cake\View\View.php, line 471
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-18 09:53:29 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Employees\index.ctp, line 219]
+Trace:
+include - APP\Plugin\File\View\Employees\index.ctp, line 219
+View::_evaluate() - C:\cakephp-2.5.4\Cake\View\View.php, line 948
+View::_render() - C:\cakephp-2.5.4\Cake\View\View.php, line 910
+View::render() - C:\cakephp-2.5.4\Cake\View\View.php, line 471
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-18 09:53:30 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Employees\index.ctp, line 219]
+Trace:
+include - APP\Plugin\File\View\Employees\index.ctp, line 219
+View::_evaluate() - C:\cakephp-2.5.4\Cake\View\View.php, line 948
+View::_render() - C:\cakephp-2.5.4\Cake\View\View.php, line 910
+View::render() - C:\cakephp-2.5.4\Cake\View\View.php, line 471
+Controller::render() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 954
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 198
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-18 10:06:01 Error: [PDOException] SQLSTATE[42S02]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Invalid object name 'file_document_certificates'.
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  [Employ...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Employ...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  [Employ...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  [Employ...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(163): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:22:54 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Column 'file_employees.name' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  [Employ...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Employ...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  [Employ...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  [Employ...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(169): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:23:46 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Column 'file_employees.name' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  [Employ...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Employ...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  [Employ...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  [Employ...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(169): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:26:57 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Column 'file_employees.name' 
+is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  [Employ...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Employ...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  [Employ...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  [Employ...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(167): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:36:51 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Column "file_employees.paternal_surname" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause.
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  [Employ...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Employ...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  [Employ...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  [Employ...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(168): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:37:24 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Column 'file_employees.name' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  [Employ...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Employ...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  [Employ...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  [Employ...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(168): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:38:01 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Column 'file_employees.id' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  [Employ...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Employ...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  [Employ...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  [Employ...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(168): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:38:17 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Column 'file_employees.id' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  [Employ...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Employ...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  [Employ...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  [Employ...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(168): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:38:38 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Column 'file_employees.id' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  [Employ...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Employ...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  [Employ...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  [Employ...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(168): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:38:58 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Column 'file_employees.name' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  [Employ...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Employ...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  [Employ...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  [Employ...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(168): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:39:15 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Column
+ "file_employees.paternal_surname" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the 
+ GROUP BY clause.
+
+ Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  [Employ...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Employ...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  [Employ...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  [Employ...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(168): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:40:09 Error: Fatal Error (1): Call to a member function schema() on a non-object in 
+[C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php, line 304]
+2015-03-18 10:40:10 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\cakephp-2.5....', 304)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\cakephp-2.5....', 304, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\cakephp-2.5....', 304, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-18 10:41:03 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Column 
+"file_employees.paternal_surname" is invalid in the ORDER BY clause because it is not contained in either an aggregate function or the GROUP BY clause.
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  Employe...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  Employe...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  Employe...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  Employe...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(168): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:43:58 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Column 'file_employees.name' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  [Employ...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Employ...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  [Employ...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  [Employ...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(167): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:49:00 Error: [PDOException] SQLSTATE[42S22]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Invalid column name 'Employee.id, Employee'.
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  [Employ...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Employ...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  [Employ...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  [Employ...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(168): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:49:51 Error: [PDOException] SQLSTATE[42000]: [Microsoft][SQL Server Native Client 11.0][SQL Server]Column 'file_employees.paternal_surname' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(773): DboSource->_execute('SELECT  [Employ...', Array, Array)
+#2 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(424): Sqlserver->_execute('SELECT  [Employ...', Array)
+#3 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('SELECT  [Employ...', Array, Array)
+#4 C:\cakephp-2.5.4\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT  [Employ...', false)
+#5 C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php(617): DboSource->read(Object(Employee), Array, NULL)
+#6 C:\cakephp-2.5.4\Cake\Model\Model.php(2947): Sqlserver->read(Object(Employee), Array)
+#7 C:\cakephp-2.5.4\Cake\Model\Model.php(2919): Model->_readDataSource('all', Array)
+#8 C:\Aplicaciones\useraclSQL\Plugin\File\Model\Employee.php(168): Model->find('all', Array)
+#9 C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php(150): Employee->search('', '', '', '', '', '', '', 's')
+#10 [internal function]: EmployeesController->search()
+#11 C:\cakephp-2.5.4\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#12 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest))
+#14 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-03-18 10:51:45 Error: Fatal Error (1): Call to a member function schema() on a non-object in [C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php, line 304]
+2015-03-18 10:51:45 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\cakephp-2.5....', 304)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\cakephp-2.5....', 304, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\cakephp-2.5....', 304, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

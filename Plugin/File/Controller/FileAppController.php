@@ -26,17 +26,34 @@ class FileAppController extends AdminController {
 
     public $PROFESSIONAL_DEGREE = array(
         'n' => 'Ninguno',
-        'd' => 'Doctorado',
-        'm' => 'Maestria',
-        'l' => 'Licenciatura',
-        's' => 'Técnico superior',
+        'c' => 'Certificado escolar',
+        'p' => 'Primaria',
+        's' => 'Secundaria',
+        'b' => 'Bachiller',
         't' => 'Técnico medio',
-        'b' => 'Bachiller'
+        'u' => 'Técnico superior',
+        'l' => 'Licenciatura',
+        'd' => 'Diplomado',
+        'm' => 'Maestria',
+        'o' => 'Doctorado'
+    );
+
+    public $PROFILE = array(
+        'a' => 'Administrativo',
+        's' => 'Salud',
+        'g' => 'Servicios de apoyo/generales'
+    );
+
+    public $GENDER = array(
+        'm' => 'Masculino',
+        'f' => 'Femenino'
     );
 
     public $CERTIFICATE_PROVISION = array(
         'z' => 'Ninguno',
-        'b' => 'Departamental',
+        'c' => 'Curso',
+        't' => 'Taller',
+        's' => 'Seminario',
         'n' => 'Congreso nacional',
         'i' => 'Congreso internacional'
     );
