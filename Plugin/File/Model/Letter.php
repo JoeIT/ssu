@@ -27,19 +27,20 @@ class Letter extends FileAppModel
         ),
         'subject' => array(
             //'rule' => array('custom', '/([\w.-]+ )+[\w+.-]/'),
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'), // Regex to allow alphanumeric and internal spaces
+            //'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'), // Regex to allow alphanumeric and internal spaces
+            'rule' => array('custom', '/[^\pL\d]+/u'), // Regex to allow alphanumeric and internal spaces
             'allowEmpty' => false
         ),
         'addressee' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => false
         ),
         'content_text' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'digital_file' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         )
     );

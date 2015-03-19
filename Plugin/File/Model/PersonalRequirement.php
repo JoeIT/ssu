@@ -16,19 +16,19 @@ class Personalrequirement extends FileAppModel
             'allowEmpty' => true
         ),
         'code' => array(
-            'rule' => array('custom', '/^[a-z0-9 \/.-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => false
         ),
         'area' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'unit' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'job' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'from_date' => array(
@@ -40,19 +40,19 @@ class Personalrequirement extends FileAppModel
             'allowEmpty' => true
         ),
         'reason' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'supersede' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'comments' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'petitioner' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'petition_date' => array(
@@ -60,7 +60,7 @@ class Personalrequirement extends FileAppModel
             'allowEmpty' => true
         ),
         'report' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'report_date' => array(
@@ -68,7 +68,7 @@ class Personalrequirement extends FileAppModel
             'allowEmpty' => true
         ),
         'approved_by' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         )
     );

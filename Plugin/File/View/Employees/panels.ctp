@@ -16,7 +16,7 @@
             buildCode();
         });
 
-        $(document).on('click', '#crud_action', function () {
+        $(document).on('click', '#crud_action', function (){
             var title = '';
             var action = $(this).attr('action');
             var tag = $(this).attr('tag');

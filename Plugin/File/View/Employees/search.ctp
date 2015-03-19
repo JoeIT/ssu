@@ -9,8 +9,11 @@
         <th>Grado profesional</th>
     </tr>
     <?php
-    foreach ($result  as  $employee){ ?>
+    if(count($result) == 0)
+        echo "<tr><td colspan='6'>NO SE TIENEN RESULTADOS PARA ESTA BUSQUEDA.</td></td></tr>";
 
+
+    foreach ($result as $employee){ ?>
     <tr>
         <td align="left"><?php echo $employee['Employee']['paternal_surname'] . ' ' . $employee['Employee']['maternal_surname'] . ' ' . $employee['Employee']['name']; ?></td>
         <td>

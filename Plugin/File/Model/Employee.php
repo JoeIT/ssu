@@ -27,7 +27,7 @@ class Employee extends FileAppModel
 
     public $validate = array(
         'name' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'), // Regex to allow alphanumeric and internal spaces
+            'rule' => array('custom', '/[^\pL\d]+/u'), // Regex to allow alphanumeric and internal spaces
             'allowEmpty' => false
         ),
         'paternal_surname' => array(
@@ -46,10 +46,10 @@ class Employee extends FileAppModel
             'allowEmpty' => false
 		),
         'born_country' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i')
+            'rule' => array('custom', '/[^\pL\d]+/u')
         ),
         'born_city' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i')
+            'rule' => array('custom', '/[^\pL\d]+/u')
         ),
         'ci' => array(
             'rule' => array('minLength', '5'),
@@ -61,14 +61,14 @@ class Employee extends FileAppModel
             'allowEmpty' => false
         ),
         'profile' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => false
         ),
         'professional_degree' => array(
             'rule' => 'alphaNumeric'
         ),
         'address' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'phone' => array(

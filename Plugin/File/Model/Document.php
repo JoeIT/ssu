@@ -17,11 +17,11 @@ class Document extends FileAppModel
 
     public $validate = array(
         'name' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => false
         ),
         'description' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         )
     /*    ,

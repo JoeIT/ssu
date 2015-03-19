@@ -106,8 +106,7 @@ http://almsaeedstudio.com/preview
 ______________________
 
 -- CORREGIR ERROR DE PERDIDA DE ID DE EMPLEADO POR REFRESCAR OTRA TAB CON INDEX
-??- Crear permisos para acceder a secciones
-- Crear sub-modulo de busqedas de personal
+- Agregar paginador
 - Crear sub-modulo de subida masiva de archivos
 - Agregar subseccion para administrativos y salud
 - Agregar AdminLTE theme al proyecto
@@ -117,9 +116,11 @@ ______________________
 - Evitar que se guarden datos con el mismo nombre
 - Mostrar en add el archivo cargado al lado del boton del chooser
 - Usar DatePickers en vez de los choosers
+??- Crear permisos para acceder a secciones
 
 *** Programar el registro de contratos
 *** Recuperar la foto de cada empleado
 *** Guardar las imagenes de perfil de cada empleado
 *** Guardar los archivos en carpeta de plugin
 *** En la ventana de empleado, no mostrar las listas de documentos que no contengan datos
+*** Crear sub-modulo de busqedas de personal

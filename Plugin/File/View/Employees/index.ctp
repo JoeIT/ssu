@@ -16,8 +16,10 @@
         color: #ffffff;
     }
 
-    .css-search_table th, .css-search_table td {
+    .css-search_table th, .css-search_table td, .css-search_table td input,.css-search_table td select {
         padding-left: 4px;
+        font-size: 90%;
+        width: auto;
     }
 
     .css-section_panel {
@@ -47,7 +49,7 @@
 
     .css-info_panel_results {
         text-align: center;
-        width: 65%;
+        width: 70%;
     }
 
     .css-left_container a {

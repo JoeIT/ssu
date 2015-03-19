@@ -28887,3 +28887,130 @@ Stack Trace:
 #3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-03-18 12:16:30 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\Aplicaciones\useraclSQL\Plugin\File\View\Employees\search.ctp, line 12]
+2015-03-18 12:16:30 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/employees/search
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\Aplicaciones...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\Aplicaciones...', 12, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\Aplicaciones...', 12, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-19 09:52:28 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\LettersController.php, line 103]
+Trace:
+LettersController::add() - APP\Plugin\File\Controller\LettersController.php, line 103
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 09:54:02 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\LettersController.php, line 103]
+Trace:
+LettersController::add() - APP\Plugin\File\Controller\LettersController.php, line 103
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 09:54:03 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\LettersController.php, line 103]
+Trace:
+LettersController::add() - APP\Plugin\File\Controller\LettersController.php, line 103
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 09:54:03 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\LettersController.php, line 103]
+Trace:
+LettersController::add() - APP\Plugin\File\Controller\LettersController.php, line 103
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 09:54:04 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\LettersController.php, line 103]
+Trace:
+LettersController::add() - APP\Plugin\File\Controller\LettersController.php, line 103
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 09:54:05 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\LettersController.php, line 103]
+Trace:
+LettersController::add() - APP\Plugin\File\Controller\LettersController.php, line 103
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 09:54:06 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\LettersController.php, line 103]
+Trace:
+LettersController::add() - APP\Plugin\File\Controller\LettersController.php, line 103
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 09:54:06 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\LettersController.php, line 103]
+Trace:
+LettersController::add() - APP\Plugin\File\Controller\LettersController.php, line 103
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 09:54:07 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\LettersController.php, line 103]
+Trace:
+LettersController::add() - APP\Plugin\File\Controller\LettersController.php, line 103
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 09:54:08 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\LettersController.php, line 103]
+Trace:
+LettersController::add() - APP\Plugin\File\Controller\LettersController.php, line 103
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 09:54:08 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\LettersController.php, line 103]
+Trace:
+LettersController::add() - APP\Plugin\File\Controller\LettersController.php, line 103
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 09:54:09 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\LettersController.php, line 103]
+Trace:
+LettersController::add() - APP\Plugin\File\Controller\LettersController.php, line 103
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 09:54:51 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\LettersController.php, line 103]
+Trace:
+LettersController::add() - APP\Plugin\File\Controller\LettersController.php, line 103
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+

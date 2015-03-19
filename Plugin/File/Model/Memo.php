@@ -16,15 +16,15 @@ class Memo extends FileAppModel
             'allowEmpty' => false
         ),
         'code' => array(
-            'rule' => array('custom', '/^[a-z0-9 \/.-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => false
         ),
         'description' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'content_text' => array(
-            'rule' => array('custom', '/^[a-z0-9 .\-]+$/i'),
+            'rule' => array('custom', '/[^\pL\d]+/u'),
             'allowEmpty' => true
         )
     );
