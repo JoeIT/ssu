@@ -145,9 +145,10 @@ class EmployeesController extends FileAppController {
         $gender = $this->request->data('gender');
         $profile = $this->request->data('profile');
         $degree = $this->request->data('degree');
+        $years = $this->request->data('years');
         $certificate = $this->request->data('certificate');
 
-        $result = $this->Employee->search($name, $lastName, $code, $ci, $gender, $profile, $degree, $certificate);
+        $result = $this->Employee->search($name, $lastName, $code, $ci, $gender, $profile, $degree, $years, $certificate);
         $this->set(compact('result'));
         $this->set('GENDER', $this->GENDER);
         $this->set('PROFILE', $this->PROFILE);

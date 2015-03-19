@@ -7,10 +7,11 @@
         <th>Género</th>
         <th>Perfil</th>
         <th>Grado profesional</th>
+        <th>Años experiencia</th>
     </tr>
     <?php
     if(count($result) == 0)
-        echo "<tr><td colspan='6'>NO SE TIENEN RESULTADOS PARA ESTA BUSQUEDA.</td></td></tr>";
+        echo "<tr><td colspan='10'>NO SE TIENEN RESULTADOS PARA ESTA BUSQUEDA.</td></td></tr>";
 
 
     foreach ($result as $employee){ ?>
@@ -28,6 +29,7 @@
         <td><?php echo $GENDER[$employee['Employee']['gender']]; ?></td>
         <td><?php echo $PROFILE[$employee['Employee']['profile']]; ?></td>
         <td><?php echo $PROFESSIONAL_DEGREE[$employee['Employee']['professional_degree']]; ?></td>
+        <td align="right"><?php echo $employee['Employee']['professional_years']; ?></td>
     </tr>
 
     <?php } ?>

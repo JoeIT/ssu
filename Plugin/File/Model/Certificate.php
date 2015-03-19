@@ -12,7 +12,7 @@ class Certificate extends FileAppModel
 
     public $validate = array(
         'titulation_grade' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u'), // Regex to allow alphanumeric and internal spaces
+            'rule' => array('custom', '/[\pL\d]+/u'), // Regex to allow alphanumeric and internal spaces
             'allowEmpty' => false
         ),
         'expedition_date' => array(
@@ -20,15 +20,15 @@ class Certificate extends FileAppModel
             'allowEmpty' => false
         ),
         'location' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u'),
+            'rule' => array('custom', '/[\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'institution' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u'),
+            'rule' => array('custom', '/[\pL\d]+/u'),
             'allowEmpty' => false
         ),
         'description' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u'),
+            'rule' => array('custom', '/[\pL\d]+/u'),
             'allowEmpty' => true
         )
     );

@@ -18,7 +18,7 @@
 
     .css-search_table th, .css-search_table td, .css-search_table td input,.css-search_table td select {
         padding-left: 4px;
-        font-size: 90%;
+        font-size: 85%;
         width: auto;
     }
 
@@ -123,6 +123,7 @@
     .css-search_result_table td {
         border: 1px solid grey;
         padding: 5px;
+        font-size: 85%;
     }
 
 </style>
@@ -142,6 +143,7 @@
                     gender: $('#search_gender').val(),
                     profile: $('#search_profile').val(),
                     degree: $('#search_degree').val(),
+                    years: $('#search_years').val(),
                     certificate: $('#search_certificate').val()
                 },
                 success: function ( searchResultPanel ) {
@@ -211,6 +213,14 @@
                                 <option value="<?php echo $key; ?>"><?php echo $degree; ?></option>
                                 <?php } ?>
                             </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Años experiencia:</th>
+                        <td>
+                            (Mayor o igual a)
+                            </br>
+                            <input type="number" min="0" id="search_years"/>
                         </td>
                     </tr>
                     <tr>

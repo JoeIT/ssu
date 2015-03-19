@@ -28,6 +28,7 @@ echo $this->Form->input('ci', array('label' => 'Carnet identidad (*)'));
 echo $this->Form->input('gender', array('label' => 'Género', 'options' => $GENDER));
 echo $this->Form->input('profile', array('label' => 'Perfíl', 'options' => $PROFILE));
 echo $this->Form->input('professional_degree', array('label' => 'Grado profesional', 'options' => $PROFESSIONAL_DEGREE));
+echo $this->Form->input('professional_years', array('label' => 'Años de experiencia (*)', 'min' => 0));
 
 echo $this->Form->input('address', array('label' => 'Dirección'));
 echo $this->Form->input('phone', array('label' => 'Teléfono', 'maxlength' => '8'));

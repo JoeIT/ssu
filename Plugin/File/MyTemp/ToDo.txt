@@ -106,7 +106,8 @@ http://almsaeedstudio.com/preview
 ______________________
 
 -- CORREGIR ERROR DE PERDIDA DE ID DE EMPLEADO POR REFRESCAR OTRA TAB CON INDEX
-- Agregar paginador
+- Agregar paginadores
+- Agregar scrollbars
 - Crear sub-modulo de subida masiva de archivos
 - Agregar subseccion para administrativos y salud
 - Agregar AdminLTE theme al proyecto

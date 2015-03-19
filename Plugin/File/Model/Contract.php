@@ -12,7 +12,7 @@ class Contract extends FileAppModel
 
     public $validate = array(
         'number' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u'), // Regex to allow alphanumeric and internal spaces
+            'rule' => array('custom', '/[\pL\d]+/u'), // Regex to allow alphanumeric and internal spaces
             'allowEmpty' => false
         ),
         'start_date' => array(
@@ -24,7 +24,7 @@ class Contract extends FileAppModel
             'allowEmpty' => false
         ),
         'job' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u'), // Regex to allow alphanumeric and internal spaces
+            'rule' => array('custom', '/[\pL\d]+/u'), // Regex to allow alphanumeric and internal spaces
             'allowEmpty' => false
         ),
         'time' => array(
@@ -38,19 +38,19 @@ class Contract extends FileAppModel
             'allowEmpty' => false
         ),
         'term' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u'),
+            'rule' => array('custom', '/[\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'representant' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u'),
+            'rule' => array('custom', '/[\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'legal_adviser' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u'),
+            'rule' => array('custom', '/[\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'description' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u'),
+            'rule' => array('custom', '/[\pL\d]+/u'),
             'allowEmpty' => true
         )
     );

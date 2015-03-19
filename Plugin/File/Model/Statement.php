@@ -13,11 +13,11 @@ class Statement extends FileAppModel
     public $validate = array(
         'name' => array(
             //'rule' => array('custom', '/([\w.-]+ )+[\w+.-]/'),
-            'rule' => array('custom', '/[^\pL\d]+/u'), // Regex to allow alphanumeric and internal spaces
+            'rule' => array('custom', '/[\pL\d]+/u'), // Regex to allow alphanumeric and internal spaces
             'allowEmpty' => false
         ),
         'description' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u'),
+            'rule' => array('custom', '/[\pL\d]+/u'),
             'allowEmpty' => true
         )
     );

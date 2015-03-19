@@ -27,7 +27,7 @@ class Employee extends FileAppModel
 
     public $validate = array(
         'name' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u'), // Regex to allow alphanumeric and internal spaces
+            'rule' => array('custom', '/[\pL\d]+/u'), // Regex to allow alphanumeric and internal spaces
             'allowEmpty' => false
         ),
         'paternal_surname' => array(
@@ -46,10 +46,10 @@ class Employee extends FileAppModel
             'allowEmpty' => false
 		),
         'born_country' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u')
+            'rule' => array('custom', '/[\pL\d]+/u')
         ),
         'born_city' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u')
+            'rule' => array('custom', '/[\pL\d]+/u')
         ),
         'ci' => array(
             'rule' => array('minLength', '5'),
@@ -61,14 +61,19 @@ class Employee extends FileAppModel
             'allowEmpty' => false
         ),
         'profile' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u'),
+            'rule' => array('custom', '/[\pL\d]+/u'),
             'allowEmpty' => false
         ),
         'professional_degree' => array(
             'rule' => 'alphaNumeric'
         ),
+        'professional_years' => array(
+            'rule' => array('custom', '/\d{0,2}/'),
+            'message' => 'Este campo solo permite enteros positivos',
+            'allowEmpty' => false
+        ),
         'address' => array(
-            'rule' => array('custom', '/[^\pL\d]+/u'),
+            'rule' => array('custom', '/[\pL\d]+/u'),
             'allowEmpty' => true
         ),
         'phone' => array(
@@ -118,7 +123,7 @@ class Employee extends FileAppModel
         return $this->find('all', $params);
     }
 
-    public function search($name, $lastName, $code, $ci, $gender, $profile, $degree, $certificate)
+    public function search($name, $lastName, $code, $ci, $gender, $profile, $degree, $years, $certificate)
     {
         $conditions = array();
 
@@ -140,6 +145,8 @@ class Employee extends FileAppModel
             $conditions['profile'] = $profile;
         if(!empty($degree))
             $conditions['professional_degree'] = $degree;
+        if(!empty($years))
+            $conditions['professional_years >= '] = $years;
 
         $joinCertificates = array();
 
@@ -167,7 +174,8 @@ class Employee extends FileAppModel
                 'Employee.ci',
                 'Employee.gender',
                 'Employee.profile',
-                'Employee.professional_degree'
+                'Employee.professional_degree',
+                'Employee.professional_years'
             ),
             'conditions' => $conditions,
             'joins' => $joinCertificates,

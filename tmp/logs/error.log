@@ -29014,3 +29014,75 @@ Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
 Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
 [main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
 
+2015-03-19 10:47:12 Warning: Warning (2): preg_match(): No ending matching delimiter '}' found in [C:\cakephp-2.5.4\Cake\Utility\Validation.php, line 870]
+Trace:
+preg_match - [internal], line ??
+Validation::_check() - C:\cakephp-2.5.4\Cake\Utility\Validation.php, line 870
+Validation::custom() - C:\cakephp-2.5.4\Cake\Utility\Validation.php, line 276
+CakeValidationRule::process() - C:\cakephp-2.5.4\Cake\Model\Validator\CakeValidationRule.php, line 277
+CakeValidationSet::validate() - C:\cakephp-2.5.4\Cake\Model\Validator\CakeValidationSet.php, line 135
+ModelValidator::errors() - C:\cakephp-2.5.4\Cake\Model\ModelValidator.php, line 267
+ModelValidator::validates() - C:\cakephp-2.5.4\Cake\Model\ModelValidator.php, line 99
+Model::validates() - C:\cakephp-2.5.4\Cake\Model\Model.php, line 3367
+Model::save() - C:\cakephp-2.5.4\Cake\Model\Model.php, line 1758
+EmployeesController::edit() - APP\Plugin\File\Controller\EmployeesController.php, line 83
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 10:47:21 Warning: Warning (2): preg_match(): No ending matching delimiter '}' found in [C:\cakephp-2.5.4\Cake\Utility\Validation.php, line 870]
+Trace:
+preg_match - [internal], line ??
+Validation::_check() - C:\cakephp-2.5.4\Cake\Utility\Validation.php, line 870
+Validation::custom() - C:\cakephp-2.5.4\Cake\Utility\Validation.php, line 276
+CakeValidationRule::process() - C:\cakephp-2.5.4\Cake\Model\Validator\CakeValidationRule.php, line 277
+CakeValidationSet::validate() - C:\cakephp-2.5.4\Cake\Model\Validator\CakeValidationSet.php, line 135
+ModelValidator::errors() - C:\cakephp-2.5.4\Cake\Model\ModelValidator.php, line 267
+ModelValidator::validates() - C:\cakephp-2.5.4\Cake\Model\ModelValidator.php, line 99
+Model::validates() - C:\cakephp-2.5.4\Cake\Model\Model.php, line 3367
+Model::save() - C:\cakephp-2.5.4\Cake\Model\Model.php, line 1758
+EmployeesController::edit() - APP\Plugin\File\Controller\EmployeesController.php, line 83
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 10:47:45 Warning: Warning (2): preg_match(): No ending delimiter '^' found in [C:\cakephp-2.5.4\Cake\Utility\Validation.php, line 870]
+Trace:
+preg_match - [internal], line ??
+Validation::_check() - C:\cakephp-2.5.4\Cake\Utility\Validation.php, line 870
+Validation::custom() - C:\cakephp-2.5.4\Cake\Utility\Validation.php, line 276
+CakeValidationRule::process() - C:\cakephp-2.5.4\Cake\Model\Validator\CakeValidationRule.php, line 277
+CakeValidationSet::validate() - C:\cakephp-2.5.4\Cake\Model\Validator\CakeValidationSet.php, line 135
+ModelValidator::errors() - C:\cakephp-2.5.4\Cake\Model\ModelValidator.php, line 267
+ModelValidator::validates() - C:\cakephp-2.5.4\Cake\Model\ModelValidator.php, line 99
+Model::validates() - C:\cakephp-2.5.4\Cake\Model\Model.php, line 3367
+Model::save() - C:\cakephp-2.5.4\Cake\Model\Model.php, line 1758
+EmployeesController::edit() - APP\Plugin\File\Controller\EmployeesController.php, line 83
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-19 10:59:48 Warning: Warning (2): preg_match(): Delimiter must not be alphanumeric or backslash in [C:\cakephp-2.5.4\Cake\Utility\Validation.php, line 870]
+Trace:
+preg_match - [internal], line ??
+Validation::_check() - C:\cakephp-2.5.4\Cake\Utility\Validation.php, line 870
+Validation::custom() - C:\cakephp-2.5.4\Cake\Utility\Validation.php, line 276
+CakeValidationRule::process() - C:\cakephp-2.5.4\Cake\Model\Validator\CakeValidationRule.php, line 277
+CakeValidationSet::validate() - C:\cakephp-2.5.4\Cake\Model\Validator\CakeValidationSet.php, line 135
+ModelValidator::errors() - C:\cakephp-2.5.4\Cake\Model\ModelValidator.php, line 267
+ModelValidator::validates() - C:\cakephp-2.5.4\Cake\Model\ModelValidator.php, line 99
+Model::validates() - C:\cakephp-2.5.4\Cake\Model\Model.php, line 3367
+Model::save() - C:\cakephp-2.5.4\Cake\Model\Model.php, line 1758
+EmployeesController::edit() - APP\Plugin\File\Controller\EmployeesController.php, line 83
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+

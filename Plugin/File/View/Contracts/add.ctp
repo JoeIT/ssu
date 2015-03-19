@@ -30,7 +30,7 @@ echo $this->Form->input('start_date', array('label' => 'Fecha de inicio', 'dateF
 echo $this->Form->input('end_date', array('label' => 'Fecha de finalización', 'dateFormat' => 'DMY', 'class' => 'css-date_area', 'minYear' => date('Y'), 'maxYear' => date('Y') + 50, 'separator' => '/'));
 echo $this->Form->input('job', array('label' => 'Servicio a prestar(*)'));
 echo $this->Form->input('time', array('label' => 'Tiempo(*)', 'options' => $CONTRACT_TIME));
-echo $this->Form->input('salary', array('label' => 'Salario(*)'));
+echo $this->Form->input('salary', array('label' => 'Salario(*)', 'min' => 0));
 echo $this->Form->input('term', array('label' => 'Plazo(*)', 'options' => $CONTRACT_TERMS));
 echo $this->Form->input('representant', array('label' => 'Representante del seguro(*)'));
 echo $this->Form->input('legal_adviser', array('label' => 'Asesor legal'));
