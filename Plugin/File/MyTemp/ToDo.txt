@@ -108,6 +108,8 @@ ______________________
 -- CORREGIR ERROR DE PERDIDA DE ID DE EMPLEADO POR REFRESCAR OTRA TAB CON INDEX
 - Agregar paginadores
 - Agregar scrollbars
+- Agregar gifs animados para mostrar al usuario que su peticion esta siendo realizada
+- Evitar que se cachee la imagen de los perfiles
 - Crear sub-modulo de subida masiva de archivos
 - Agregar subseccion para administrativos y salud
 - Agregar AdminLTE theme al proyecto

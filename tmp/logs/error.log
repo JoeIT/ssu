@@ -29086,3 +29086,88 @@ Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
 Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
 [main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
 
+2015-03-20 00:00:53 Warning: Warning (2): rename(C:/Aplicaciones/useraclSQL/Plugin/File/webroot/img/PERSONAL/ARM800319,C:/Aplicaciones/useraclSQL/Plugin/File/webroot/img/PERSONAL/ARM800320): Acceso denegado. (code: 5) in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php, line 94]
+Trace:
+rename - [internal], line ??
+EmployeesController::edit() - APP\Plugin\File\Controller\EmployeesController.php, line 94
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-20 00:01:47 Warning: Warning (2): rename(C:/Aplicaciones/useraclSQL/Plugin/File/webroot/img/PERSONAL/ARM800320,C:/Aplicaciones/useraclSQL/Plugin/File/webroot/img/PERSONAL/ARM760320): El sistema no puede encontrar el archivo especificado. (code: 2) in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php, line 94]
+Trace:
+rename - [internal], line ??
+EmployeesController::edit() - APP\Plugin\File\Controller\EmployeesController.php, line 94
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-20 00:03:25 Warning: Warning (2): move_uploaded_file(C:/Aplicaciones/useraclSQL/Plugin/File/webroot/img/PERSONAL/ARM760320/profile_photo.jpg): failed to open stream: No such file or directory in [C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php, line 101]
+Trace:
+move_uploaded_file - [internal], line ??
+EmployeesController::edit() - APP\Plugin\File\Controller\EmployeesController.php, line 101
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 105
+
+2015-03-20 00:03:25 Warning: Warning (2): move_uploaded_file() 
+[<a href='http://php.net/function.move-uploaded-file'>function.move-uploaded-file</a>]: 
+Unable to move 'C:\xampp\tmp\phpEF2F.tmp' to 'C:/Aplicaciones/useraclSQL/Plugin/File/webroot/img/PERSONAL/ARM760320/profile_photo.jpg' in 
+[C:\Aplicaciones\useraclSQL\Plugin\File\Controller\EmployeesController.php, line 101]
+Trace:
+move_uploaded_file - [internal], line ??
+EmployeesController::edit() - APP\Plugin\File\Controller\EmployeesController.php, line 101
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - C:\cakephp-2.5.4\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 191
+Dispatcher::dispatch() - C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php, line 165
+[main] - C:\xampp\htdocs\useraclSQL\index.php, line 1052015-03-23 09:14:50 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php, line 137]
+2015-03-23 09:14:50 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/auth_acl/permissions
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\cakephp-2.5....', 137)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\cakephp-2.5....', 137, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\cakephp-2.5....', 137, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-23 10:42:19 Error: [MissingViewException] View file "C:\Aplicaciones\useraclSQL\Plugin\File\View\Files\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Aplicaciones\\useraclSQL\\Plugin\\File\\View\\Files\\index.ctp',
+)
+Request URL: /useraclSQL/file/files
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\cakephp-2.5.4\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FilesController), Object(CakeRequest))
+#4 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-23 10:42:25 Error: [MissingViewException] View file "C:\Aplicaciones\useraclSQL\Plugin\File\View\Files\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'C:\\Aplicaciones\\useraclSQL\\Plugin\\File\\View\\Files\\index.ctp',
+)
+Request URL: /useraclSQL/file/files
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 C:\cakephp-2.5.4\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 C:\cakephp-2.5.4\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(FilesController), Object(CakeRequest))
+#4 C:\xampp\htdocs\useraclSQL\index.php(105): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-24 10:24:51 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [C:\cakephp-2.5.4\Cake\Model\Datasource\Database\Sqlserver.php, line 135]
+2015-03-24 10:24:51 Error: [InternalErrorException] Internal Server Error
+Request URL: /useraclSQL/file/employees
+Stack Trace:
+#0 C:\cakephp-2.5.4\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\cakephp-2.5....', 135)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\cakephp-2.5....', 135, Array)
+#2 C:\cakephp-2.5.4\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\cakephp-2.5....', 135, Array)
+#3 C:\cakephp-2.5.4\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

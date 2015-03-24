@@ -27,7 +27,7 @@
         -moz-border-radius: 10px;
         border-radius: 10px;
         border: 2px solid gray;
-        background: #F2ECCE;
+        background: #C3C3C3;
     }
 
     .css-section_panel_search {
@@ -216,10 +216,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <th>Años experiencia:</th>
+                        <th>Años experiencia: </br> (Mayor o igual a) </th>
                         <td>
-                            (Mayor o igual a)
-                            </br>
                             <input type="number" min="0" id="search_years"/>
                         </td>
                     </tr>
